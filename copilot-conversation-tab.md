@@ -4,7 +4,7 @@
 
 Once an AI Agent has been selected in Copilot, you'll be able to fully speak to them.
 
-<figure><img src=".gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
 ### Documents & Voice
 
@@ -12,13 +12,13 @@ You have the ability to upload documents within the AI, to which it will use as 
 \
 You have the ability to turn on the voice chat feature and speak to the AI as if you we're having a conversation with a real person.
 
-<figure><img src=".gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
 
 ### Feedback
 
 When speaking to an AI, you're able to rate the questions providing real time feedback to the creators of the Agent.
 
-<figure><img src=".gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
 While providing positive feedback by simply clicking on the thumbs up, the answer will be marked as positive.
 
@@ -37,17 +37,17 @@ As well as by clicking the feedback button next to the thumbs down, you'll be ab
 
 You have the ability to rename the log for better context, if needed you can freely download the entire chat logs. And if the conversation is no longer needed simply delete it.
 
-<figure><img src=".gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
 ## Conversation Rating
 
 Top right you're able to see the Conversation Quality rating and who started this conversation with the AI.
 
-<figure><img src=".gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
 Clicking on it will reveal more of the Users information, allowing for out reach if needed and as well as a conversation summary.
 
-<figure><img src=".gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
 #### Logs Score
 
@@ -59,4 +59,4 @@ Yellow means a medium level, not bad but not good either
 
 Green means that it is up to standard Quality of what is to be expected within the Scoring feature.
 
-<figure><img src=".gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>

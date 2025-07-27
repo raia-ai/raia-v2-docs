@@ -4,23 +4,23 @@
 
 The Agent Instructions Tab is where you'll be able to edit the prompting and the AI Agents Information
 
-<figure><img src=".gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
 
 ## Ability to go to previous Agent version.
 
 Whenever you save your prompting a version is uploaded and saved as a backup to return to.
 
-<figure><img src=".gitbook/assets/image (105).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
 
 ## Custom Agent Prompting & Optimization
 
 You are able to create your own Agent prompting and customize it as you wish.
 
-<figure><img src=".gitbook/assets/image (108).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;If you are less experienced and feel unsure raia AI can optimize it for you. By simply clicking on the Optimize with AI button.
 
-<div align="center"><figure><img src=".gitbook/assets/image (107).png" alt="" width="104"><figcaption></figcaption></figure></div>
+<div align="center"><figure><img src=".gitbook/assets/image (52).png" alt="" width="104"><figcaption></figcaption></figure></div>
 
 Doing so will optimize your prompting to what is the standard for AI Prompting, even after doing so you are free to edit it as you need.
 
@@ -28,35 +28,35 @@ Doing so will optimize your prompting to what is the standard for AI Prompting, 
 
 With raia even after the creation of the agent, you are still able to add Information Packs.
 
-<figure><img src=".gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
 
 ## Ability to add documents & disable them as needed.
 
 With raia you have the ability to uploads documents as you please, ranging from Json, Pdfs, etc.
 
-<figure><img src=".gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
 
 As well as you have the ability to disable and enable as you please after importing them and if needed deleting them.
 
-<figure><img src=".gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
 
 ## Advanced Settings
 
 This tab allows you to fine-tune your AI agent’s behavior by adjusting model settings like creativity (Temperature), response diversity (Top\_P), and enabling features like file search, JSON output, or code interpretation. It also links the agent to a specific Assistant ID and Vector Store for personalized memory and file-driven responses.
 
-<figure><img src=".gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
 
 ## GPT Model
 
 The GPT model you choose determines the intelligence, speed, cost, and capabilities of your AI agent, directly affecting how well it understands and responds to users. Selecting the right model—whether lightweight for efficiency or advanced for complex reasoning—ensures the agent aligns with your specific goals and performance needs.
 
-<figure><img src=".gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
 
 ## AI Agent Creativity
 
 The Creativity (Temperature) setting controls how random or creative the AI’s responses are—lower values (0.2–0.5) produce more focused, predictable answers, while higher values (0.7–1.0) generate more diverse and imaginative output. Adjusting this lets you tailor the AI's tone and response style to match your use case, from technical accuracy to conversational flair.
 
-<figure><img src=".gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
 
 ## AI Agent Randomness
 
