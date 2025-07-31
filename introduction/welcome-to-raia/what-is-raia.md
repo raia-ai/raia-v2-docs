@@ -26,7 +26,7 @@ The **top 5 core pillars** of the raia system—especially when viewed through t
 
 #### 1. **Security-First Infrastructure**
 
-* **SOC2-compliant architecture** with **enterprise-grade access controls**, audit trails, and encryption standards ensures secure handling of data across the platform.
+* **SOC2 and HIPAA - compliant architecture** with **enterprise-grade access controls**, audit trails, and encryption standards ensures secure handling of data across the platform.
 * Every agent interaction is **audited and logged**, and security extends to **API integrations**, **data storage**, and **user management**.
 
 ***
