@@ -3,6 +3,7 @@
 ## Introduction
 
 * [Welcome to raia](README.md)
+  * [What is raia?](introduction/welcome-to-raia/what-is-raia.md)
   * [Why use raia](introduction/welcome-to-raia/why-use-raia.md)
   * [Core Features of raia](introduction/welcome-to-raia/core-features-of-raia.md)
 
