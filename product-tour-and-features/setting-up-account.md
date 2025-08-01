@@ -50,7 +50,7 @@ raia uses a **step-by-step wizard**. Here’s how the process typically flows:
 
 ***
 
-#### **Step 3:** [**Provide Instructions & Training Data**](agent-training-tab.md)
+#### **Step 3:** [**Provide Instructions & Training Data**](../agent-training-tab.md)
 
 * **Instructions:** Write the “job description” or rules for your agent. This shapes how it responds.
 * **Upload documents:** Attach PDFs, FAQs, or knowledge files. This becomes the agent’s knowledge base.
