@@ -1,5 +1,11 @@
 # Launching an AI Agent
 
+{% hint style="success" %}
+### Check out our AI Training Program
+
+For a more comprehensive training program on AI and how to build AI Agents [check out our AI Training](https://app.gitbook.com/o/6fIasulwAMiCXfnCAZn0/s/SfECtcNwrIDQm7NrCIeB/).&#x20;
+{% endhint %}
+
 ### Creating an AI Agent is a 7 step process
 
 <figure><img src="../.gitbook/assets/buildAgent.png" alt=""><figcaption></figcaption></figure>
