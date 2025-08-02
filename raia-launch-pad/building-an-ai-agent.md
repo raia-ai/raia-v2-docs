@@ -18,7 +18,7 @@ The logo will be used in the Live Chat and Copilot user interface.
 
 ## Able to setup basic prompting
 
-The instructions are one of the most important parts of building an agent. This is where you define the roles, objective, personality, guardrails, etc of the Agent. [See more details here](../ai-training/setup-of-instructions.md). You can also upload documents here for the AI to add to it's training.\
+The instructions are one of the most important parts of building an agent. This is where you define the roles, objective, personality, guardrails, etc of the Agent. [See more details here](../ai-training-guide/setup-of-instructions.md). You can also upload documents here for the AI to add to it's training.\
 \
 (Note: it's ok to skip this part, and come back to edit these later. Most likely you won't have a clear idea on instructions or documents ready to upload at this stage.)
 
