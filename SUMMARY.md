@@ -86,7 +86,10 @@
   * [Human Feedback](applications/copilot/human-feedback.md)
 * [Live Chat](applications/live-chat/README.md)
   * [Live Chat SDK](applications/live-chat/live-chat-sdk.md)
-* [Academy](applications/academy.md)
+* [Academy](applications/academy/README.md)
+  * [File Transformation](applications/academy/file-transformation.md)
+  * [Simulation](applications/academy/simulation.md)
+  * [Human Feedback](applications/academy/human-feedback.md)
 
 ## Launch Plan
 
