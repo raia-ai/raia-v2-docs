@@ -1,12 +1,12 @@
 # Agent Web Search Skill
 
-<figure><img src="../.gitbook/assets/image (168).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (168).png" alt=""><figcaption></figcaption></figure>
 
 ## Web Search
 
 Web search lets AI provide up-to-date, real-world information that isn't in its training data, making answers more accurate and relevant. Being able to choose between AI models allows users to tailor responses based on strengths—like reasoning, speed, or integration with specific services. Together, they boost flexibility, precision, and trust in the AI’s output.
 
-<figure><img src="../.gitbook/assets/image (169).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (169).png" alt=""><figcaption></figcaption></figure>
 
 ## **Importance of Web Search in AI**
 

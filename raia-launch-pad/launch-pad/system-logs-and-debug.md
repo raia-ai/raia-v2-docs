@@ -16,7 +16,7 @@ This **Log Information** panel is part of a debugging or monitoring tool for tra
 
 In short, this view helps developers or admins monitor and troubleshoot actions, calls, or events made within their AI system.
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 ## Organization Information
 
@@ -30,7 +30,7 @@ The **Organization Information** section in the debug menu provides key administ
 
 In summary, this section helps track when the organization was onboarded, its current activity status, and its unique identifiers for internal system referencing.
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 ## Agent Information
 
@@ -46,7 +46,7 @@ The **Agent Information** section in the debug menu provides detailed metadata a
 
 This section is useful for identifying the agent’s purpose, managing its lifecycle, and tracking its changes over time within the broader organizational context.
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 ## Details
 
@@ -64,5 +64,5 @@ In this case, it includes:
 
 Even though most fields are blank in this example, it helps developers validate the request structure and debug issues like missing data or formatting errors.
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
