@@ -88,6 +88,7 @@
 * [Live Chat](applications/live-chat/README.md)
   * [Live Chat SDK](applications/live-chat/live-chat-sdk.md)
 * [Academy](applications/academy/README.md)
+  * [Connecting to your Agent](applications/academy/connecting-to-your-agent.md)
   * [File Transformation](applications/academy/file-transformation.md)
   * [Simulation](applications/academy/simulation.md)
   * [Human Feedback](applications/academy/human-feedback.md)

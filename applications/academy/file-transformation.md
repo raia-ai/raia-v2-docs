@@ -4,7 +4,11 @@ description: Transforming any unstructured or structured file type to be "AI Rea
 
 # File Transformation
 
-**Overview**
+### **Converting Files in raia Academy**
+
+{% embed url="https://youtu.be/FcQGD_9sHNc" %}
+
+### **Overview**
 
 raia Academy enables you to convert virtually any file into an **AI‑Ready** format—**Markdown (.md)** or **JSON (.json)**—before uploading into the vector store.
 
@@ -61,7 +65,9 @@ By transforming files into **clean, structured, and consistent Markdown or JSON*
 
 ***
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-08-03 at 10.26.08 AM.png" alt="" width="563"><figcaption></figcaption></figure>
+### Pushing Files to AI Agents
+
+{% embed url="https://youtu.be/_x6G-K6bll8" %}
 
 ### **Pushing to AI Agents**
 
@@ -74,6 +80,8 @@ Once files are converted:
    * Natural language queries.
    * Agent reasoning and training.
 
+<figure><img src="../../.gitbook/assets/Screenshot 2025-08-03 at 10.26.08 AM.png" alt="" width="563"><figcaption></figcaption></figure>
+
 ***
 
 ### **Managing Files in raia Academy**
@@ -81,6 +89,12 @@ Once files are converted:
 * **Assign to specific agents** so knowledge is targeted.
 * **Easily remove outdated files** from an agent’s vector store to keep responses relevant.
 * **Re-upload updated versions** without disrupting other knowledge sources.
+
+
+
+### Bulk Upload of Files into raia Academy
+
+{% embed url="https://youtu.be/SKS3bhZEqYs" %}
 
 ***
 

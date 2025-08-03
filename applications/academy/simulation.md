@@ -4,6 +4,10 @@ description: Using Simulation in raia Academy to Test AI Agents
 
 # Simulation
 
+### **How Simulation works**
+
+{% embed url="https://youtu.be/fYgDJ4380pA" %}
+
 ### **Overview**
 
 Simulation in **raia Academy** allows you to create realistic test conversations for your AI Agents before deploying them in a live environment.\
