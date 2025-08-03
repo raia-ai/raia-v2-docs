@@ -10,7 +10,7 @@ description: The Leading Platform for building, training, testing and managing A
 
 If you have not created your account on raia, you can sign up for a free trial or join our developers program to gain limited access.&#x20;
 
-<a href="https://raia2.com/" class="button primary" data-icon="rocket-launch">Create an Account</a> <a href="broken-reference" class="button secondary" data-icon="terminal">API reference</a>
+<a href="https://raia2.com/" class="button primary" data-icon="rocket-launch">Create an Account</a> <a href="https://app.gitbook.com/o/6fIasulwAMiCXfnCAZn0/s/YnCphJOJo77GlU5wRPYS/" class="button secondary" data-icon="terminal">API reference</a>
 
 ***
 
