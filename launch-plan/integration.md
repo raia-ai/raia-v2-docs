@@ -5,8 +5,12 @@
 **Goal:** Connect the AI Agent to your business systems and automate workflows\
 **Who’s Involved:**
 
-* n8n Workflow Developer (Primary)
+* n8n Workflow Developer (Primary)&#x20;
 * RAIA Agent Engineer (Support)
+
+{% hint style="info" %}
+See our native n8n integration at [https://n8n.io/integrations/raia/](https://n8n.io/integrations/raia/)
+{% endhint %}
 
 ***
 

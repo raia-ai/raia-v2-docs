@@ -1,6 +1,6 @@
 # n8n Node
 
-View our n8n Node / Integration here: [https://www.npmjs.com/package/n8n-nodes-raia](https://www.npmjs.com/package/n8n-nodes-raia)
+View our n8n Node / Integration here: [https://n8n.io/integrations/raia/](https://n8n.io/integrations/raia/)
 
 **Custom n8n Node** to interact with the **Raia** platform for managing AI-powered and human-led conversations via SMS, Email, or Voice.
 
