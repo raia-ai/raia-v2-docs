@@ -52,7 +52,7 @@ Hiring developers, buying tools, and managing integrations yourself adds up fast
 
 ***
 
-### 🧩 The Framework Advantage
+### 🧩 The Platform Advantage
 
 Other platforms give you pieces. raia gives you the **whole system**:
 
