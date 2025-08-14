@@ -6,7 +6,7 @@
 
 The Conversation Scoring Skill allows the AI to rate interactions based on engagement and effectiveness, helping identify quality levels and areas for improvement through a standardized scoring system.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Ability to customize Conversation Summary Prompt
 

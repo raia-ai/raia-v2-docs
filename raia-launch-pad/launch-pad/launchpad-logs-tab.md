@@ -4,7 +4,7 @@
 
 The logs tab on raia provides a detailed record of activity, tracking the date, source, action taken, status, and related messages for each event. This helps users monitor agent interactions and system changes, ensuring complete visibility and auditability within the platform.
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Sorting
 
