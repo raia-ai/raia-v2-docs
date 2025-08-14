@@ -40,7 +40,15 @@ You are able to change the design of the AI. This means you can change It's colo
 
 <figure><img src="../../.gitbook/assets/image (142).png" alt="" width="283"><figcaption></figcaption></figure>
 
+## Live Chat History Logs
 
+The live chat menu includes a **Recent Chats** section, allowing users to quickly access their previous conversations without leaving the chat interface. Each entry displays the conversation title (or first message) along with a timestamp for when it was created.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (171).png" alt="" width="329"><figcaption></figcaption></figure>
+
+This enhancement makes it easy to reference past discussions, continue an unfinished conversation, or review earlier information all within the same live chat window. It streamlines navigation, reduces the need to switch between different pages, and helps maintain context when following up on earlier inquiries.
+
+<figure><img src="../../.gitbook/assets/image (172).png" alt="" width="329"><figcaption></figcaption></figure>
 
 ## Live Chat Default Page Options
 
