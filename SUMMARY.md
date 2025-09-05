@@ -38,6 +38,7 @@
 * [Integration](integration/README.md)
   * [API Documentation](integration/api-documentation.md)
   * [n8n Node](integration/n8n-node.md)
+  * [Zapier](integration/zapier.md)
 
 ## raia Launch Pad
 
