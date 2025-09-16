@@ -1,2 +1,4 @@
 # Release Notes - raia
 
+<table><thead><tr><th width="401.01043701171875">Update</th><th>Date</th><th><select><option value="TuHoHMlWh5aH" label="Bug Fix" color="blue"></option><option value="8TSpsKSotydX" label="New Feature" color="blue"></option><option value="9ccRU4KBohd6" label="Security" color="blue"></option><option value="DABgFqKfk8Rs" label="Improvement" color="blue"></option></select></th></tr></thead><tbody><tr><td>Ability to Login with SSO with Apple Account</td><td>9/15/25</td><td><span data-option="DABgFqKfk8Rs">Improvement</span></td></tr><tr><td>Ability to change Vector store in Agent</td><td>9/12/25</td><td><span data-option="8TSpsKSotydX">New Feature</span></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table>
+
