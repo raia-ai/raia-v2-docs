@@ -124,3 +124,7 @@
         kind: openapi
         spec: raia-ai-api
   ```
+
+## RELEASE NOTES
+
+* [Release Notes - raia](release-notes/release-notes-raia.md)
