@@ -94,6 +94,10 @@
   * [Simulation](applications/academy/simulation.md)
   * [Human Feedback](applications/academy/human-feedback.md)
 
+## RELEASE NOTES
+
+* [Release Notes - raia](release-notes/release-notes-raia.md)
+
 ## Launch Plan
 
 * [Launch Checklist](launch-plan/launch-checklist.md)
@@ -124,7 +128,3 @@
         kind: openapi
         spec: raia-ai-api
   ```
-
-## RELEASE NOTES
-
-* [Release Notes - raia](release-notes/release-notes-raia.md)
