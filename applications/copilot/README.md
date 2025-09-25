@@ -4,7 +4,7 @@
 
 raia Copilot is our primary internal user experience for engaging with AI Agents built on raia Launch Pad. The user experience is similar to a "chat gpt" experience.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-04-17 at 12.18.46 PM (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-09-25 at 8.46.13 AM.png" alt=""><figcaption></figcaption></figure>
 
 ### Copilot is your Team's Access to your AI Agents <a href="#copilot-is-your-teams-access-to-your-ai-agents" id="copilot-is-your-teams-access-to-your-ai-agents"></a>
 
@@ -14,7 +14,7 @@ Your team can now access the AI Agents you build using [**raia Launchpad**](http
 
 raia’s Co-Pilot platform makes accessing AI agents a breeze. With a straightforward interface much like ChatGPT, your team can tap into these agents trained on your business’s data and processes, optimizing day-to-day tasks. Need insights on a client? Want to run a quick analysis on a project? Co-Pilot has your team covered with answers that save time and drive smarter, quicker decisions.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-04-17 at 12.24.05 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-09-25 at 8.48.02 AM.png" alt=""><figcaption></figcaption></figure>
 
 ### Give access to AI to your entire organization <a href="#give-access-to-ai-to-your-entire-organization" id="give-access-to-ai-to-your-entire-organization"></a>
 
