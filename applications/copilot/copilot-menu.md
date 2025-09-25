@@ -2,7 +2,7 @@
 
 ## Copilot Menu
 
-<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-09-25 at 8.48.02 AM (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Dropdown Menu
 
