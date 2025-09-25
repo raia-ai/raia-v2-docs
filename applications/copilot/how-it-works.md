@@ -4,7 +4,7 @@
 
 The user experience of Copilot is very similar to Chat GPT (or any AI interface). The primary functionality revolves around prompting (chatting) with the AI Agent.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-04-17 at 12.18.46 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-09-25 at 8.46.13 AM (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Selecting the AI Agent <a href="#selecting-the-ai-agent" id="selecting-the-ai-agent"></a>
 
@@ -26,5 +26,4 @@ If you want to navigate to a different AI Agent, use the pull down menu at the t
 
 Each conversation (thread) is saved on the left side of the screen. You can click on the conversation to view the messages at anytime. You can also easily rename the conversation by clicking on the three dot menu when you hover over the conversation title. Other features include downloading the conversation, deleting and adding to Memory of the Agent (if you want to train the Agent to remember the conversation for future recall).
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-04-17 at 12.29.21 PM.png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../.gitbook/assets/Screenshot 2025-09-25 at 8.49.15 AM.png" alt=""><figcaption></figcaption></figure>
