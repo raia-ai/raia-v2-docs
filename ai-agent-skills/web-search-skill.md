@@ -1,6 +1,6 @@
 # Web Search Skill
 
-Here’s the full, polished **Web Search Skill Documentation** for the Raia platform, incorporating your updated explanation of how it works:
+
 
 ***
 

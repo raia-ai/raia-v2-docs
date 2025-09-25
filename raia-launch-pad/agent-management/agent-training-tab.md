@@ -44,7 +44,7 @@ As well as you have the ability to disable and enable as you please after import
 
 This tab allows you to fine-tune your AI agent’s behavior by adjusting model settings like creativity (Temperature), response diversity (Top\_P), and enabling features like file search, JSON output, or code interpretation. It also links the agent to a specific Assistant ID and Vector Store for personalized memory and file-driven responses.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## GPT Model
 
@@ -80,9 +80,9 @@ The **Assistant ID** uniquely identifies a specific AI agent configuration, link
 
 The **Update Vector Store** option allows users to delete and recreate an existing vector store in one step. This is especially useful when major changes have been made to the source data, ensuring the store reflects the most current and accurate information. When this option is triggered, the system removes the old vector embeddings and regenerates them from the updated data set. This process helps maintain optimal search accuracy, content relevance, and system performance without requiring manual deletion followed by a separate recreation step.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## [Agents Tab Full Showcase](https://www.youtube.com/watch?v=FE4Stzy5fTk)
 

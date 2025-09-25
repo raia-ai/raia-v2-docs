@@ -22,16 +22,16 @@ When speaking to an AI, you're able to rate the questions providing real time fe
 
 While providing positive feedback by simply clicking on the thumbs up, the answer will be marked as positive.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 While providing negative feedback you are asked to comment and explain as to why the answer is not suitable for the AI or the second option of editing to AI's answer to what you believe it should be.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 As well as by clicking the feedback button next to the thumbs down, you'll be able to see your feedback and even edit your feedback later on or delete it.\
 
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Rename, Download, Delete
 
@@ -65,4 +65,4 @@ Green means that it is up to standard Quality of what is to be expected within t
 
 Users have the option to archive conversations, which removes them from the active conversation list without permanently deleting them.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
