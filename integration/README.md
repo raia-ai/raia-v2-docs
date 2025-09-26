@@ -131,3 +131,5 @@ Combined with RAIA’s **omni-channel capabilities** (SMS, Email, Live Chat, Voi
 Check out the API docs, create a webhook in Launch Pad, or build your first Function in minutes.\
 Need help? Our team can guide you through any integration—just ask.
 
+{% embed url="https://youtu.be/Q0l4EK533Bw" %}
+

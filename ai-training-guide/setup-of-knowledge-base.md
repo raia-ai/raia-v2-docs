@@ -124,5 +124,7 @@ No re-uploading 15 files. No guessing what’s still accurate. No retraining fro
 
 > A well-fed Agent is a high-performing Agent.
 
+{% embed url="https://youtu.be/Fv16VNkU_g4" %}
+
 ***
 

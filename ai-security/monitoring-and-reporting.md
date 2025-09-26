@@ -35,3 +35,5 @@ Raia’s Monitoring & Reporting features provide the transparency organizations 
 ### Reporting Skill
 
 If you want to receive a copy of conversations or want to receive a general usage report via email or SMS you can install the Reporting Skill on your Agent. [See more here.](../ai-agent-skills/reporting-skill.md)
+
+{% embed url="https://youtu.be/hryJTYh6vK4" %}

@@ -231,3 +231,4 @@ Instructions **guide how** the Agent uses everything else.
 * Use the “Optimize with AI” tool to help clean up your wording
 * Version your changes and track improvements over time
 
+{% embed url="https://youtu.be/AvRWDO6Jw-E" %}

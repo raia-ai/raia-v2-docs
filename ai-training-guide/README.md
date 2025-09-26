@@ -129,3 +129,5 @@ It’s everything you’d expect from a well-trained employee—only faster, mor
 
 Head to **Launch Pad** to create your agent, upload documents, define your prompts, and watch your AI workforce grow smarter with every interaction.
 
+{% embed url="https://youtu.be/6DC2tmRaWHs" %}
+

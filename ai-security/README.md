@@ -27,3 +27,5 @@ Securing AI Agents starts with a clear, multi-level access framework designed to
    * **Trust & Compliance:** By integrating security best practices at the agent level, organizations can demonstrate to stakeholders—customers, employees, regulators—that they manage AI-driven processes responsibly and ethically.
 
 In summary, multi-level access and agent-specific security in Raia ensure that every AI Agent—whether public-facing or restricted—operates under the right protective measures. Through robust role assignments, logging, and compliance features, organizations gain both the flexibility to create diverse AI-driven solutions and the confidence that sensitive data remains secure at every stage.
+
+{% embed url="https://youtu.be/OjruL7-pKuA" %}

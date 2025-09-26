@@ -35,3 +35,5 @@ raia’s Wizard-Based Setup transforms the typically complex process of AI Agent
    * **Ongoing Updates:** Even post-launch, the Wizard-like interface makes it simple to revisit and update agent configurations, ensuring AI remains accurate and up-to-date as organizational needs evolve.
 
 In short, Raia’s Wizard-Based Setup streamlines AI Agent creation into an intuitive, guided journey. By pairing role-driven clarity with reusable packs and ready-to-configure skills, the Wizard drastically shortens the time from concept to deployment, empowering organizations to expand their AI initiatives with minimal fuss.
+
+{% embed url="https://youtu.be/UsLb-ukJcBU" %}

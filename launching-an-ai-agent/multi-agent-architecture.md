@@ -28,3 +28,5 @@ raia’s vision is to empower organizations to deploy and manage hundreds or eve
 * **Easier Upgrades & Maintenance:** Independent lifecycles mean updates or maintenance on one agent do not impact the functionality of others, reducing downtime and risk.
 * **Scalable Growth:** As a business expands, new agents can be created for emerging needs without overhauling existing setups.
 * **Focused Performance:** Each agent can be measured and refined based on its specific domain, allowing more data-driven improvements and better overall ROI.
+
+{% embed url="https://youtu.be/VRK3kdrwk8s" %}

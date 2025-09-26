@@ -131,3 +131,5 @@ You can assign or revoke roles from the **Agent Settings > Security tab** or the
 ### Summary
 
 Use these access levels to confidently manage who can build, test, launch, or interact with your AI Agents in raia v2. Whether you’re scaling to thousands of users or just starting out, access control is your first line of governance.&#x20;
+
+{% embed url="https://youtu.be/xmSAs-WfyF8" %}

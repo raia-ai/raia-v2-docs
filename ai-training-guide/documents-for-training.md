@@ -151,3 +151,4 @@ Once you upload documents:
 2. Confirm it's retrieving the right information
 3. Tweak and re-upload if needed—think of it as a living training file
 
+{% embed url="https://youtu.be/ywzbQw8NrW8" %}
