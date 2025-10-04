@@ -1,10 +1,12 @@
 ---
-description: The Leading Platform for building, training, testing and managing AI Agents
+description: ✨️ A Constellation Software Company
 ---
 
-# raia User Guide
+# Welcome to raia
 
-<table data-view="cards"><thead><tr><th align="center"></th><th></th><th data-type="content-ref"></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td align="center"><strong>raia User Guide</strong></td><td>Access documentation to learn how to use raia products to build AI Agents.</td><td><a href="https://docs.raiaai.com/">https://docs.raiaai.com/</a></td><td></td><td><a href=".gitbook/assets/1.png">1.png</a></td></tr><tr><td align="center"><strong>AI Training Courses</strong></td><td>Access our Training Courses to learn best practices on building AI Agents.</td><td><a href="https://docs.raiaai.com/ai-training">https://docs.raiaai.com/ai-training</a></td><td><a href="https://app.gitbook.com/s/SfECtcNwrIDQm7NrCIeB/">Welcome to AI Training</a></td><td><a href=".gitbook/assets/2 (2).png">2 (2).png</a></td></tr></tbody></table>
+The Leading Platform for building, training, testing and managing AI Agents
+
+<table data-view="cards"><thead><tr><th align="center"></th><th></th><th data-type="content-ref"></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td align="center"><strong>raia User Guide</strong></td><td>Access documentation to learn how to use raia products to build AI Agents.</td><td><a href="https://docs.raiaai.com/">https://docs.raiaai.com/</a></td><td></td><td><a href=".gitbook/assets/1.png">1.png</a></td></tr><tr><td align="center"><strong>AI Training Courses</strong></td><td>Access our Training Courses to learn best practices on building AI Agents.</td><td><a href="https://docs.raiaai.com/ai-training">https://docs.raiaai.com/ai-training</a></td><td><a href="https://app.gitbook.com/s/SfECtcNwrIDQm7NrCIeB/ai-training/welcome-to-ai-training">Welcome to AI Training</a></td><td><a href=".gitbook/assets/2 (2).png">2 (2).png</a></td></tr></tbody></table>
 
 ### Want to Test Drive raia Launch Pad?
 
