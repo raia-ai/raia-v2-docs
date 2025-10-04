@@ -8,7 +8,7 @@ description: The Leading Platform for building, training, testing and managing A
 
 **Welcome to raia**—the platform that helps you build your AI-powered workforce, all in one place. With raia, you can create and manage AI agents that are trained on your data, follow your processes, and support your team—without needing any technical skills. Everything happens on a single, secure, and scalable platform, so you can grow your agentic workforce with confidence, one use case at a time.
 
-<figure><img src="../../.gitbook/assets/Launchpad.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-10-04 at 9.41.24 AM.png" alt=""><figcaption></figcaption></figure>
 
 ## What is raia?&#x20;
 
