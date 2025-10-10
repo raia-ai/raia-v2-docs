@@ -7,6 +7,96 @@ description: >-
 
 # Release Notes - raia
 
+**October 3, 2025**\
+**New Features**
+
+*   **Account Deletion Option (Apple App Store Requirement)**
+
+    Added a “Delete Account” link under Profile → Settings. When selected, the user’s account is flagged for deletion in 7 days.
+
+    This meets Apple’s requirement for providing users with a clear way to request account deletion directly within the app.
+*   **Cancel Scraping API Integration**
+
+    Added the ability to stop an active scraping process directly from the interface.
+
+    This allows users to cancel running data extractions without waiting for completion, improving control and responsiveness during API operations.
+*   **API — Create Agent via API**
+
+    Added support for creating new Agents directly through the API.
+
+    This endpoint enables programmatic Agent setup with configurable parameters such as role, public/internal names, disclaimer, instructions, model, creativity, and enabled skills.
+
+**Improvements**
+
+*   **Copilot — Redesigned Right-Side Conversation Drawer**
+
+    Introduced a reimagined right-hand drawer in Copilot for improved usability and organization.
+
+    The drawer now includes enhanced structure for Info, Conversations, Activity, and Feedback tabs, plus an always-visible toggle for easier navigation.
+*   **Email Skill — Disable Human-in-the-Loop in Passive Mode**
+
+    Updated the Email Skill behavior to automatically disable the Human-in-the-Loop feature when operating in Passive Mode.
+
+    This ensures smoother automated email processing and eliminates unnecessary human intervention in passive workflows.
+*   **Live Chat — Display All Form Fields in Copilot**
+
+    Updated the Copilot interface to ensure that all user-submitted fields from the Live Chat form (including Company) are properly displayed in the right-side info panel.
+
+    This provides agents with complete context during conversations and ensures no form data is missed.
+*   **UI Fixes — Design System Alignment**
+
+    Aligned the visual presentation across the platform to match the design system (Copilot, Skills Section).
+
+    Standardized typography, spacing, buttons, icons, and badges for consistent appearance and accessibility across all themes and screen sizes.
+*   **Live Chat — Constrain “Experience View” to Viewport Height**
+
+    Updated the Live Chat layout for both Agent Info and Agent Skill “Experience View” screens to match the browser viewport height, ensuring consistent scrolling behavior and usability.
+
+**Fixes**
+
+*   **Instructions Not Selected After Wizard Setup**
+
+    Fixed an issue where the agent’s instructions were not automatically selected or applied after completing the setup wizard.
+
+    Users previously had to manually reselect the instructions after setup.
+*   **File Search Activation for New Agents**
+
+    Fixed an issue where the File Search settings were not automatically enabled when creating a new Agent.
+
+    File Search is now activated by default to ensure immediate document search functionality.
+*   **Subscription Limits Bug**
+
+    Fixed an issue where subscription usage limits were not updating correctly, causing agents to either exceed their plan limits or be restricted prematurely.
+
+    Limits now refresh accurately in real time according to the user’s active plan.
+*   **\[DEVOPS] Monitoring Alert Notifications to Slack**
+
+    Fixed an issue where infrastructure monitoring alerts were not being delivered to Slack channels.
+
+    Notifications now trigger reliably for all monitored services and environments.
+*   **Live Chat Popup Behavior**
+
+    Fixed an issue where the Live Chat popup would repeatedly appear for the same user on a website.
+
+    The popup now appears only once per user session—after being closed, it will not reopen for that user.
+*   **Number Formatting Issue in Assistant Replies**
+
+    Fixed an issue where numbers were sometimes displayed with math-style formatting (e.g., $87$ instead of 87).
+
+    The renderer now correctly displays plain numerals unless the content explicitly represents a math expression or currency.
+*   **Copilot Code Block Formatting**
+
+    Fixed an issue where code blocks rendered in Copilot were misaligned or clipped.
+
+    The Copy button now displays correctly, and long code snippets are contained within scrollable, monospace boxes for better readability.
+*   **Mobile Dropdown Minimum Width**
+
+    Added a minimum width to the Copilot agent dropdown in mobile view to prevent name truncation when agent names are short.
+
+    Ensures consistent layout and readability across screen sizes.
+
+***
+
 **September 25, 2025** \
 **New Features**
 
