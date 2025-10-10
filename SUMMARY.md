@@ -96,6 +96,10 @@
   * [File Transformation](applications/academy/file-transformation.md)
   * [Simulation](applications/academy/simulation.md)
   * [Human Feedback](applications/academy/human-feedback.md)
+* [Mission Control](applications/mission-control/README.md)
+  * [Connecting your Agent](applications/mission-control/connecting-your-agent.md)
+  * [Uploading a Client List](applications/mission-control/uploading-a-client-list.md)
+  * [Launching a Mission](applications/mission-control/launching-a-mission.md)
 
 ## RELEASE NOTES
 

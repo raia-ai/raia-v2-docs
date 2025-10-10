@@ -8,6 +8,6 @@ In this video thought a few simple steps you'll learn how to directly connect yo
 
 ### Connecting Pages Content with Agents
 
-raia Academy also allows you to build custom pages (content) to synch with your Agents.
+raia Academy also allows you to build custom pages (content) to sync with your Agents.
 
 {% embed url="https://youtu.be/xPKLr1qKj3w" %}
