@@ -329,12 +329,3 @@ Standard approach for clients: **Raia Live Chat collects transcript & context an
 5. **Publish** during a low-traffic window.
 6. **Monitor** logs and Zendesk ticket creation for 48h; have rollback ready.
 
-All set! I added a clean **Quick Start (10-minute setup)** to the top of the doc and expanded a **Full Implementation Plan** with phased steps. Everything uses your exact embed:
-
-```html
-<script async src="https://raiabot.raia2.com/assets/raia-chatbot-widget.js"
-        data-api-key="YOUR_API_KEY"
-        onload="onRaiaChatLoaded()"></script>
-```
-
-and the SDK (`raiaChat.sendCommand`)&#x20;
