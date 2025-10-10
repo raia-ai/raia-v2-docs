@@ -90,6 +90,7 @@
   * [Human Feedback](applications/copilot/human-feedback.md)
 * [Live Chat](applications/live-chat/README.md)
   * [Live Chat SDK](applications/live-chat/live-chat-sdk.md)
+  * [Live chat in Zendesk](applications/live-chat/live-chat-in-zendesk.md)
 * [Academy](applications/academy/README.md)
   * [Connecting to your Agent](applications/academy/connecting-to-your-agent.md)
   * [File Transformation](applications/academy/file-transformation.md)
