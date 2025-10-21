@@ -7,6 +7,87 @@ description: >-
 
 # Release Notes - raia
 
+**October 21, 2025**\
+**New Features**&#x20;
+
+* **Reasoning Mode & File Search Enhancements**\
+  Added a new “Reasoning” dropdown in Agent Advanced Settings for models supporting reasoning capabilities (e.g., GPT-5, o-series).\
+  Users can now select reasoning depth: Low, Medium, or High.\
+  Also introduced the ability to configure the max\_num\_results parameter in file search to fine-tune retrieval performance and result precision.
+
+**Improvements**
+
+* **Access Control for File Downloads**\
+  Updated file permission rules to enhance data security.\
+  Now, only organization owners and agent owners can download files associated with training, feedback, memory skills, and scraping.\
+  This update ensures sensitive training and feedback data remain protected.
+* **Copilot: Collapsible “Conversation Details” Panel**\
+  Replaced the static _Conversation Details_ block in Copilot’s sidebar with a collapsible accordion component.\
+  By default, the section is now collapsed on load to reduce visual clutter and improve scannability.
+* **Copilot Center Pane UI Updates**\
+  Redesigned the center pane in Copilot for a cleaner and more intuitive chat experience.\
+  Prompt buttons have been removed from the main Copilot interface (they remain available in Live Chat).\
+  The chat input field is now positioned directly below the greeting message, improving visual flow and reducing unnecessary spacing.
+* **Copilot: Message Input + Icon Rail**\
+  Redesigned the chat input with a compact icon rail on the left side.\
+  All actions (attach, admin mode, personalization, etc.) remain available.
+
+**Fixes**
+
+* **AI Model Behavior with File Search**\
+  Resolved an issue where the AI produced off-topic or irrelevant answers when File Search or Vector Store was enabled but returned no results.\
+  The model now correctly recognizes empty search results and avoids generating unrelated responses, improving overall accuracy and reliability.
+* **Agent Response Stability & Context Window Limit**\
+  Resolved an issue where the Agent could stop responding during long conversations due to exceeding the context window token limit.\
+  This fix improves model stability and ensures continuous, reliable responses even in extended chats.
+* **Citation Formatting in Copilot**\
+  Fixed a visual formatting issue where citation tags appeared incorrectly in Copilot responses (e.g., stacked or merged citation blocks).\
+  Citations now render cleanly and consistently, improving readability and maintaining the professional appearance of AI-generated responses.
+* **Mobile Table Formatting in Copilot**\
+  Resolved a mobile layout issue where tables and long, unbroken text strings in Copilot responses caused the interface to stretch beyond the screen width.\
+  Tables are now wrapped in a responsive scrollable container, allowing smooth horizontal scrolling while keeping the overall layout constrained to the mobile viewport.
+* **Weekly Report Email Delivery Check**\
+  Resolved an issue where weekly report emails were not being consistently sent to customers.\
+  This fix restores reliable email notifications for all active users and organizations receiving weekly reports.
+
+***
+
+**October 13, 2025**\
+**New Features**&#x20;
+
+* **Copilot & Live Chat Streaming**\
+  Implemented real-time message streaming in Live Chat for faster, smoother interactions.\
+  Messages now appear progressively as they are generated, creating a more dynamic and responsive chat experience for users.
+
+**Improvements**
+
+* **Live Chat: Text Wrapping Fix**\
+  Updated message formatting in Live Chat and Copilot to prevent long text strings from creating horizontal scrolls.\
+  Text now wraps automatically within the chat container, keeping content readable and neatly contained on all screen sizes.
+* **Live Chat: Home Button Removed**\
+  Removed the Home button from the Live Chat interface to simplify the layout and reduce visual clutter.\
+  This change improves the overall user experience and aligns the chat design with Copilot’s updated interface.
+* **Chat Composer Anchoring Enhancement**\
+  Improved the message composer behavior in Copilot.\
+  The composer now smoothly transitions and anchors to the bottom of the screen after the first message is sent or received, providing a more natural and consistent chat flow.
+
+**Fixes**
+
+* **User Role Switching in Copilot**\
+  Fixed an issue preventing admins from changing a user’s role from User to Copilot User within the organization management panel.\
+  This update restores proper role-switching functionality, ensuring that user permissions and access rights are updated immediately after the change.
+* **\[DEVOPS] Database Migration Stability Fix**\
+  Resolved an issue causing migration failures during deployment and environment synchronization.\
+  The update ensures stable migrations across dev, QA, and production, preventing rollout interruptions and improving backend reliability
+* **API Timeout with GPT-5 Models**\
+  Resolved an issue causing timeout errors when using GPT-5 models through the prompt API endpoint.\
+  The fix adjusts endpoint timeout handling and improves response stability, ensuring consistent performance for agents using GPT-5 models.
+* **Feedback List Refresh Fix**\
+  Resolved an issue where deleted feedback items remained visible in the list until a manual page refresh.\
+  The list now updates instantly after deletion, maintaining accurate counters and preserving the user’s filters and pagination context.
+
+***
+
 **October 3, 2025**\
 **New Features**
 
