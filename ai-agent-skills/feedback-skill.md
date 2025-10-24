@@ -45,4 +45,4 @@ The **Feedback Skill Config** panel allows fine-tuning of how feedback is collec
 | **Generation Mode**      | Auto · Manual                                         | **Auto** generates the feedback document automatically on schedule. **Manual** allows admins to trigger generation on demand. |
 | **Auto Upload Document** | On / Off                                              | When enabled, the generated feedback document is uploaded to the AI immediately after generation for training.                |
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>

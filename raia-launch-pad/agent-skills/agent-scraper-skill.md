@@ -36,13 +36,13 @@ Page Limit and Max Depth are key settings in web scraping that help control the 
 
 Defines how often the web scraping process runs for a given website. You can set it to manual (run only when triggered), daily, weekly, or monthly, depending on how often the site’s content changes. Choosing the right frequency ensures you capture updates without overloading the crawler or collecting unnecessary duplicate data.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" width="548"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="548"><figcaption></figcaption></figure>
 
 ## Auto Upload Document
 
 When enabled, this feature automatically sends the scraped content to the assistant as a document as soon as the scraping process finishes. This ensures the data is instantly available for review, processing, or further actions without requiring a manual upload.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt="" width="545"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt="" width="545"><figcaption></figcaption></figure>
 
 ## Website Exclusion while scraping
 

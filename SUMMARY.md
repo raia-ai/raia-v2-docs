@@ -33,6 +33,7 @@
   * [Web Search Skill](ai-agent-skills/web-search-skill.md)
   * [Calendar Skill](ai-agent-skills/calendar-skill.md)
   * [Feedback Skill](ai-agent-skills/feedback-skill.md)
+  * [Escalation Skill](ai-agent-skills/escalation-skill.md)
 * [AI Agent Packs](ai-agent-packs.md)
 * [AI Security](ai-security/README.md)
   * [Setup of Access Control](ai-security/setup-of-access-control.md)
