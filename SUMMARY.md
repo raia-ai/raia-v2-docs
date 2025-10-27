@@ -81,6 +81,7 @@
 
 ## Applications
 
+* [raia cX](applications/raia-cx.md)
 * [Copilot](applications/copilot/README.md)
   * [Copilot vs Chat GPT](applications/copilot/copilot-vs-chat-gpt.md)
   * [How it works](applications/copilot/how-it-works.md)
