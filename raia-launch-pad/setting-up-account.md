@@ -1,6 +1,6 @@
 # Setting up Account
 
-Absolutely! Here’s a clear, **step-by-step guide to setting up a new account on raia and building your first AI agent**, tailored for a business user or team member. I'll mix in both the **big-picture overview** and the **practical clicks and steps** you’ll take in the platform.
+Here’s a clear, **step-by-step guide to setting up a new account on raia and building your first AI agent**, tailored for a business user or team member. I'll mix in both the **big-picture overview** and the **practical clicks and steps** you’ll take in the platform.
 
 <figure><img src="../.gitbook/assets/Screenshot 2025-07-19 at 2.50.06 PM.png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -17,6 +17,10 @@ Absolutely! Here’s a clear, **step-by-step guide to setting up a new account o
 
 > _Note: raia supports multiple plans (Basic, Business, Enterprise), but you can start with a free trial or basic tier for evaluation._\
 >
+
+{% hint style="danger" %}
+If you sign up using a phone number that is not a valid mobile phone, you will not receive the 2FA authorization code for logging into your account. You will need to request to reset your phone number from our support team. Email support@raiaai.com to have our team refresh your account.&#x20;
+{% endhint %}
 
 ***
 
