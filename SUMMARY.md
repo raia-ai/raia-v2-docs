@@ -83,6 +83,7 @@
 
 * [raia cX](applications/raia-cx/README.md)
   * [Why Should I Use raiaCX?](applications/raia-cx/why-should-i-use-raiacx.md)
+  * [AI-first vs. Human-first](applications/raia-cx/ai-first-vs.-human-first.md)
 * [Copilot](applications/copilot/README.md)
   * [Copilot vs Chat GPT](applications/copilot/copilot-vs-chat-gpt.md)
   * [How it works](applications/copilot/how-it-works.md)
