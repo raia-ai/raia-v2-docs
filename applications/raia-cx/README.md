@@ -1,10 +1,10 @@
 ---
-description: >-
-  Meet the first AI-driven platform that delivers effortless, automated customer
-  support.
+description: Meet the first AI-driven platform that delivers effortless, automated support.
 ---
 
 # raia cX
+
+raia cX brings an entirely new eXperience to how your business supports: **customers, code, collaboration & communications.**
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-10-27 at 5.17.37 PM.png" alt=""><figcaption></figcaption></figure>
 
