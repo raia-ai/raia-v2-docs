@@ -6,78 +6,78 @@ description: AI-First (raiaCX) vs. Human-First with Embedded AI (Traditional Pla
 
 ### Comprehensive Feature Comparison
 
-| Feature / Capability           | **Traditional Platforms** (Zendesk, Salesforce Service Cloud, Freshdesk) |         **raiaCX** (AI-First Platform)         |
-| ------------------------------ | :----------------------------------------------------------------------: | :--------------------------------------------: |
+| Feature / Capability           | **Traditional Platforms** (Zendesk, Salesforce Service Cloud, Freshdesk) | **raiaCX** (AI-First Platform)                 |
+| ------------------------------ | ------------------------------------------------------------------------ | ---------------------------------------------- |
 | **CORE APPROACH**              |                                                                          |                                                |
-| Primary Model                  |                        Human-First with AI Add-Ons                       |    **AI-First with Human+AI Collaboration**    |
-| AI Type                        |                         Embedded Search/Retrieval                        | **Custom Knowledge Model with Deep Reasoning** |
-| Learning Approach              |                          Static / Manual Updates                         |   **Continuous Learning from Human Feedback**  |
-| Foundation Models              |                        Platform-Specific / Limited                       |            **Best-of-Breed (GPT-5)**           |
+| Primary Model                  | Human-First with AI Add-Ons                                              | **AI-First with Human+AI Collaboration**       |
+| AI Type                        | Embedded Search/Retrieval                                                | **Custom Knowledge Model with Deep Reasoning** |
+| Learning Approach              | Static / Manual Updates                                                  | **Continuous Learning from Human Feedback**    |
+| Foundation Models              | Platform-Specific / Limited                                              | **Best-of-Breed (GPT-5)**                      |
 |                                |                                                                          |                                                |
 | **KNOWLEDGE MANAGEMENT**       |                                                                          |                                                |
-| Knowledge Base                 |                             ✅ Static Articles                            |   ✅ **Dynamic, Continuously Learning Model**   |
-| Knowledge Updates              |                          Manual Article Creation                         |    **Automatic Learning from Team Feedback**   |
-| Expertise Capture              |                       ❌ Trapped in Individual Minds                      |     ✅ **Democratized Across Organization**     |
-| Knowledge Preservation         |                          ❌ Lost When Reps Leave                          |        ✅ **Preserved Forever in Model**        |
-| Multi-Source Training          |                         ❌ Limited to KB Articles                         |     ✅ **KB + Tickets + Docs + Data Stores**    |
-| Continuous Improvement         |                         ❌ Requires Manual Updates                        |          ✅ **Gets Smarter Every Day**          |
+| Knowledge Base                 | ✅ Static Articles                                                        | ✅ **Dynamic, Continuously Learning Model**     |
+| Knowledge Updates              | Manual Article Creation                                                  | **Automatic Learning from Team Feedback**      |
+| Expertise Capture              | ❌ Trapped in Individual Minds                                            | ✅ **Democratized Across Organization**         |
+| Knowledge Preservation         | ❌ Lost When Reps Leave                                                   | ✅ **Preserved Forever in Model**               |
+| Multi-Source Training          | ❌ Limited to KB Articles                                                 | ✅ **KB + Tickets + Docs + Data Stores**        |
+| Continuous Improvement         | ❌ Requires Manual Updates                                                | ✅ **Gets Smarter Every Day**                   |
 |                                |                                                                          |                                                |
 | **AI CAPABILITIES**            |                                                                          |                                                |
-| AI Functionality               |                         Basic Search & Retrieval                         |     **Deep Reasoning & Autonomous Action**     |
-| Conversation Ability           |                              ✅ Basic Chatbot                             |         ✅ **Advanced Natural Language**        |
-| Autonomous Action              |                            ❌ Information Only                            |        ✅ **Takes Action Across Systems**       |
-| Tier 1 Support (FAQs)          |                                   ✅ Yes                                  |                    ✅ **Yes**                   |
-| Tier 2 Support (Technical)     |                        ❌ Limited / Human Required                        |            ✅ **Yes - AI Can Handle**           |
-| Tier 3 Support (Complex)       |                               ❌ Human Only                               |            ✅ **Yes - AI Can Handle**           |
-| Reasoning Capability           |                            ❌ Keyword Matching                            |        ✅ **Multi-Step Problem Solving**        |
-| Context Understanding          |                                  Partial                                 |       ✅ **Deep Contextual Understanding**      |
+| AI Functionality               | Basic Search & Retrieval                                                 | **Deep Reasoning & Autonomous Action**         |
+| Conversation Ability           | ✅ Basic Chatbot                                                          | ✅ **Advanced Natural Language**                |
+| Autonomous Action              | ❌ Information Only                                                       | ✅ **Takes Action Across Systems**              |
+| Tier 1 Support (FAQs)          | ✅ Yes                                                                    | ✅ **Yes**                                      |
+| Tier 2 Support (Technical)     | ❌ Limited / Human Required                                               | ✅ **Yes - AI Can Handle**                      |
+| Tier 3 Support (Complex)       | ❌ Human Only                                                             | ✅ **Yes - AI Can Handle**                      |
+| Reasoning Capability           | ❌ Keyword Matching                                                       | ✅ **Multi-Step Problem Solving**               |
+| Context Understanding          | Partial                                                                  | ✅ **Deep Contextual Understanding**            |
 |                                |                                                                          |                                                |
 | **AUTOMATION & INTEGRATION**   |                                                                          |                                                |
-| 24/7 Availability              |                       Partial (Basic Chatbot Only)                       |         ✅ **Full Expert-Level Support**        |
-| Real-Time System Integration   |                             ✅ Within Platform                            |       ✅ **Cross-Platform (All Systems)**       |
-| Access Customer Data           |                           ✅ Platform Data Only                           |           ✅ **All Connected Systems**          |
-| Execute Workflows              |                            ✅ Platform-Specific                           |          ✅ **Cross-System Workflows**          |
-| Create/Update Tickets          |                          ✅ Manual or Basic Rules                         |      ✅ **Intelligent Autonomous Creation**     |
-| Update Knowledge Base          |                               ❌ Manual Only                              |        ✅ **AI-Generated from Solutions**       |
-| Process Transactions           |                                  Partial                                 |        ✅ **Full Autonomous Processing**        |
+| 24/7 Availability              | Partial (Basic Chatbot Only)                                             | ✅ **Full Expert-Level Support**                |
+| Real-Time System Integration   | ✅ Within Platform                                                        | ✅ **Cross-Platform (All Systems)**             |
+| Access Customer Data           | ✅ Platform Data Only                                                     | ✅ **All Connected Systems**                    |
+| Execute Workflows              | ✅ Platform-Specific                                                      | ✅ **Cross-System Workflows**                   |
+| Create/Update Tickets          | ✅ Manual or Basic Rules                                                  | ✅ **Intelligent Autonomous Creation**          |
+| Update Knowledge Base          | ❌ Manual Only                                                            | ✅ **AI-Generated from Solutions**              |
+| Process Transactions           | Partial                                                                  | ✅ **Full Autonomous Processing**               |
 |                                |                                                                          |                                                |
 | **HUMAN SUPPORT**              |                                                                          |                                                |
-| Human Agent Role               |                            Primary Responders                            |          **Strategic Problem-Solvers**         |
-| Agent Workload                 |                      High Volume of Repetitive Tasks                     |     **Focus on Complex, High-Value Issues**    |
-| Human-AI Collaboration         |                            ❌ Separate Systems                            |           ✅ **Seamless Integration**           |
-| AI Training by Team            |                              ❌ Not Available                             |           ✅ **Active Feedback Loop**           |
-| Context for Escalations        |                                  Partial                                 |      ✅ **Complete History + AI Insights**      |
-| Agent Empowerment              |                                  Limited                                 |       ✅ **AI-Powered with Full Context**       |
+| Human Agent Role               | Primary Responders                                                       | **Strategic Problem-Solvers**                  |
+| Agent Workload                 | High Volume of Repetitive Tasks                                          | **Focus on Complex, High-Value Issues**        |
+| Human-AI Collaboration         | ❌ Separate Systems                                                       | ✅ **Seamless Integration**                     |
+| AI Training by Team            | ❌ Not Available                                                          | ✅ **Active Feedback Loop**                     |
+| Context for Escalations        | Partial                                                                  | ✅ **Complete History + AI Insights**           |
+| Agent Empowerment              | Limited                                                                  | ✅ **AI-Powered with Full Context**             |
 |                                |                                                                          |                                                |
 | **CUSTOMER EXPERIENCE**        |                                                                          |                                                |
-| Wait Times                     |                             Minutes to Hours                             |              **Seconds (Instant)**             |
-| Availability                   |                       Business Hours (Full Support)                      |         ✅ **24/7 Expert-Level Support**        |
-| Consistency                    |                             ❌ Varies by Agent                            |           ✅ **Consistent Every Time**          |
-| Customer Autonomy              |                           Limited Self-Service                           |          ✅ **Full Autonomous Access**          |
-| Escalation Experience          |                           ❌ Repeat Information                           |        ✅ **Seamless with Full Context**        |
-| Resolution Speed               |                               Hours to Days                              |              **Minutes to Hours**              |
-| Expert-Level Answers           |                            Only When Available                           |          ✅ **Always Available, 24/7**          |
+| Wait Times                     | Minutes to Hours                                                         | **Seconds (Instant)**                          |
+| Availability                   | Business Hours (Full Support)                                            | ✅ **24/7 Expert-Level Support**                |
+| Consistency                    | ❌ Varies by Agent                                                        | ✅ **Consistent Every Time**                    |
+| Customer Autonomy              | Limited Self-Service                                                     | ✅ **Full Autonomous Access**                   |
+| Escalation Experience          | ❌ Repeat Information                                                     | ✅ **Seamless with Full Context**               |
+| Resolution Speed               | Hours to Days                                                            | **Minutes to Hours**                           |
+| Expert-Level Answers           | Only When Available                                                      | ✅ **Always Available, 24/7**                   |
 |                                |                                                                          |                                                |
 | **SCALABILITY & EFFICIENCY**   |                                                                          |                                                |
-| Scaling Model                  |                     Linear (More Agents = More Cost)                     |      **Non-Linear (AI Scales Infinitely)**     |
-| Cost Structure                 |                       High Fixed Costs (Headcount)                       |           **Lower, More Predictable**          |
-| Ticket Volume Handling         |                          Limited by Agent Count                          |                 ✅ **Unlimited**                |
-| New Rep Onboarding             |                        Months to Full Productivity                       |   **Weeks (Access to Collective Knowledge)**   |
-| Knowledge Scaling              |                              ❌ Doesn't Scale                             |            ✅ **Compounds Over Time**           |
+| Scaling Model                  | Linear (More Agents = More Cost)                                         | **Non-Linear (AI Scales Infinitely)**          |
+| Cost Structure                 | High Fixed Costs (Headcount)                                             | **Lower, More Predictable**                    |
+| Ticket Volume Handling         | Limited by Agent Count                                                   | ✅ **Unlimited**                                |
+| New Rep Onboarding             | Months to Full Productivity                                              | **Weeks (Access to Collective Knowledge)**     |
+| Knowledge Scaling              | ❌ Doesn't Scale                                                          | ✅ **Compounds Over Time**                      |
 |                                |                                                                          |                                                |
 | **INTELLIGENCE & LEARNING**    |                                                                          |                                                |
-| AI Effectiveness Over Time     |                           ❌ Static or Degrades                           |           ✅ **Continuously Improves**          |
-| Learning from Interactions     |                                   ❌ No                                   |             ✅ **Every Interaction**            |
-| Human Feedback Integration     |                              ❌ Not Available                             |               ✅ **Core Feature**               |
-| Adaptation to Business Changes |                         ❌ Manual Updates Required                        |           ✅ **Automatic Adaptation**           |
-| Collective Intelligence        |                                 ❌ Siloed                                 |        ✅ **Organizational Intelligence**       |
+| AI Effectiveness Over Time     | ❌ Static or Degrades                                                     | ✅ **Continuously Improves**                    |
+| Learning from Interactions     | ❌ No                                                                     | ✅ **Every Interaction**                        |
+| Human Feedback Integration     | ❌ Not Available                                                          | ✅ **Core Feature**                             |
+| Adaptation to Business Changes | ❌ Manual Updates Required                                                | ✅ **Automatic Adaptation**                     |
+| Collective Intelligence        | ❌ Siloed                                                                 | ✅ **Organizational Intelligence**              |
 |                                |                                                                          |                                                |
 | **REPORTING & INSIGHTS**       |                                                                          |                                                |
-| Ticket Analytics               |                                   ✅ Yes                                  |       ✅ **Yes + AI Performance Metrics**       |
-| Customer Insights              |                                  ✅ Basic                                 |         ✅ **Advanced with AI Analysis**        |
-| Knowledge Gap Identification   |                                 ❌ Manual                                 |            ✅ **Automatic Detection**           |
-| AI Learning Metrics            |                                   ❌ N/A                                  |      ✅ **Continuous Improvement Tracking**     |
-| ROI Measurement                |                                   Basic                                  |     ✅ **Comprehensive AI Impact Analysis**     |
+| Ticket Analytics               | ✅ Yes                                                                    | ✅ **Yes + AI Performance Metrics**             |
+| Customer Insights              | ✅ Basic                                                                  | ✅ **Advanced with AI Analysis**                |
+| Knowledge Gap Identification   | ❌ Manual                                                                 | ✅ **Automatic Detection**                      |
+| AI Learning Metrics            | ❌ N/A                                                                    | ✅ **Continuous Improvement Tracking**          |
+| ROI Measurement                | Basic                                                                    | ✅ **Comprehensive AI Impact Analysis**         |
 
 ***
 
