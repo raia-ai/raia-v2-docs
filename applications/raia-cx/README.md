@@ -6,7 +6,7 @@ description: >-
 
 # raia cX
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-10-27 at 5.17.37 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-10-27 at 5.17.37 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Intro to cX
 

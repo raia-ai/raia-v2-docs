@@ -81,7 +81,8 @@
 
 ## Applications
 
-* [raia cX](applications/raia-cx.md)
+* [raia cX](applications/raia-cx/README.md)
+  * [Why Should I Use raiaCX?](applications/raia-cx/why-should-i-use-raiacx.md)
 * [Copilot](applications/copilot/README.md)
   * [Copilot vs Chat GPT](applications/copilot/copilot-vs-chat-gpt.md)
   * [How it works](applications/copilot/how-it-works.md)
