@@ -1,3 +1,9 @@
+---
+description: >-
+  Internal User Experience for training, testing and collaborating with your AI
+  Agents.
+---
+
 # Copilot
 
 ## Welcome to CoPilot

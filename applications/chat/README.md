@@ -1,4 +1,8 @@
-# Live Chat
+---
+description: Externally facing Live Chat Experience for embedding on websites.
+---
+
+# Chat
 
 Live Chat with raia is one of the core communication skills available to any AI Agent built on the raia platform. Here’s a breakdown of how it works:
 
