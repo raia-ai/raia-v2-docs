@@ -8,9 +8,11 @@ description: >-
 
 ## Welcome to CoPilot
 
-raia Copilot is our primary internal user experience for engaging with AI Agents built on raia Launch Pad. The user experience is similar to a "chat gpt" experience.\
-\
+raia Copilot is our primary internal user experience for engaging with AI Agents built on raia Launch Pad. The user experience is similar to a "chat gpt" experience.
+
+{% hint style="success" %}
 **Copilot is an app that is part of the raia cX Suite.**
+{% endhint %}
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-09-25 at 8.46.13 AM.png" alt=""><figcaption></figcaption></figure>
 

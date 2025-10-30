@@ -2,6 +2,10 @@
 
 **raia Academy** is a specialized application designed to streamline and accelerate the training of AI Agents by transforming traditional business content into AI-ready formats. It empowers teams to turn everyday knowledge—whether in PDFs, Word docs, slide decks, or web pages—into structured training data that can be instantly pushed into any AI Agent within the raia platform.
 
+{% hint style="success" %}
+**Academy is an app that is part of the raia cX Suite.**
+{% endhint %}
+
 ***
 
 #### 🔍 **What raia Academy Does**
