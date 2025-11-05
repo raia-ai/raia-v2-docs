@@ -7,6 +7,77 @@ description: >-
 
 # Release Notes - raia
 
+**November 5, 2025**\
+**New Features**
+
+* **Conversation Assignment**\
+  Added the ability to assign conversations to other users in Copilot. Admins can now reassign threads, track assignment history, and control access, improving collaboration and workflow management.
+* **Live Chat File Uploads**\
+  Added file upload support to the Live Chat Skill, allowing users to attach and send documents or media during conversations.&#x20;
+* **Voice-to-Text (Dictation) Support for Copilot**\
+  Introduced voice dictation in Copilot, allowing users to speak messages that are automatically transcribed into text in real time. Enhances accessibility and provides a faster, hands-free chat experience.
+
+**Improvements**
+
+* **Custom API Key Indicator**\
+  Added an indicator in the Agents view to show which agents were created using custom API keys (OpenAI or VAPI), making it easier to distinguish between system and external keys.
+* **Auditor Skill: Email and SMS Notifications**\
+  Extended the Auditor Skill to support additional notification channels — Email and SMS — alongside Webhook. Admins can now define multiple recipients and select preferred delivery methods for alerts.
+* **“Leave Page?” Confirmation Modal**\
+  Added a confirmation modal that appears if a user attempts to navigate away while an image generation process is still running. Prevents accidental interruption of ongoing jobs across Agent, Pack, and Admin screens.
+* **Copilot Input Limits — Uploads and Text Paste**\
+  Added configurable limits for document uploads and pasted text in Copilot. Upload size is now restricted (e.g., 10 MB), and pasted text length is capped (e.g., 30,000 words) to improve performance and stability.
+* **Reasoning Support Indicator**\
+  Added a visible note in Agent → Advanced Settings to indicate whether the selected AI model supports Reasoning Mode, helping users choose appropriate models for analytical or multi-step reasoning tasks.
+
+**Fixes**
+
+* **Web Scraping Skill**\
+  Resolved an issue where web scraping tasks using Apify were not properly uploading results to Raia. The skill now reliably syncs scraped data after task completion.
+* **Vector Store Upload Errors**\
+  Resolved an issue where files uploaded to the Vector Store were appearing twice, displaying incorrect error messages, and not deleting properly when toggled off.
+
+***
+
+**October 31, 2025**\
+**New Features**
+
+* **Escalation Skill**\
+  Added a new Escalation Skill that automatically detects escalation intent during a chat — for example, when a user says _“I want to talk to a human.”_ When triggered, the system sends notifications via email, SMS, or webhook to designated escalation recipients. \
+  This skill helps route urgent or sensitive cases to human agents quickly and efficiently.
+* **Auditor Skill**\
+  Added a new Auditor Skill for automatic conversation security and compliance checks. Detects PII, potential hack/abuse content, and supports a custom auditing rule.
+* **Organization-Level Conversation States**\
+  Is an organization-level tool for managing the lifecycle of conversations in Copilot. It allows org admins to create, edit, reorder, and delete custom conversation states with unique names and colors, helping teams track progress and maintain consistency across conversations.
+* **Live Chat Feedback in Copilot**\
+  Users can now rate their conversations directly in the Copilot interface using a star rating system. Submitted ratings are saved with each conversation and can be viewed in conversation details and reports.
+
+**Improvements**
+
+* **Custom Integrations for Skills via API Keys**\
+  Expanded the API Keys section to support external service integrations. Organizations can now use their own API keys for select skills and services such as VAPI.
+* **JSON Schema Output for Agents**\
+  Added support for configuring JSON Schema as an output type in Advanced Settings. Admins can now enable “JSON Schema Output” and define schema structure directly in a text field.
+* **“Optimize with AI” in Prompt Editors**\
+  Added an AI-assisted rewrite option to all prompt editors, helping users refine clarity, tone, and structure automatically.
+* **Mobile Settings View Redesign**\
+  Updated the Copilot mobile settings layout to match the cleaner and more modern design. The new layout improves readability, spacing, and visual hierarchy for better usability on small screens.
+* **Production Stability Improvement**\
+  Resolved a stability issue in the raia-api service that caused crashes in production. The root cause was identified in the liveness probe configuration, and the replica count was adjusted from dynamic to static to ensure consistent availability.
+* **Feedback Details on API**\
+  The API now includes the email address of the user who left feedback on a conversation message. This makes it easier to see who submitted each feedback item when viewing conversation data.
+
+**Fixes**
+
+* **Copilot First Message Display**\
+  Resolved an issue where the user’s first message in Copilot temporarily disappeared for a few seconds before the assistant’s response appeared.\
+  The fix ensures that the initial message now remains visible in the chat thread immediately after submission, providing a smoother and more consistent user experience.
+* **Duplicate Account Creation by Email Case**\
+  Resolved an issue where users could create duplicate accounts using the same email address if one was entered in uppercase and another in lowercase.\
+  The system now enforces automatic conversion of all email inputs to lowercase during registration and authentication to ensure unique account identification and prevent duplicates.
+
+***
+
 **October 21, 2025**\
 **New Features**&#x20;
 
