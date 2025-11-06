@@ -67,6 +67,7 @@
   * [Agent Auditor Skill](raia-cx/agent-skills/agent-auditor-skill.md)
   * [Agent Calendar Skill](raia-cx/agent-skills/agent-calendar-skill.md)
   * [Agent Feedback Skill](raia-cx/agent-skills/agent-feedback-skill.md)
+  * [Agent Auditor Skill](raia-cx/agent-skills/agent-auditor-skill-1.md)
 * [Agent Management](raia-cx/agent-management/README.md)
   * [Agent Training Tab](raia-cx/agent-management/agent-training-tab.md)
   * [Agent Security Tab](raia-cx/agent-management/agent-security-tab.md)
