@@ -87,7 +87,7 @@
 ## Applications
 
 * [raia cX](applications/raia-cx/README.md)
-  * [Why Should I Use raiaCX?](applications/raia-cx/why-should-i-use-raiacx.md)
+  * [raiaCX for Support](applications/raia-cx/raiacx-for-support.md)
   * [AI-first vs. Human-first](applications/raia-cx/ai-first-vs.-human-first.md)
 * [Copilot](applications/copilot/README.md)
   * [How it works](applications/copilot/how-it-works.md)
