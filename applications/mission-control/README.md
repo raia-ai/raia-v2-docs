@@ -34,6 +34,8 @@ At its core, **raia Control** streamlines the entire outbound communication proc
 
 ***
 
+<figure><img src="../../.gitbook/assets/Screenshot 2025-11-08 at 5.24.46 PM.png" alt=""><figcaption></figcaption></figure>
+
 ### ⚙️ Key Capabilities
 
 **Multi-Channel Outreach:** Launch campaigns across both email and SMS from a single interface.\
