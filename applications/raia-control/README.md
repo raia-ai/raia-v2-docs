@@ -1,14 +1,14 @@
 ---
 description: >-
-  Mission Control is a centralized outreach system designed to launch, monitor,
-  and manage large-scale AI-driven email and text message campaigns.
+  raia Control is a centralized outreach system designed to launch, monitor, and
+  manage large-scale AI-driven email and text message campaigns.
 ---
 
-# Mission Control
+# raia Control
 
-### 🔍 What Mission Control Does
+### 🔍 What raia Control Does
 
-At its core, **Mission Control** streamlines the entire outbound communication process by enabling users to:
+At its core, **raia Control** streamlines the entire outbound communication process by enabling users to:
 
 #### Upload Target Lists
 
@@ -44,24 +44,24 @@ At its core, **Mission Control** streamlines the entire outbound communication p
 
 ### 🧠 Under the Hood
 
-Behind the scenes, Mission Control uses **raia’s API and infrastructure** to maintain stability and precision at scale.\
+Behind the scenes, raia Control uses **raia’s API and infrastructure** to maintain stability and precision at scale.\
 The **raia engineering team** oversees:
 
 * Agent maintenance and uptime
 * Vector and conversation synchronization
 * System integrity for all outbound campaigns
 
-This ensures that every AI conversation launched through Mission Control is reliable, secure, and continuously optimized.
+This ensures that every AI conversation launched through raia Control is reliable, secure, and continuously optimized.
 
 ***
 
 ### 🚀 Why It Matters
 
-Mission Control empowers organizations to:
+raia Control empowers organizations to:
 
 * Scale outbound engagement instantly across both email and text channels
 * Maintain personalization and relevance at high volume through AI continuity
 * Gain full visibility into campaign performance and conversation outcomes
 * Seamlessly bridge traditional outreach with next-generation AI follow-ups
 
-By combining automation with intelligent conversation management, **Mission Control** transforms outreach into a fully autonomous and data-driven system that serves as the command hub for every large-scale AI campaign.
+By combining automation with intelligent conversation management, **raia Control** transforms outreach into a fully autonomous and data-driven system that serves as the command hub for every large-scale AI campaign.
