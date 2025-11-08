@@ -1,16 +1,16 @@
-# Academy
+# Connect
 
-**raia Academy** is a specialized application designed to streamline and accelerate the training of AI Agents by transforming traditional business content into AI-ready formats. It empowers teams to turn everyday knowledge—whether in PDFs, Word docs, slide decks, or web pages—into structured training data that can be instantly pushed into any AI Agent within the raia platform.
+**raia** Connect is a specialized application designed to streamline and accelerate the training of AI Agents by transforming traditional business content into AI-ready formats. It empowers teams to turn everyday knowledge—whether in PDFs, Word docs, slide decks, or web pages—into structured training data that can be instantly pushed into any AI Agent within the raia platform.
 
 {% hint style="success" %}
-**Academy is an app that is part of the raia cX Suite.**
+Connect **is an app that is part of the raia cX Suite.**
 {% endhint %}
 
 ***
 
-#### 🔍 **What raia Academy Does**
+#### 🔍 **What raia** Connect **Does**
 
-At its core, **raia Academy** simplifies and automates the traditionally manual, time-consuming training process by enabling users to:
+At its core, **raia** Connect simplifies and automates the traditionally manual, time-consuming training process by enabling users to:
 
 1. **Upload Any Content Type**
    * Drag and drop or import **PDFs, Word Docs, Google Docs, Web URLs, Excel sheets**, etc.
@@ -31,14 +31,14 @@ At its core, **raia Academy** simplifies and automates the traditionally manual,
 
 * **Document Intelligence**: Uses AI and smart parsing to break down documents into coherent knowledge chunks optimized for vector embedding.
 * **Version Control**: Tracks every document version and update to ensure reproducibility in AI agent training.
-* **Real-Time Integration**: Seamlessly integrates with raia's **Launch Pad** and **Copilot**, ensuring that updates made in Academy instantly enhance the agent’s performance.
+* **Real-Time Integration**: Seamlessly integrates with raia's **Launch Pad** and **Copilot**, ensuring that updates made in Connect instantly enhance the agent’s performance.
 * **Role-Based Access**: Organization admins can control who can upload, annotate, or deploy training data.
 
 ***
 
 #### 🚀 **Why It Matters**
 
-raia Academy enables non-technical users to:
+raia Connect enables non-technical users to:
 
 * Eliminate complex manual formatting.
 * Avoid costly errors in training data prep.

@@ -1,12 +1,12 @@
 ---
-description: raia Academy – Feedback Tool
+description: raia Connect – Feedback Tool
 ---
 
 # Human Feedback
 
 ### **Overview**
 
-The **raia Academy Feedback Tool** is designed to close the loop between **real-world AI Agent performance** and **continuous training improvements**.\
+The **raia** Connect **Feedback Tool** is designed to close the loop between **real-world AI Agent performance** and **continuous training improvements**.\
 It integrates directly with **raia Copilot’s Human Feedback** system, allowing you to capture, review, and resolve feedback from users who interact with your AI Agents.
 
 This powerful workflow helps your AI Training team **identify the root cause** of issues, **apply targeted fixes**, and **rapidly improve agent accuracy and reliability**.
@@ -23,15 +23,15 @@ When a user interacts with an AI Agent through **raia Copilot**, they can:
 * **Flag incorrect or incomplete answers**.
 * **Add written comments** with details on what was wrong or missing.
 
-This feedback is **automatically sent to raia Academy** for deeper analysis.
+This feedback is **automatically sent to raia** Connect for deeper analysis.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-08-03 at 10.54.37 AM.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-#### **2. Feedback Review in raia Academy**
+#### **2. Feedback Review in raia** Connect
 
-Inside **raia Academy**, the Feedback Tool presents:
+Inside **raia** Connect, the Feedback Tool presents:
 
 * **Conversation transcripts** – showing exactly what was asked and how the AI responded.
 * **User rating** – good, bad, or neutral.
@@ -69,7 +69,7 @@ The AI Training team can:
 By managing feedback systematically:
 
 1. **Collect** → Human reviews in raia Copilot.
-2. **Analyze** → Identify cause in raia Academy.
+2. **Analyze** → Identify cause in raia Connect.
 3. **Fix** → Update knowledge, prompts, or functions.
 4. **Verify** → Test changes via simulations.
 5. **Deploy** → Push improvements live.
@@ -102,9 +102,9 @@ This cycle ensures your AI Agents become more accurate, helpful, and aligned wit
 
 1. A customer using the **Support Agent** in raia Copilot gets an incorrect shipping policy answer.
 2. They give a 👎 and write: _“The answer is outdated; our policy changed last month.”_
-3. Feedback appears in raia Academy.
+3. Feedback appears in raia Connect.
 4. Training team investigates → finds the **shipping policy doc** in the vector store is from last year.
-5. They upload the updated doc via raia Academy and re-run a simulation.
+5. They upload the updated doc via raia Connect and re-run a simulation.
 6. Simulation confirms the new answer is correct.
 7. Issue is marked **Resolved**.
 

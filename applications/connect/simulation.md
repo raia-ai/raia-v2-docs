@@ -1,5 +1,5 @@
 ---
-description: Using Simulation in raia Academy to Test AI Agents
+description: Using Simulation in raia Connect to Test AI Agents
 ---
 
 # Simulation
@@ -10,7 +10,7 @@ description: Using Simulation in raia Academy to Test AI Agents
 
 ### **Overview**
 
-Simulation in **raia Academy** allows you to create realistic test conversations for your AI Agents before deploying them in a live environment.\
+Simulation in **raia** Connect allows you to create realistic test conversations for your AI Agents before deploying them in a live environment.\
 This feature lets you design **scenarios** that mimic real-world situations, run them against your agents, and then review the results in **raia Copilot** for human feedback and performance tuning.
 
 ***
@@ -32,7 +32,7 @@ Testing your AI Agents in realistic scenarios before launch helps:
 ### **How It Works**
 
 1. **Create a Simulation**
-   * Go to the **Simulation** section in raia Academy.
+   * Go to the **Simulation** section in raia Connect.
    * Click **Add Simulation**.
    * Choose between:
      * **Single Scenario** – Test one specific situation.

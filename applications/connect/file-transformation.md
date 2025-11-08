@@ -4,13 +4,13 @@ description: Transforming any unstructured or structured file type to be "AI Rea
 
 # File Transformation
 
-### **Converting Files in raia Academy**
+### **Converting Files in raia** Connect
 
 {% embed url="https://youtu.be/FcQGD_9sHNc" %}
 
 ### **Overview**
 
-raia Academy enables you to convert virtually any file into an **AI‑Ready** format—**Markdown (.md)** or **JSON (.json)**—before uploading into the vector store.
+raia Connect enables you to convert virtually any file into an **AI‑Ready** format—**Markdown (.md)** or **JSON (.json)**—before uploading into the vector store.
 
 \
 This ensures your data is clean, structured, and optimized for AI Agent training, regardless of the original file format.
@@ -35,7 +35,7 @@ Each of these formats has its own structure, quirks, and limitations. Without pr
 * Produce poor retrieval accuracy due to inconsistent chunking.
 * Include “noise” from headers, footers, or formatting artifacts.
 
-By transforming files into **clean, structured, and consistent Markdown or JSON**, raia Academy ensures:
+By transforming files into **clean, structured, and consistent Markdown or JSON**, raia Connect ensures:
 
 * **Consistent formatting** across all knowledge sources.
 * **Preserved semantic structure** (headings, lists, tables).
@@ -46,10 +46,10 @@ By transforming files into **clean, structured, and consistent Markdown or JSON*
 
 ***
 
-### **How raia Academy Processes Your Files**
+### **How raia** Connect **Processes Your Files**
 
 1. **Upload Your Files**
-   * Drag & drop files directly into raia Academy.
+   * Drag & drop files directly into raia Connect.
    * Or bulk import from a **shared drive** for large-scale processing.
 2. **AI‑Powered Parsing**
    * Automatically detects file type.
@@ -84,7 +84,7 @@ Once files are converted:
 
 ***
 
-### **Managing Files in raia Academy**
+### **Managing Files in raia** Connect
 
 * **Assign to specific agents** so knowledge is targeted.
 * **Easily remove outdated files** from an agent’s vector store to keep responses relevant.
@@ -92,7 +92,7 @@ Once files are converted:
 
 
 
-### Bulk Upload of Files into raia Academy
+### Bulk Upload of Files into raia Connect
 
 {% embed url="https://youtu.be/SKS3bhZEqYs" %}
 
@@ -110,13 +110,13 @@ Once files are converted:
 
 ### **Example Workflow**
 
-1. Drop a **100-page PDF report** into raia Academy.
-2. Academy extracts text, tables, and headings → converts to `.md`.
+1. Drop a **100-page PDF report** into raia Connect.
+2. Connect extracts text, tables, and headings → converts to `.md`.
 3. Push the `.md` to your **Market Research AI Agent**.
 4.  The agent can now instantly answer:
 
     > “Summarize the Q4 trends from the latest market report.”
-5. Later, update the report → Academy replaces the old version in the vector store.
+5. Later, update the report → Connect replaces the old version in the vector store.
 
 ***
 
@@ -125,7 +125,7 @@ Once files are converted:
 * **Choose Markdown** for textual/narrative-heavy content.
 * **Choose JSON** for tabular, database-like, or structured content.
 * Keep your files **organized by topic** before upload for easier agent assignment.
-* Use the **remove** function in Academy to instantly pull outdated knowledge.
+* Use the **remove** function in Connect to instantly pull outdated knowledge.
 
 ***
 

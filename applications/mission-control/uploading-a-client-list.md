@@ -2,7 +2,7 @@
 
 ## 📇 Adding a Contact List
 
-The **Contacts** section in Mission Control allows you to upload, organize, and manage your outreach lists. Each list represents a group of contacts that your AI Agent will reach out to during campaigns.
+The **Contacts** section in raia Control allows you to upload, organize, and manage your outreach lists. Each list represents a group of contacts that your AI Agent will reach out to during campaigns.
 
 Adding a contact list is a simple step-by-step process designed to prepare your data for multi-channel campaigns across both **email** and **SMS**.
 
@@ -48,7 +48,7 @@ Your file should include at least the following columns:
 * **Email** or **Phone Number** (depending on outreach type)
 * **Email Body** (in HTML format for proper spacing and visuals)
 
-Mission Control supports uploads of up to **10,000 rows per file**.
+raia Control supports uploads of up to **10,000 rows per file**.
 
 Once the upload completes, you’ll see the number of rows processed.\
 Click **Next** to continue.
@@ -59,7 +59,7 @@ Click **Next** to continue.
 
 ### 🧩 Step 4: Map Your Fields
 
-In this step, you’ll match your CSV columns to Mission Control’s contact fields.\
+In this step, you’ll match your CSV columns to raia Control’s contact fields.\
 First and Last Name are required.
 
 Typical field mappings include:
@@ -75,7 +75,7 @@ You can also configure **Optional Mappings** for:
 * **Email Subject**
 * **Email Body**
 
-This ensures Mission Control understands exactly what data to use for each communication channel.\
+This ensures raia Control understands exactly what data to use for each communication channel.\
 Click **Next** to continue.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-10-06 095944.png" alt="" width="563"><figcaption></figcaption></figure>
@@ -97,7 +97,7 @@ You can choose from:
 
 ### ✅ Step 6: Review and Confirm
 
-Before finalizing your upload, Mission Control provides a confirmation screen with a **preview** of your data.\
+Before finalizing your upload, raia Control provides a confirmation screen with a **preview** of your data.\
 Check the details carefully to ensure all fields are mapped correctly.
 
 Once everything looks right, click **Upload** to complete the import.
