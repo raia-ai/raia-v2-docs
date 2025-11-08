@@ -10,8 +10,13 @@ raia cX is our suite of products that power enterprise grade autonomous Agents f
 
 ### Chat
 
-
+<figure><img src="../../.gitbook/assets/680febd5c42981d5cc90ec01_iMockup---iPhone-15-Pro-Max-4.png" alt="" width="350"><figcaption></figcaption></figure>
 
 ### Connect
 
+<figure><img src="../../.gitbook/assets/Screenshot 2025-11-08 at 8.52.47 AM.png" alt=""><figcaption></figcaption></figure>
+
 ### Control
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-11-08 at 8.55.42 AM.png" alt=""><figcaption></figcaption></figure>
+
