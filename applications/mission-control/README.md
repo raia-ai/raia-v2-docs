@@ -6,6 +6,10 @@ description: >-
 
 # Control
 
+
+
+{% embed url="https://youtu.be/b6kLCxv0nCY" %}
+
 ### 🔍 What raia Control Does
 
 At its core, **raia Control** streamlines the entire outbound communication process by enabling users to:
