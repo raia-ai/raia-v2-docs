@@ -105,10 +105,10 @@
   * [File Transformation](applications/academy/file-transformation.md)
   * [Simulation](applications/academy/simulation.md)
   * [Human Feedback](applications/academy/human-feedback.md)
-* [raia Control](applications/raia-control/README.md)
-  * [Connecting your Agent](applications/raia-control/connecting-your-agent.md)
-  * [Uploading a Client List](applications/raia-control/uploading-a-client-list.md)
-  * [Launching a Mission](applications/raia-control/launching-a-mission.md)
+* [Control](applications/control/README.md)
+  * [Connecting your Agent](applications/control/connecting-your-agent.md)
+  * [Uploading a Contact List](applications/control/uploading-a-contact-list.md)
+  * [Launching a Mission](applications/control/launching-a-mission.md)
 
 ## RELEASE NOTES
 

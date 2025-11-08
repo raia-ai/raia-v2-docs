@@ -1,4 +1,4 @@
-# Uploading a Client List
+# Uploading a Contact List
 
 ## 📇 Adding a Contact List
 
@@ -114,3 +114,4 @@ Your contact list will now appear in the **Contacts** section, ready for use in 
 * Include HTML formatting in your **Email Body** column for better presentation.
 * Use meaningful list and tag names to keep your campaigns organized.
 * For SMS-only missions, make sure phone numbers include the country code.
+

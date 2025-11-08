@@ -4,7 +4,7 @@ description: >-
   manage large-scale AI-driven email and text message campaigns.
 ---
 
-# raia Control
+# Control
 
 ### 🔍 What raia Control Does
 
