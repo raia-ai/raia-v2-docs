@@ -109,6 +109,7 @@
   * [Connecting your Agent](applications/mission-control/connecting-your-agent.md)
   * [Uploading a Contact List](applications/mission-control/uploading-a-client-list.md)
   * [Launching a Mission](applications/mission-control/launching-a-mission.md)
+* [Command](applications/command.md)
 
 ## RELEASE NOTES
 
