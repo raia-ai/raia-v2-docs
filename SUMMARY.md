@@ -5,7 +5,7 @@
 * [Welcome to raia](README.md)
   * [What is raia?](introduction/raia-user-guide/what-is-raia.md)
   * [Why use raia](introduction/raia-user-guide/why-use-raia.md)
-  * [Core Features of raia](introduction/raia-user-guide/core-features-of-raia.md)
+  * [Core Capabilities of raia](introduction/welcome-to-raia/core-capabilities-of-raia.md)
 
 ***
 
