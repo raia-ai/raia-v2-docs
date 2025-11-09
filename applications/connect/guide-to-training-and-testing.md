@@ -1,5 +1,7 @@
 # Guide to Training and Testing
 
+{% embed url="https://youtu.be/Tk0XtPrr6pg" %}
+
 raia Connect is your AI knowledge management engine—the bridge between your business data and intelligent AI Agents. It transforms scattered documents, databases, and data sources into AI-ready knowledge that your Agents can access instantly and accurately.
 
 **The Challenge:** AI Agents are only as good as the knowledge they have access to. Raw documents, PDFs, spreadsheets, and databases aren't in a format AI can effectively use. Without proper preparation, your AI Agent will give incomplete, inaccurate, or irrelevant responses.
@@ -1469,4 +1471,4 @@ Ready to train your AI Agent? Here's your first week:
 
 With raia Connect, you're not just building an AI Agent—you're building an intelligent system that knows your business as well as your best employees.
 
-Let's get started.
+&#x20;
