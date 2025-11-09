@@ -105,6 +105,7 @@
   * [File Transformation](applications/connect/file-transformation.md)
   * [Simulation](applications/connect/simulation.md)
   * [Human Feedback](applications/connect/human-feedback.md)
+  * [Guide to Training and Testing](applications/connect/guide-to-training-and-testing.md)
 * [Control](applications/mission-control/README.md)
   * [Connecting your Agent](applications/mission-control/connecting-your-agent.md)
   * [Uploading a Contact List](applications/mission-control/uploading-a-client-list.md)
