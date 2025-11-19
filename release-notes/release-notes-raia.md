@@ -7,6 +7,80 @@ description: >-
 
 # Release Notes - raia
 
+**November 19, 2025**\
+**New Features**
+
+*   **Default Start Page Setting Added to Copilot & LaunchPad**
+
+    A new setting is now available in both Copilot and LaunchPad that allows users to select which page should automatically open after they log in. Users can choose between LaunchPad or Copilot, and the platform will redirect them accordingly on each login.
+
+    The selected preference is saved across sessions and synchronized between Copilot Settings and LaunchPad Profile Settings.
+*   **Add Profile Photo to User Account**
+
+    The User Account page now supports uploading a personal profile photo. Users can add, update, or remove their profile image, improving personalization across conversations, activity logs, and team views. If no photo is uploaded, a default avatar with user initials is displayed automatically. The feature follows the same design and behavior as the Agent avatar settings, ensuring consistency across the platform.
+
+**Improvements**
+
+* **New Model Option: GPT-5.1 Reasoning**\
+  A new model option, GPT-5.1 (Reasoning), is now available in raia2.\
+  This update adds full support for selecting the 5.1 Reasoning model in the Agent Advanced Settings section, allowing agents to leverage improved reasoning capabilities where needed.
+*   **Live Chat & Copilot — Character Limit Enhancement + Validation**
+
+    Expanded the maximum allowed message length to 100,000 characters in both Live Chat and Copilot.
+
+    Additionally, input validation has been added: if the user attempts to type more than the allowed limit, the system blocks the message and shows a clear warning.
+*   **Delete Multiple Documents in raia Training**
+
+    The Training Documents section now supports bulk deletion, allowing users to remove several files at once or delete all documents. The interface has been updated to simplify handling large document sets, making training data cleanup faster and more efficient.
+*   **Chat Continuity When Context Window Limit Is Reached**
+
+    A new mechanism now ensures chat continuity when the model reaches its maximum context window. This prevents interruptions, avoids loss of conversation flow, and maintains a smooth user experience even during long or complex chats.
+*   **Login Rate Limit & Error Messaging Improvements**
+
+    A new rate-limit rule has been added for login attempts: after more than five failed password entries, users will now receive a clear rate-limit error.
+
+    Additionally, the login flow now distinguishes between incorrect credentials and server-side issues. If a login cannot be completed due to a server problem, users will see an appropriate message indicating a system error rather than an invalid credentials warning.
+* **Activity Logs for Conversation History Download, Document Upload to Memory, and Rating Action**\
+  Activity logging has been expanded to include three new user actions: downloading conversation history, uploading documents to Memory, and submitting or updating a conversation rating. Each action now generates a structured activity entry with a timestamp, user information, and relevant details, appearing consistently in the Activity section of the conversation record.&#x20;
+*   **Live Chat – Background Style Options**
+
+    The Live Chat Skill now supports selecting how the background color is rendered.
+
+    A new setting allows choosing between Gradient and Solid background styles, giving more control over the visual appearance of the chat launcher.
+
+    This update improves customization flexibility and allows Live Chat to better match various brand requirements.
+
+**Fixes**
+
+* **Auditor Skill — fixed inconsistent processing of sensitive files**\
+  Resolved an issue where the Auditor Skill triggered correctly on sensitive files but did not always complete the analysis. All sensitive file types are now processed consistently as expected.
+
+***
+
+**November 12, 2025**\
+**Improvements**
+
+*   **Live Chat: Automatic Pop-Up Frequency Setting**
+
+    Added a new configuration option that lets admins control how often the Live Chat widget automatically opens for visitors. The previous binary setting (“Automatic Open Chat: Yes/No”) is now expanded to three options — No, Once Per Session, and Every Time — providing more flexible behavior and improved user experience.
+*   **Live Chat: Updated “Close Chat” Behavior**
+
+    Improved the Live Chat closing flow by replacing the old “Close Chat” action with a new End Chat option. When selected, the chat session is formally ended and the user is prompted to provide a rating before the window closes. The original “Close Chat” label is now updated to Close Window for clarity.
+*   **Copilot: Real-Time Skill & Function Status During Streaming Responses**
+
+    Added live, human-readable status indicators that display what the AI is doing during a streaming response. The status chip now appears above the streaming message and updates through the full lifecycle (e.g., preparing, retrieving info, calling tools, drafting response). The indicator fades out once the final token is delivered.
+*   **Usage Summary: Unified Number Formatting for Tokens Per Conversation**
+
+    Updated the Usage Summary to apply consistent number formatting to the “Tokens Per Conversation” metric. Large values now include comma separators and proper rounding to match the formatting used across other usage statistics.
+*   **Copilot Activity Tab Updates**
+
+    The Activity Tab has been improved to provide a clearer and more structured view of the conversation history. It now displays consistent titles, timestamps, and a unified system author (“raia”). All key events—such as conversation start, status updates, scoring, feedback, and system actions—are shown in a more readable format.&#x20;
+*   **Escalation Skill: New “Alerts” Tab**
+
+    A new Alerts tab has been added to the Escalation Skill to improve visibility into triggered escalation events. The tab provides list of all escalation logs for the selected agent and aligns the UI with the existing Auditor Skill.
+
+***
+
 **November 5, 2025**\
 **New Features**
 
@@ -147,7 +221,7 @@ description: >-
 * **User Role Switching in Copilot**\
   Fixed an issue preventing admins from changing a user’s role from User to Copilot User within the organization management panel.\
   This update restores proper role-switching functionality, ensuring that user permissions and access rights are updated immediately after the change.
-* **\[DEVOPS] Database Migration Stability Fix**\
+* **Database Migration Stability Fix**\
   Resolved an issue causing migration failures during deployment and environment synchronization.\
   The update ensures stable migrations across dev, QA, and production, preventing rollout interruptions and improving backend reliability
 * **API Timeout with GPT-5 Models**\
