@@ -22,7 +22,7 @@ description: >-
 **Improvements**
 
 * **New Model Option: GPT-5.1 Reasoning**\
-  A new model option, GPT-5.1 (Reasoning), is now available in raia2.\
+  A new model option, GPT-5.1 (Reasoning), is now available in raia2. In addition, this new model allows you to set the reasoning level to 'none' greatly increasing speed while working with the latest model (at the cost of the internal reasoning effort).\
   This update adds full support for selecting the 5.1 Reasoning model in the Agent Advanced Settings section, allowing agents to leverage improved reasoning capabilities where needed.
 *   **Live Chat & Copilot — Character Limit Enhancement + Validation**
 
