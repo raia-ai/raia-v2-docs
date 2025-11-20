@@ -10,6 +10,7 @@
 ## Applications
 
 * [raia cX](applications/raia-cx/README.md)
+  * [Your Intelligent Workforce Platform](applications/raia-cx/your-intelligent-workforce-platform.md)
   * [raiaCX for Support](applications/raia-cx/why-should-i-use-raiacx.md)
   * [AI-First vs. Human-First](applications/raia-cx/ai-first-vs.-human-first.md)
 * [Command](applications/command/README.md)
