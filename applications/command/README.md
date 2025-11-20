@@ -6,7 +6,7 @@ description: Formerly known as Launch Pad
 
 
 
-<figure><img src="../.gitbook/assets/67f538f6295fd7e13f56f5d9_laptop.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/67f538f6295fd7e13f56f5d9_laptop.png" alt=""><figcaption></figcaption></figure>
 
 Meet **raia Command** — the central hub for building, training, and deploying AI agents at scale. Designed for simplicity and speed, raia Command empowers businesses to create intelligent, autonomous agents without a single line of code.&#x20;
 

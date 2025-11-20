@@ -7,6 +7,35 @@
   * [Why use raia](introduction/raia-user-guide/why-use-raia.md)
   * [Core Capabilities of raia](introduction/welcome-to-raia/core-capabilities-of-raia.md)
 
+## Applications
+
+* [raia cX](applications/raia-cx/README.md)
+  * [raiaCX for Support](applications/raia-cx/why-should-i-use-raiacx.md)
+  * [AI-First vs. Human-First](applications/raia-cx/ai-first-vs.-human-first.md)
+* [Command](applications/command/README.md)
+  * [raia Command User Guide](applications/command/raia-command-user-guide.md)
+* [Copilot](applications/copilot/README.md)
+  * [How it works](applications/copilot/how-it-works.md)
+  * [Copilot Menu](applications/copilot/copilot-menu.md)
+  * [Copilot Admin Mode](applications/copilot/copilot-admin-mode.md)
+  * [Copilot Conversation Status](applications/copilot/copilot-conversation-status.md)
+  * [Copilot Conversation Tab](applications/copilot/copilot-conversation-tab.md)
+  * [Human in the Loop](applications/copilot/human-in-the-loop.md)
+  * [Human Feedback](applications/copilot/human-feedback.md)
+* [Chat](applications/chat/README.md)
+  * [Live Chat SDK](applications/chat/live-chat-sdk.md)
+  * [Live Chat in Zendesk](applications/chat/live-chat-in-zendesk.md)
+* [Connect](applications/connect/README.md)
+  * [Connecting to your Agent](applications/connect/connecting-to-your-agent.md)
+  * [File Transformation](applications/connect/file-transformation.md)
+  * [Simulation](applications/connect/simulation.md)
+  * [Human Feedback](applications/connect/human-feedback.md)
+  * [Guide to Training and Testing](applications/connect/guide-to-training-and-testing.md)
+* [Control](applications/mission-control/README.md)
+  * [Connecting your Agent](applications/mission-control/connecting-your-agent.md)
+  * [Uploading a Contact List](applications/mission-control/uploading-a-client-list.md)
+  * [Launching a Mission](applications/mission-control/launching-a-mission.md)
+
 ***
 
 * [Launching an AI Agent](launching-an-ai-agent/README.md)
@@ -83,34 +112,6 @@
   * [Launchpad Logs Tab](raia-cx/launch-pad/launchpad-logs-tab.md)
   * [Launchpad Settings](raia-cx/launch-pad/launchpad-settings.md)
   * [System Logs and Debug](raia-cx/launch-pad/system-logs-and-debug.md)
-
-## Applications
-
-* [raia cX](applications/raia-cx/README.md)
-  * [raiaCX for Support](applications/raia-cx/why-should-i-use-raiacx.md)
-  * [AI-First vs. Human-First](applications/raia-cx/ai-first-vs.-human-first.md)
-* [Copilot](applications/copilot/README.md)
-  * [How it works](applications/copilot/how-it-works.md)
-  * [Copilot Menu](applications/copilot/copilot-menu.md)
-  * [Copilot Admin Mode](applications/copilot/copilot-admin-mode.md)
-  * [Copilot Conversation Status](applications/copilot/copilot-conversation-status.md)
-  * [Copilot Conversation Tab](applications/copilot/copilot-conversation-tab.md)
-  * [Human in the Loop](applications/copilot/human-in-the-loop.md)
-  * [Human Feedback](applications/copilot/human-feedback.md)
-* [Chat](applications/chat/README.md)
-  * [Live Chat SDK](applications/chat/live-chat-sdk.md)
-  * [Live Chat in Zendesk](applications/chat/live-chat-in-zendesk.md)
-* [Connect](applications/connect/README.md)
-  * [Connecting to your Agent](applications/connect/connecting-to-your-agent.md)
-  * [File Transformation](applications/connect/file-transformation.md)
-  * [Simulation](applications/connect/simulation.md)
-  * [Human Feedback](applications/connect/human-feedback.md)
-  * [Guide to Training and Testing](applications/connect/guide-to-training-and-testing.md)
-* [Control](applications/mission-control/README.md)
-  * [Connecting your Agent](applications/mission-control/connecting-your-agent.md)
-  * [Uploading a Contact List](applications/mission-control/uploading-a-client-list.md)
-  * [Launching a Mission](applications/mission-control/launching-a-mission.md)
-* [Command](applications/command.md)
 
 ## RELEASE NOTES
 
