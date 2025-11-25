@@ -142,6 +142,7 @@
 
 ## raia API Specifications
 
+* [API Swagger Links](raia-api-specifications/api-swagger-links.md)
 * ```yaml
   type: builtin:openapi
   props:
