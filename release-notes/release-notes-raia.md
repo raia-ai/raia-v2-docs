@@ -7,6 +7,123 @@ description: >-
 
 # Release Notes - raia
 
+**December 04, 2025**\
+**New Features**
+
+* **Copilot: Personalized Prompt Settings Added**\
+  Added a new customizable prompt option allowing users to set personal instructions for their conversations with an agent. These instructions apply only to the user’s chats and can be configured through a new settings modal accessible from the Copilot sidebar and message composer.
+
+**Improvements**
+
+* **Unified Filters Panel** \
+  Conversations filters were consolidated into a single panel for a cleaner, more consistent experience.
+*   &#x20;**File-Only Message Support**
+
+    Added support for sending messages that contain only an attached file without requiring any text.
+
+    This update increases flexibility for users who need to share documents, images, or other files without typing a message.
+*   **Escalation Webhook Now Sends Full Conversation Payload**
+
+    Updated the escalation skill so that when it triggers a webhook, it now includes the full conversation payload instead of only sending the form submission. This aligns escalation behavior with other webhook types and ensures downstream systems receive complete context.
+*   **Dynamic Agent-Based Navigation on Copilot Home Page**
+
+    Enhanced the user experience on the Copilot Home Page by removing the previously empty left navigation panel. Instead of displaying an empty sidebar on initial load, the system now loads only the list of agents. When a user selects an agent, the left navigation dynamically populates with the relevant conversation history for that agent. This change improves UI clarity and reduces visual clutter on first load.
+*   **Webhook Trigger Added for Unavailable Chat State**
+
+    Implemented a webhook trigger for the “Chat currently unavailable” state, aligning it with the behavior used when conversations end. This ensures downstream systems are notified consistently via the Webhook skill.
+
+**Fixes**
+
+* **Live Chat & Copilot: Geographic Restrictions Behavior Fixes**\
+  Improved how geographic restrictions are applied: Live Chat now shows a clear warning when a restricted user tries to send a message, the chat no longer appears active while blocked, and Copilot is no longer affected by Live Chat restrictions—conversations are created normally regardless of region. This fix ensures consistent behavior and prevents missing conversations.
+*   **Reasoning Text Formatting**
+
+    Resolved an issue where reasoning blocks displayed headings without proper line breaks. Updated formatting now ensures clear separation between reasoning steps and improves readability across all conversations.
+*   **Cross-Organization Prompt Response Access Blocked**
+
+    Resolved an issue where an agent could retrieve another organization’s prompt response using an API key not associated with the originating org. The API now enforces strict ownership validation, ensuring that only the agent who initiated a prompt can access its results.
+*   **Calendar Skill API Key Validation**
+
+    Resolved an issue where the Calendar skill could be saved even when an invalid or incorrectly formatted API key was entered. The system now properly validates API keys and blocks saving until a valid key is provided, preventing misconfigured calendar setups.
+*   **Escalation Skill: Incorrect Response**&#x20;
+
+    Resolved an issue where the Escalation skill returned unrelated prompts (e.g., document-upload requests) instead of the configured escalation response after a conversation was escalated. The skill now consistently returns the correct response defined in the escalation settings.
+*   **Duplicate Uploads in Vector Store When Uploading Large Files**
+
+    Resolved an issue where large file uploads to the Vector Store appeared to “fail” in the UI, causing the system to repeatedly retry the upload. Although the file successfully uploaded on the backend, these retries created duplicate entries in the Vector Store. The upload process now correctly reflects success/failure states and prevents duplicate vector records from being generated.
+* **Email Autofill Conflict Handling Improved**\
+  Fixed an issue where the system autofilled an already-taken email address based on the agent’s name without validation. Now the system checks for availability and adjusts the address if needed, with a clearer error message shown to users.
+*   **Intermittent Agent Response Failures**
+
+    Fixed an issue where agents would occasionally stop responding without error messages. The system now reliably detects and handles stalled response states to ensure consistent agent replies across sessions.
+
+***
+
+**November 25, 2025**\
+**New Features**
+
+*   **EU Production Deployment Launched**
+
+    Added a fully hosted EU deployment of RAIA, running on dedicated EU servers.
+
+    This ensures improved compliance with regional data regulations and provides EU-based customers with faster, localized performance.
+
+**Improvements**
+
+*   **Live Chat: Welcome Message on Chat Start**
+
+    Added a new configurable in-chat welcome message that appears when a user opens a new conversation.
+
+    This creates a more engaging chat entry experience and prevents users from landing on an empty chat window when no predefined questions are set.
+*   **Copilot Functionality Packaged into a Dedicated Skill**
+
+    The existing Copilot functionality, previously built directly into the agent interface—has now been formalized and packaged into a standalone&#x20;
+*   **Live Chat & Copilot: Added Support for .json and .md Files**
+
+    Expanded the list of supported file types in Live Chat and Copilot uploads.
+
+    Users can now upload JSON (.json) and Markdown (.md) files in addition to existing text formats.
+
+    This enhancement improves compatibility with common developer workflows and internal documentation formats.
+*   **Launch Pad: Navigation Cleanup**
+
+    Moved Conversation States, Logs, and Resource Usage into the Settings section of the Launch Pad for a cleaner, more consistent navigation structure.
+*   **Delete Multiple Files at Once**
+
+    Added the ability to remove several uploaded documents in a single action. This update streamlines document management and makes cleanup significantly faster and more convenient.
+*   **Trial Experience and Payment Screen Update**
+
+    Updated the trial logic and visibility rules for licenses.
+
+    \
+    **Fixes**
+*   **Live Chat: Auto-Finish Logic Restored (EU Prod. Deployment)**
+
+    Fixed an issue where inactive conversations were not being marked as Finished, preventing scoring and summaries from being generated. Conversations now close correctly based on inactivity, and summaries and scores are produced as expected.
+*   **Conversation Status Visible to Users in Copilot**
+
+    Updated the Copilot inbox so that end users can now see the status of their conversations (e.g., New, Escalated, Assigned) — not just admins.
+*   **Live Chat: File Upload Icon Not Showing with GPT-5.1**
+
+    Fixed an issue where the file upload icon did not appear in Live Chat when using the GPT-5.1 model.
+
+    The supported file types configuration has been updated to correctly include GPT-5.1, ensuring the upload button displays as expected.
+*   **Report Skill: Email Sending Issue Resolved**
+
+    Fixed a bug where the Report Skill failed to send an email if only one recipient was provided.
+
+    The report now sends correctly regardless of whether there is one or multiple email addresses.
+*   **Tokens per Conversation Calculation Corrected**
+
+    Fixed an issue where the Tokens per Conversation metric displayed incorrect values in the Resources Usage section.
+
+    The calculation now reflects accurate token usage across all conversations.
+*   **Mobile View: Unexpected Zooming Fixed**
+
+    Resolved an issue where the screen automatically zoomed in when typing into input fields on mobile devices. Input interactions on iOS Safari and Android Chrome now work without unwanted zooming, providing a smoother mobile experience.
+
+***
+
 **November 19, 2025**\
 **New Features**
 
@@ -117,7 +234,7 @@ description: >-
 **New Features**
 
 * **Escalation Skill**\
-  Added a new Escalation Skill that automatically detects escalation intent during a chat — for example, when a user says _“I want to talk to a human.”_ When triggered, the system sends notifications via email, SMS, or webhook to designated escalation recipients. \
+  Added a new Escalation Skill that automatically detects escalation intent during a chat — for example, when a user says “I want to talk to a human.” When triggered, the system sends notifications via email, SMS, or webhook to designated escalation recipients. \
   This skill helps route urgent or sensitive cases to human agents quickly and efficiently.
 * **Auditor Skill**\
   Added a new Auditor Skill for automatic conversation security and compliance checks. Detects PII, potential hack/abuse content, and supports a custom auditing rule.
@@ -167,7 +284,7 @@ description: >-
   Now, only organization owners and agent owners can download files associated with training, feedback, memory skills, and scraping.\
   This update ensures sensitive training and feedback data remain protected.
 * **Copilot: Collapsible “Conversation Details” Panel**\
-  Replaced the static _Conversation Details_ block in Copilot’s sidebar with a collapsible accordion component.\
+  Replaced the static Conversation Details block in Copilot’s sidebar with a collapsible accordion component.\
   By default, the section is now collapsed on load to reduce visual clutter and improve scannability.
 * **Copilot Center Pane UI Updates**\
   Redesigned the center pane in Copilot for a cleaner and more intuitive chat experience.\
