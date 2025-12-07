@@ -50,8 +50,7 @@ Function parameters are crucial because they define the inputs your AI needs to 
 
 ### Sample Function that calls a Webhook in n8n
 
-Here is a function that transforms the prompt into a SQL Statement that is passed ot a n8n workflow.\
-
+Here is a function that transforms the prompt into a SQL Statement that is passed ot a n8n workflow.<br>
 
 Here is the Function Parameters:
 

@@ -140,6 +140,10 @@
 
 * [OpenAI Integration](openai/openai-integration.md)
 
+## CODE
+
+* [VS Code + Agent](code/vs-code-+-agent.md)
+
 ## raia API Specifications
 
 * [API Swagger Links](raia-api-specifications/api-swagger-links.md)

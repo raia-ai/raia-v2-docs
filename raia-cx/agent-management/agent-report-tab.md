@@ -30,8 +30,7 @@ This dashboard keeps track of the Tokens used by the AI and Call Minutes.
 
 ## Engagement Metric
 
-This dashboard keeps track of how many total unique users the AI has spoken to.\
-
+This dashboard keeps track of how many total unique users the AI has spoken to.<br>
 
 <figure><img src="../../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>
 

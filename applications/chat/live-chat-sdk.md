@@ -13,8 +13,7 @@ To pass variables to the Live Chat can be done using our SDK. This is important 
 You can do the following:
 
 1. Set User - This will add the user into raia for tracking / memory
-2. Set Context - This provide context of the conversation for the AI Agent. \
-
+2. Set Context - This provide context of the conversation for the AI Agent. <br>
 
 Command usage:
 

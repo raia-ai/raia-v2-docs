@@ -24,8 +24,7 @@ raia Control moves your organization from reactive support to proactive engageme
 
 ### How the Ecosystem Works Together
 
-The power of raia cX comes not from individual applications but from how they integrate to create unified workflows that span the entire agent lifecycle. You begin in Command by building an agent—defining its role, communication style, and capabilities. You use Connect to prepare the knowledge that informs the agent's responses, uploading documents and connecting data sources that are automatically transformed into AI-ready format. You deploy the agent through Chat for customer-facing interactions and Control for proactive campaigns. Throughout deployment, you use Copilot to monitor conversations, provide feedback, test improvements, and intervene when needed. Insights from Copilot inform updates to agent configuration in Command and knowledge in Connect, creating a continuous improvement cycle that makes agents more effective over time.\
-
+The power of raia cX comes not from individual applications but from how they integrate to create unified workflows that span the entire agent lifecycle. You begin in Command by building an agent—defining its role, communication style, and capabilities. You use Connect to prepare the knowledge that informs the agent's responses, uploading documents and connecting data sources that are automatically transformed into AI-ready format. You deploy the agent through Chat for customer-facing interactions and Control for proactive campaigns. Throughout deployment, you use Copilot to monitor conversations, provide feedback, test improvements, and intervene when needed. Insights from Copilot inform updates to agent configuration in Command and knowledge in Connect, creating a continuous improvement cycle that makes agents more effective over time.<br>
 
 This integrated approach eliminates the silos, context switching, and integration challenges that plague organizations trying to assemble AI capabilities from disparate point solutions. Your team works within a unified platform where insights flow seamlessly between applications, changes propagate automatically, and the entire intelligent workforce is visible and manageable from a single pane of glass. The result is faster deployment, higher quality, better governance, and sustainable scaling as your AI initiatives grow from experimental projects to business-critical infrastructure.
 
@@ -55,4 +54,4 @@ Success with raia cX comes from treating it as a platform capability rather than
 
 ***
 
-\
+<br>

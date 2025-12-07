@@ -130,4 +130,4 @@ raia Control represents a fundamental transformation in how organizations approa
 
 Organizations using raia Control report dramatic improvements in engagement rates, significant increases in conversion and revenue, substantial reductions in cost per acquisition, and enhanced customer relationships through proactive, personalized communication. The platform's integration with the raia ecosystem ensures that campaign conversations benefit from the same quality, intelligence, and oversight as reactive support interactions. As customer expectations for personalized, relevant engagement continue to rise, Control provides the infrastructure necessary to meet those expectations at scale while maintaining operational efficiency and cost-effectiveness.
 
-\
+<br>

@@ -12,8 +12,7 @@ You're able to Invite a User through Email and then set their role within the Ag
 
 <figure><img src="../../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
 
-The **Invited Users** Tab is where you'll be able to keep track of them.\
-
+The **Invited Users** Tab is where you'll be able to keep track of them.<br>
 
 <figure><img src="../../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
 

@@ -51,8 +51,7 @@ This key connects your Launchpad Agent with Mission Control.
 Return to Mission Control, paste the copied **API Key** into the **Agent API Key** field, and click **Add Agent**.\
 You can also test the connection by selecting **Test Agent** before saving.
 
-Once added, your Agent will appear in the **AI Agents** list.\
-
+Once added, your Agent will appear in the **AI Agents** list.<br>
 
 <figure><img src="../../.gitbook/assets/image (196).png" alt=""><figcaption></figcaption></figure>
 

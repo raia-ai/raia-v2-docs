@@ -15,8 +15,7 @@ Here’s a clear, **step-by-step guide to setting up a new account on raia and b
 * **Verify your email:** Check your inbox for a verification link and click it to activate your account.
 * **Log in** with your new credentials.
 
-> _Note: raia supports multiple plans (Basic, Business, Enterprise), but you can start with a free trial or basic tier for evaluation._\
->
+> _Note: raia supports multiple plans (Basic, Business, Enterprise), but you can start with a free trial or basic tier for evaluation._<br>
 
 {% hint style="danger" %}
 If you sign up using a phone number that is not a valid mobile phone, you will not receive the 2FA authorization code for logging into your account. You will need to request to reset your phone number from our support team. Email support@raiaai.com to have our team refresh your account.&#x20;

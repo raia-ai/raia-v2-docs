@@ -6,8 +6,7 @@
 
 ### Overview
 
-raia Command serves as the central command center for building, training, and deploying AI agents across your organization. Designed with simplicity and enterprise security in mind, Command empowers businesses to create intelligent, autonomous agents without writing a single line of code. Through an intuitive, step-by-step interface, teams can define an agent's purpose, connect data sources, assign capabilities, and launch into production—all within minutes.\
-
+raia Command serves as the central command center for building, training, and deploying AI agents across your organization. Designed with simplicity and enterprise security in mind, Command empowers businesses to create intelligent, autonomous agents without writing a single line of code. Through an intuitive, step-by-step interface, teams can define an agent's purpose, connect data sources, assign capabilities, and launch into production—all within minutes.<br>
 
 Built on SOC2-compliant infrastructure, raia Command enables organizations to scale from a single use case to hundreds of specialized agents, each trained on company knowledge and processes. Whether automating customer support, sales outreach, or internal workflows, Command provides the foundation for building a true digital workforce that operates 24/7 across every channel.
 
@@ -33,8 +32,7 @@ Intelligence Skills enhance agent capabilities with features like Web Search for
 
 #### Agent States and Lifecycle Management
 
-raia Command implements a clear agent lifecycle with three distinct states that ensure safe development and deployment. Draft state represents the configuration and testing phase where agents are built, trained, and refined without handling real conversations. This protected environment allows teams to experiment, test different configurations, and iterate on training materials without risk to production operations.\
-
+raia Command implements a clear agent lifecycle with three distinct states that ensure safe development and deployment. Draft state represents the configuration and testing phase where agents are built, trained, and refined without handling real conversations. This protected environment allows teams to experiment, test different configurations, and iterate on training materials without risk to production operations.<br>
 
 Active state indicates that an agent is live and operational, handling real conversations across configured channels. Active agents respond to customer inquiries, execute workflows, and perform their assigned tasks with full access to skills and knowledge. Inactive state represents a paused agent that retains all settings, training, and configuration but does not handle conversations. This state is useful for seasonal agents, temporary deactivation during updates, or agents that need to be preserved for future reactivation.
 
@@ -92,15 +90,13 @@ Integration with raia Copilot enables human-in-the-loop feedback where team memb
 
 #### No-Code Agent Builder with Guided Wizard
 
-The Agent Builder Wizard represents Command's commitment to accessibility without sacrificing sophistication. The step-by-step interface guides users through agent creation with contextual help, examples, and best practice recommendations at each stage. Users define the agent's role and purpose through natural language descriptions, eliminating the need to understand technical AI concepts. The Wizard intelligently suggests relevant skills based on the selected role, streamlining configuration while allowing full customization.\
-
+The Agent Builder Wizard represents Command's commitment to accessibility without sacrificing sophistication. The step-by-step interface guides users through agent creation with contextual help, examples, and best practice recommendations at each stage. Users define the agent's role and purpose through natural language descriptions, eliminating the need to understand technical AI concepts. The Wizard intelligently suggests relevant skills based on the selected role, streamlining configuration while allowing full customization.<br>
 
 Pre-built templates for common use cases—such as customer support, lead qualification, appointment scheduling, and FAQ answering—provide starting points that can be customized to specific needs. The Wizard includes validation checks that identify potential issues before deployment, such as missing required configurations or conflicting settings. Preview functionality allows users to test agent behavior during the creation process, ensuring the configuration meets expectations before activation.
 
 #### Comprehensive Skills Ecosystem
 
-Command's Skills ecosystem provides agents with a rich set of capabilities that can be enabled and configured through simple interfaces. Each skill includes detailed configuration options that control behavior, authentication, error handling, and integration specifics. The Live Chat Skill, for example, offers extensive customization of widget appearance, welcome messages, routing rules, and escalation triggers, all configured through visual editors without code.\
-
+Command's Skills ecosystem provides agents with a rich set of capabilities that can be enabled and configured through simple interfaces. Each skill includes detailed configuration options that control behavior, authentication, error handling, and integration specifics. The Live Chat Skill, for example, offers extensive customization of widget appearance, welcome messages, routing rules, and escalation triggers, all configured through visual editors without code.<br>
 
 The API Skill enables sophisticated integrations with external systems through a configuration interface that handles endpoint specification, authentication methods, request/response mapping, and error handling. Users can test API connections directly from Command, validating functionality before agent activation. The Functions Skill allows execution of custom backend logic, with configuration for function selection, parameter passing, and result handling. Each skill includes comprehensive documentation, examples, and troubleshooting guidance accessible directly from the configuration interface.
 
@@ -138,8 +134,7 @@ Connection to raia Copilot provides testing and feedback capabilities, with the 
 
 #### Version Control and Rollback
 
-Command maintains complete version history for all agent configurations, enabling safe experimentation and rapid recovery from issues. Every change to agent settings, instructions, skills, or knowledge is tracked with timestamps, user attribution, and change descriptions. Users can compare versions to understand what changed between iterations, facilitating troubleshooting and learning.\
-
+Command maintains complete version history for all agent configurations, enabling safe experimentation and rapid recovery from issues. Every change to agent settings, instructions, skills, or knowledge is tracked with timestamps, user attribution, and change descriptions. Users can compare versions to understand what changed between iterations, facilitating troubleshooting and learning.<br>
 
 Rollback functionality allows instant reversion to any previous configuration, minimizing downtime and risk when updates don't perform as expected. Version tagging enables marking stable configurations for easy reference and reuse. The version control system supports branching workflows where teams can experiment with variations without affecting production agents, then merge successful changes back to the main configuration. This capability encourages innovation and continuous improvement by reducing the risk associated with making changes.
 
@@ -149,8 +144,7 @@ Rollback functionality allows instant reversion to any previous configuration, m
 
 ### Getting Started with raia Command
 
-Organizations beginning their journey with raia Command typically start with a single, well-defined use case that addresses a clear business need. Common starting points include customer FAQ automation, lead qualification, appointment scheduling, or internal help desk support. The focused approach allows teams to learn the platform, establish best practices, and demonstrate value before expanding to additional use cases.\
-
+Organizations beginning their journey with raia Command typically start with a single, well-defined use case that addresses a clear business need. Common starting points include customer FAQ automation, lead qualification, appointment scheduling, or internal help desk support. The focused approach allows teams to learn the platform, establish best practices, and demonstrate value before expanding to additional use cases.<br>
 
 The typical implementation timeline spans one to two weeks from initial setup to production deployment. The first phase involves defining the agent's role, gathering relevant knowledge materials, and configuring basic settings through the Wizard. The second phase focuses on training, where documents are uploaded through raia Connect and converted to AI-ready format. The third phase emphasizes testing through raia Copilot, where team members simulate conversations, provide feedback, and refine agent behavior. The final phase includes production deployment with monitoring and continuous optimization.
 
@@ -164,9 +158,8 @@ Success with raia Command comes from treating agents as evolving assets rather t
 
 ### Conclusion
 
-raia Command represents a fundamental shift in how organizations approach AI agent development and deployment. By eliminating technical barriers while maintaining enterprise-grade security and scalability, Command democratizes AI capabilities and enables rapid innovation. The platform's no-code interface, comprehensive skills ecosystem, and seamless integration with the raia cX platform create a complete solution for building, training, and managing intelligent agents at scale.\
-
+raia Command represents a fundamental shift in how organizations approach AI agent development and deployment. By eliminating technical barriers while maintaining enterprise-grade security and scalability, Command democratizes AI capabilities and enables rapid innovation. The platform's no-code interface, comprehensive skills ecosystem, and seamless integration with the raia cX platform create a complete solution for building, training, and managing intelligent agents at scale.<br>
 
 Organizations using raia Command report dramatic reductions in time-to-deployment, increased accessibility of AI capabilities across teams, and improved ability to scale automation initiatives. The platform's combination of simplicity and sophistication enables both rapid experimentation with new use cases and robust production deployments that handle millions of interactions. As businesses continue to recognize AI agents as essential components of modern operations, raia Command provides the foundation for building a true digital workforce that augments human capabilities and drives measurable business outcomes.
 
-\
+<br>

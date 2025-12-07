@@ -1,7 +1,7 @@
 # Quick Step-by-Step Guide
 
 {% hint style="info" %}
-For a more comprehensive guide on how to build, train, test and launch an AI Agent visit [Broken link](broken-reference "mention")
+For a more comprehensive guide on how to build, train, test and launch an AI Agent visit [Broken link](/broken/pages/s53SOxLyYDoZKg5PbDaD "mention")
 {% endhint %}
 
 ## 🛠️ How to Build an AI Agent in raia v2

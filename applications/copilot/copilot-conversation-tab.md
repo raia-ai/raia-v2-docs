@@ -28,16 +28,14 @@ While providing negative feedback you are asked to comment and explain as to why
 
 <figure><img src="../../.gitbook/assets/image (176).png" alt=""><figcaption></figcaption></figure>
 
-As well as by clicking the feedback button next to the thumbs down, you'll be able to see your feedback and even edit your feedback later on or delete it.\
-
+As well as by clicking the feedback button next to the thumbs down, you'll be able to see your feedback and even edit your feedback later on or delete it.<br>
 
 <figure><img src="../../.gitbook/assets/image (177).png" alt=""><figcaption></figcaption></figure>
 
 ### Status
 
 You're able to set specific statuses for specific chatlogs within copilot itself for better organization\
-\
-
+<br>
 
 <figure><img src="../../.gitbook/assets/image (180).png" alt=""><figcaption></figcaption></figure>
 

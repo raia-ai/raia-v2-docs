@@ -130,4 +130,4 @@ raia Connect represents a fundamental advancement in how organizations prepare a
 
 Organizations using raia Connect report dramatic improvements in agent accuracy, significant reductions in knowledge preparation time, and enhanced ability to keep agent knowledge current as business information evolves. The platform's combination of automation, intelligence, and governance creates a sustainable approach to knowledge management that scales with organizational needs. As AI agents become increasingly central to business operations, Connect provides the knowledge infrastructure necessary to ensure those agents are informed, accurate, and continuously improving.
 
-\
+<br>

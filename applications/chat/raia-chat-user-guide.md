@@ -38,8 +38,7 @@ Voice integration enables agents to engage in telephone conversations, supportin
 
 Voice conversations support natural dialogue including interruptions, clarifications, and conversational repair (handling misunderstandings). The agent can transfer calls to human team members when needed, place calls on hold, or schedule callbacks. Voice interactions are transcribed and logged, appearing in raia Copilot alongside other channels for unified oversight. The platform handles telephony considerations including call quality monitoring, latency optimization, fallback strategies for connectivity issues, and integration with existing phone systems or contact center infrastructure.
 
-\
-
+<br>
 
 ***
 
@@ -133,4 +132,4 @@ raia Chat represents the customer-facing realization of intelligent AI agents, t
 
 Organizations using raia Chat report dramatic improvements in customer satisfaction, significant reductions in support costs, increased conversion rates from instant response to sales inquiries, and enhanced brand perception through consistent, high-quality interactions. The platform's multi-channel capabilities ensure that customers can engage through their preferred channels while organizations maintain unified oversight and control. As customer expectations for instant, intelligent, always-available service continue to rise, raia Chat provides the infrastructure necessary to meet and exceed those expectations at scale.
 
-\
+<br>

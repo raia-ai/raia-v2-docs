@@ -6,8 +6,7 @@
 
 #### Dropdown Menu
 
-In Copilot, to make navigation easier you're able to use the dropdown menu to search for your organization or agent.\
-
+In Copilot, to make navigation easier you're able to use the dropdown menu to search for your organization or agent.<br>
 
 <figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
