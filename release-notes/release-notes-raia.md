@@ -7,6 +7,46 @@ description: >-
 
 # Release Notes - raia
 
+**December 31, 2025**\
+**New Features**
+
+* **Live Chat Password Support**\
+  Introduced support for password-protected Live Chat threads.
+* **Support for OpenAI 5.2 Model**\
+  Added full support for the OpenAI 5.2 model across the Raia platform.\
+  Admins can now select this model for their AI agents to take advantage of improved performance, reasoning, and response quality.
+* **File Downloads from Agent Training**\
+  Added support for downloading all training documents from the agent’s training section. Users can now select and download all files in one click, streamlining access to agent training materials.
+* **Editable Phone Numbers in Super Admin**\
+  Enabled the ability to edit user phone numbers directly from the Super Admin panel, improving administrative control and user data management.
+* **Copilot Admin Role**\
+  Introduced a new user role — Copilot Admin — designed to allow users to view all conversations and perform human-in-the-loop actions without being granted access to Launch Pad or agent editing. This role ensures greater control over user permissions while enabling effective operational oversight.
+
+**Improvements**
+
+* **API Enhancements**\
+  Expanded the API with several improvements. Now, when fetching agents via API, associated tags are also returned. A new endpoint allows token usage tracking per agent with optional date range filtering. Additionally, feedback functionality was added to messages, enabling thumbs up/down, comments, and answer tagging via API.
+* **Dropdown Option for Live Chat Form**\
+  Added support for “Select” dropdown fields in the Live Chat form configuration.\
+  Admins can now include dropdowns as part of pre-chat forms to collect structured input from users more efficiently.
+* **Fixed Sidebar Position on Dashboard**\
+  The left activity sidebar (navigation panel) is now consistently fixed on the left side across all RAIA applications, including Copilot and Launchpad. It stays visible during scrolling, maintains consistent behavior across products and browsers.
+* **Customizable Live Chat Button Text**\
+  Added a new setting allowing customization of the text on the Live Chat button, including both the headline and sub-header. This enables teams to better tailor the chat interface to match their branding and user engagement strategies.
+* **Live Chat Dark/Light Mode Support** \
+  Implemented support for both Dark Mode and Light Mode in the Live Chat interface.&#x20;
+* **Live Chat Disclaimer: Markdown Support**\
+  Updated the disclaimer field in the Live Chat widget to support Markdown formatting, ensuring consistency with the first message styling and enabling clearer, more structured communication.
+
+**Fixes**
+
+* **Origins Whitelist Fix**\
+  Resolved an issue with the origins whitelist configuration to ensure that only approved sources are allowed access to the platform. This fix improves security and prevents unauthorized cross-origin requests.
+* **LaTeX Message Rendering in Chat UI**\
+  Resolved an issue where messages containing LaTeX-style formatting (e.g. math-like expressions) were not being displayed in the chat interface, despite being correctly processed by the AI. The messages now render as expected, improving visibility and reducing confusion during testing and document preparation.
+
+***
+
 **December 17, 2025**\
 **New Features**
 
