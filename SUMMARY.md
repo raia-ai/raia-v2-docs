@@ -14,16 +14,6 @@
 ## raia API Specifications
 
 * [API Swagger Links](raia-api-specifications/api-swagger-links.md)
-* ```yaml
-  type: builtin:openapi
-  props:
-    models: true
-  dependencies:
-    spec:
-      ref:
-        kind: openapi
-        spec: raia-ai-api
-  ```
 
 ## raia CX
 
