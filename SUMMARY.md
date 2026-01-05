@@ -7,6 +7,54 @@
   * [Why use raia](introduction/raia-user-guide/why-use-raia.md)
   * [Core Capabilities of raia](introduction/welcome-to-raia/core-capabilities-of-raia.md)
 
+## RELEASE NOTES
+
+* [Release Notes - raia](release-notes/release-notes-raia.md)
+
+## raia API Specifications
+
+* [API Swagger Links](raia-api-specifications/api-swagger-links.md)
+
+## raia CX
+
+* [Setting up Account](raia-cx/setting-up-account.md)
+* [Building an AI Agent](raia-cx/building-an-ai-agent.md)
+* [Searching Agents](raia-cx/searching-agents.md)
+* [Agent Skills](raia-cx/agent-skills/README.md)
+  * [Agent API Integration Skill](raia-cx/agent-skills/agent-api-integration-skill.md)
+  * [Agent Email Skill](raia-cx/agent-skills/agent-email-skill.md)
+  * [Agent Live Chat](raia-cx/agent-skills/agent-live-chat.md)
+  * [Agent Memory Skill](raia-cx/agent-skills/agent-memory-skill.md)
+  * [Agent Notification Skill](raia-cx/agent-skills/agent-notification-skill.md)
+  * [Agent Web Search Skill](raia-cx/agent-skills/agent-web-search-skill.md)
+  * [Agent Report Skill](raia-cx/agent-skills/agent-report-skill.md)
+  * [Agent Scoring Skill](raia-cx/agent-skills/agent-scoring-skill.md)
+  * [Agent SMS Skill](raia-cx/agent-skills/agent-sms-skill.md)
+  * [Agent Scraper Skill](raia-cx/agent-skills/agent-scraper-skill.md)
+  * [Agent Voice Skill](raia-cx/agent-skills/agent-voice-skill.md)
+  * [Agent External Retriever Skill](raia-cx/agent-skills/agent-external-retriever-skill.md)
+  * [Agent Webhook Skill](raia-cx/agent-skills/agent-webhook-skill.md)
+  * [Agent Function Skill](raia-cx/agent-skills/agent-function-skill.md)
+  * [Agent Auditor Skill](raia-cx/agent-skills/agent-auditor-skill.md)
+  * [Agent Calendar Skill](raia-cx/agent-skills/agent-calendar-skill.md)
+  * [Agent Feedback Skill](raia-cx/agent-skills/agent-feedback-skill.md)
+  * [Agent Auditor Skill](raia-cx/agent-skills/agent-auditor-skill-1.md)
+* [Agent Management](raia-cx/agent-management/README.md)
+  * [Agent Training Tab](raia-cx/agent-management/agent-training-tab.md)
+  * [Agent Security Tab](raia-cx/agent-management/agent-security-tab.md)
+  * [Agent Launch Tab](raia-cx/agent-management/agent-launch-tab.md)
+  * [Agent Report Tab](raia-cx/agent-management/agent-report-tab.md)
+* [Launch Pad](raia-cx/launch-pad/README.md)
+  * [LaunchPad Packs](raia-cx/launch-pad/launchpad-packs.md)
+  * [Launchpad Functions](raia-cx/launch-pad/launchpad-functions.md)
+  * [Launchpad Users Tab](raia-cx/launch-pad/launchpad-users-tab.md)
+  * [LaunchPad Users (Basic Information)](raia-cx/launch-pad/launchpad-users-basic-information.md)
+  * [Launchpad Conversations Tab](raia-cx/launch-pad/launchpad-conversations-tab.md)
+  * [Launchpad Resource Usage Tab](raia-cx/launch-pad/launchpad-resource-usage-tab.md)
+  * [Launchpad Logs Tab](raia-cx/launch-pad/launchpad-logs-tab.md)
+  * [Launchpad Settings](raia-cx/launch-pad/launchpad-settings.md)
+  * [System Logs and Debug](raia-cx/launch-pad/system-logs-and-debug.md)
+
 ## Applications
 
 * [raia cX](applications/raia-cx/README.md)
@@ -78,50 +126,6 @@
   * [n8n Node](integration/n8n-node.md)
   * [Zapier](integration/zapier.md)
 
-## raia CX
-
-* [Setting up Account](raia-cx/setting-up-account.md)
-* [Building an AI Agent](raia-cx/building-an-ai-agent.md)
-* [Searching Agents](raia-cx/searching-agents.md)
-* [Agent Skills](raia-cx/agent-skills/README.md)
-  * [Agent API Integration Skill](raia-cx/agent-skills/agent-api-integration-skill.md)
-  * [Agent Email Skill](raia-cx/agent-skills/agent-email-skill.md)
-  * [Agent Live Chat](raia-cx/agent-skills/agent-live-chat.md)
-  * [Agent Memory Skill](raia-cx/agent-skills/agent-memory-skill.md)
-  * [Agent Notification Skill](raia-cx/agent-skills/agent-notification-skill.md)
-  * [Agent Web Search Skill](raia-cx/agent-skills/agent-web-search-skill.md)
-  * [Agent Report Skill](raia-cx/agent-skills/agent-report-skill.md)
-  * [Agent Scoring Skill](raia-cx/agent-skills/agent-scoring-skill.md)
-  * [Agent SMS Skill](raia-cx/agent-skills/agent-sms-skill.md)
-  * [Agent Scraper Skill](raia-cx/agent-skills/agent-scraper-skill.md)
-  * [Agent Voice Skill](raia-cx/agent-skills/agent-voice-skill.md)
-  * [Agent External Retriever Skill](raia-cx/agent-skills/agent-external-retriever-skill.md)
-  * [Agent Webhook Skill](raia-cx/agent-skills/agent-webhook-skill.md)
-  * [Agent Function Skill](raia-cx/agent-skills/agent-function-skill.md)
-  * [Agent Auditor Skill](raia-cx/agent-skills/agent-auditor-skill.md)
-  * [Agent Calendar Skill](raia-cx/agent-skills/agent-calendar-skill.md)
-  * [Agent Feedback Skill](raia-cx/agent-skills/agent-feedback-skill.md)
-  * [Agent Auditor Skill](raia-cx/agent-skills/agent-auditor-skill-1.md)
-* [Agent Management](raia-cx/agent-management/README.md)
-  * [Agent Training Tab](raia-cx/agent-management/agent-training-tab.md)
-  * [Agent Security Tab](raia-cx/agent-management/agent-security-tab.md)
-  * [Agent Launch Tab](raia-cx/agent-management/agent-launch-tab.md)
-  * [Agent Report Tab](raia-cx/agent-management/agent-report-tab.md)
-* [Launch Pad](raia-cx/launch-pad/README.md)
-  * [LaunchPad Packs](raia-cx/launch-pad/launchpad-packs.md)
-  * [Launchpad Functions](raia-cx/launch-pad/launchpad-functions.md)
-  * [Launchpad Users Tab](raia-cx/launch-pad/launchpad-users-tab.md)
-  * [LaunchPad Users (Basic Information)](raia-cx/launch-pad/launchpad-users-basic-information.md)
-  * [Launchpad Conversations Tab](raia-cx/launch-pad/launchpad-conversations-tab.md)
-  * [Launchpad Resource Usage Tab](raia-cx/launch-pad/launchpad-resource-usage-tab.md)
-  * [Launchpad Logs Tab](raia-cx/launch-pad/launchpad-logs-tab.md)
-  * [Launchpad Settings](raia-cx/launch-pad/launchpad-settings.md)
-  * [System Logs and Debug](raia-cx/launch-pad/system-logs-and-debug.md)
-
-## RELEASE NOTES
-
-* [Release Notes - raia](release-notes/release-notes-raia.md)
-
 ## Launch Plan
 
 * [Launch Checklist](launch-plan/launch-checklist.md)
@@ -143,17 +147,3 @@
 ## CODE
 
 * [VS Code + Agent](code/vs-code-+-agent.md)
-
-## raia API Specifications
-
-* [API Swagger Links](raia-api-specifications/api-swagger-links.md)
-* ```yaml
-  type: builtin:openapi
-  props:
-    models: true
-  dependencies:
-    spec:
-      ref:
-        kind: openapi
-        spec: raia-ai-api
-  ```
