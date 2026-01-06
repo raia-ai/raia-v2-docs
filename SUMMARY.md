@@ -13,7 +13,7 @@
 
 ## raia API Specifications
 
-* [API Swagger Links](raia-api-specifications/api-swagger-links.md)
+* [API Links](raia-api-specifications/api-links.md)
 
 ## raia CX
 
