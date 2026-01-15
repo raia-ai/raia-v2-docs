@@ -147,3 +147,7 @@
 ## CODE
 
 * [VS Code + Agent](code/vs-code-+-agent.md)
+
+***
+
+* [Repairing Coin and Bill Acceptors (CBA) for LPT:One Print Release Stations](repairing-coin-and-bill-acceptors-cba-for-lpt-one-print-release-stations.md)
