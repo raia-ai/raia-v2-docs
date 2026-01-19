@@ -7,6 +7,48 @@ description: >-
 
 # Release Notes - raia
 
+**January 16, 2026**\
+**New Features**
+
+*   **Inline Verification Setting for Live Chat**
+
+    Introduced a new inline verification setting in Live Chat that allows enabling 2FA verification via email or SMS. Admins can configure whether verification is always required or triggered conditionally. A webhook validates the submitted code, and the user’s status is updated to “verified” upon success.
+* **Password-Protected Access**\
+  You can now require users to enter a password before starting a Live Chat with an AI Agent. This helps limit access to internal or sensitive agents and is configurable in Launchpad.
+
+**Improvements**
+
+* **Copilot Disclaimer Field Relocated**\
+  The Copilot disclaimer setting has been moved from the Agent Info tab to the Copilot Skill section (under “Skills”) for better clarity and consistency. The functionality remains unchanged — the disclaimer is still editable and displays in the Copilot modal as before. Any previously saved disclaimer values were automatically migrated to the new location.
+*   **Suspicious Activity Logging Enhancement**
+
+    Suspicious conversation activity is now logged internally instead of triggering email alerts. The system captures key details like timestamp, user ID, and detection pattern, ensuring sensitive security or compliance-related events are stored centrally and not sent over email.
+*   **Live Chat Height Setting**
+
+    Added a new configuration option to adjust the Live Chat widget height, allowing users to enable full-height mode if desired.
+*   **Conversation Finished Emails — User Info**
+
+    Enhanced conversation summary emails to include user data and custom form input, improving visibility into user context.
+*   **Improved Email Change Security Flow**
+
+    Redesigned the email update process to send confirmation links to the current address first, reducing the risk of unauthorized changes and improving account recovery options.
+*   **Launchpad Filters: View Deleted Conversations**
+
+    Added a new filter in Launchpad to allow users to view conversations marked as deleted, improving transparency and supporting advanced filtering across all statuses.
+*   **Organization Branding Reset**
+
+    Introduced a new option that allows users to reset organization branding settings to default values for a clean and consistent appearance.
+*   **Conversation & Feedback Enhancements**
+
+    Added server-side conversation search, exposed timestamps, introduced message-level feedback, user listing via API, and agent token usage reporting for better analytics, compliance, and UI performance.
+
+**Fixes**
+
+* **Improved Space Key Behavior in Dropdown Inputs**\
+  Fixed an issue in Launchpad and Copilot where pressing the space key in dropdown inputs caused unexpected behavior: the dropdown would close if the input was empty, and the space character wouldn’t be inserted if text was present. Input behavior now works as expected for both the organization and agent selectors.
+
+***
+
 **December 31, 2025**\
 **New Features**
 
