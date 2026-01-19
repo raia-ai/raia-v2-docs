@@ -147,3 +147,21 @@
 ## CODE
 
 * [VS Code + Agent](code/vs-code-+-agent.md)
+
+## Integrations
+
+* [Zendesk](integrations/zendesk.md)
+* [Salesforce](integrations/salesforce.md)
+* [Bitbucket](integrations/bitbucket.md)
+* [Freshdesk](integrations/freshdesk.md)
+* [Gitbook](integrations/gitbook.md)
+* [Github](integrations/github.md)
+* [Jira](integrations/jira.md)
+* [Netsuite](integrations/netsuite.md)
+* [phpkb](integrations/phpkb.md)
+* [ServiceNow](integrations/servicenow.md)
+* [Team Support](integrations/team-support.md)
+* [Vimeo](integrations/vimeo.md)
+* [Wistia](integrations/wistia.md)
+* [Youtube](integrations/youtube.md)
+* [Zoho](integrations/zoho.md)
