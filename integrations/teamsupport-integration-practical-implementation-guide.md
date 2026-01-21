@@ -1,62 +1,25 @@
 # TeamSupport Integration — Practical Implementation Guide
 
-**Goal:** Connect TeamSupport to the AI Agent to sync support tickets and wiki articles for automated workflows and improved agent responses.**Who's Involved:**
+### Introduction
 
-* n8n Workflow Developer (Primary)
-* RAIA Agent Engineer (Support)
+This guide provides a narrative walkthrough for integrating TeamSupport with the RAIA agent. The primary goal of this integration is to synchronize support tickets, their associated actions, and wiki articles from your TeamSupport instance directly into the AI Agent's knowledge base. This connection provides the agent with a comprehensive view of your customer support interactions and internal knowledge, enabling it to support automated workflows and deliver more accurate, context-aware responses.
 
-See our native n8n integration at [https://n8n.io/integrations/teamsupport/](https://n8n.io/integrations/teamsupport/)
+### The Integration Process Overview
 
-#### **Step 1: Integration Planning & Mapping**
+The integration is built upon a standard Extract, Transform, Load (ETL) framework. The process begins with the **extraction** of tickets, actions, and wiki articles from your TeamSupport instance using its API. This data is then **transformed** into a structured JSON format, a process that includes leveraging the Manus API to generate a derivative knowledge base for enriched content. Finally, the processed information is **loaded** into a PostgreSQL data lake hosted on Supabase. The RAIA agent accesses this data, and the entire process is automated to run monthly, ensuring the agent's knowledge remains consistently up-to-date.
 
-* **Time:** \~2-4 hours
-* **Owner:** Workflow Dev
+### Roles and Responsibilities
 
-**Checklist:**
+Two key roles are essential for a successful integration. The **n8n Workflow Developer** is responsible for configuring and deploying the n8n workflows that power the ETL process. The **RAIA Agent Engineer** provides support by assisting with the agent's configuration and ensuring the synchronized data is correctly ingested and utilized by the AI.For more technical details on the n8n-TeamSupport connection, you can refer to the native n8n integration documentation at [https://n8n.io/integrations/teamsupport/](https://n8n.io/integrations/teamsupport/).
 
-* [ ] Identify TeamSupport instance URL and generate API credentials.
-* [ ] Define the scope of data to be synced (e.g., specific ticket types, wiki categories ).
-* [ ] Map TeamSupport data fields (Tickets, Actions, Wikis) to the target schema in the data lake.
-* [ ] Document system APIs, access needs, and authentication methods.
+#### Phase 1: Planning and Preparation
 
-**Deliverables:**
+The initial phase, typically requiring 2-4 hours, is dedicated to planning the integration. The Workflow Developer will start by identifying your TeamSupport instance URL and generating the necessary API credentials. A critical step in this phase is to define the scope of the data to be synced, such as specific ticket types or wiki categories. The developer then maps the TeamSupport data fields—Tickets, Actions, and Wikis—to the target schema of the data lake. This planning stage concludes with the creation of an integration architecture diagram, a list of required APIs and credentials, and a risk mitigation plan.
 
-* Integration architecture diagram.
-* List of required APIs and credentials.
-* Risk mitigation plan.
+#### Phase 2: Data Extraction and Transformation
 
-#### **Step 2: Extract & Transform TeamSupport Data**
+This phase, estimated to take 4-6 hours, focuses on the technical implementation of the data extraction and transformation. The Workflow Developer will configure two separate workflows. The `Fetch and Process TeamSupport Tickets` sub-workflow is designed to retrieve tickets and their associated actions. Concurrently, the `TeamSupport Wikis ETL` workflow is configured to fetch wiki articles. In both workflows, data shaping logic is applied to convert the raw data into a structured JSON format, and the Manus API is used to generate a derivative knowledge base. The deliverables for this phase are the completed n8n workflows and samples of the transformed JSON data for both tickets and wikis.
 
-* **Time:** \~4-6 hours
-* **Owner:** Workflow Dev
+#### Phase 3: Loading, Automation, and Synchronization
 
-**Checklist:**
-
-* [ ] Configure the `TeamSupport - Tickets -> raia (2 of 2)` sub-workflow to fetch tickets and their actions.
-* [ ] Configure the `TeamSupport Wikis` workflow to fetch wiki articles.
-* [ ] Implement data shaping and enrichment logic to transform the data into a structured JSON format.
-* [ ] Use the Manus API for derivative knowledge base generation from the extracted data.
-
-**Deliverables:**
-
-* Completed n8n sub-workflow for ticket extraction and the full workflow for wikis.
-* Sample of transformed JSON data for both tickets and wikis.
-
-#### **Step 3: Load Data into Data Lake and Raia**
-
-* **Time:** \~3-5 hours
-* **Owner:** Workflow Dev
-
-**Checklist:**
-
-* [ ] Configure the main workflow (`TeamSupport - Tickets -> raia (1 of 2)`) to orchestrate the ETL process for tickets.
-* [ ] Verify the `TeamSupport Wikis` workflow is correctly configured to load data into the data lake.
-* [ ] Use the "upsert" operation to load the transformed data into the PostgreSQL database on Supabase.
-* [ ] Trigger the Raia API to process the new data and add it to the vector store.
-* [ ] Schedule the main workflows to run monthly.
-
-**Deliverables:**
-
-* Completed n8n main workflows for data loading.
-* Confirmation of data successfully loaded into the data lake and Raia.
-* Monthly execution schedule configured.
+The final phase, requiring approximately 3-5 hours, involves loading the data and activating the automated synchronization. The Workflow Developer configures the main `TeamSupport Ticket ETL Orchestrator` workflow to manage the ticket data pipeline and verifies that the `TeamSupport Wikis ETL` workflow is correctly loading data. Both workflows use an "upsert" operation to efficiently load data into the PostgreSQL database. Once the data is loaded, the Raia API is triggered to process the new information. The process concludes by scheduling both workflows to run automatically each month. The final deliverables include the completed workflows, confirmation of a successful data load, and the configured monthly execution schedule.

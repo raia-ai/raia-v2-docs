@@ -1,61 +1,25 @@
 # Bitbucket Integration — Practical Implementation Guide
 
-**Goal:** Connect a Bitbucket repository to the AI Agent to sync files for automated workflows and to provide the agent with up-to-date knowledge.**Who's Involved:**
+### Introduction
 
-* n8n Workflow Developer (Primary)
-* RAIA Agent Engineer (Support)
+This document provides a narrative guide for integrating a Bitbucket repository with the RAIA agent. The primary goal of this integration is to synchronize files from a specified repository, making their content available to the AI Agent. This process enhances the agent's knowledge base with up-to-date information from your codebase or documentation, enabling more accurate and context-aware automated workflows.
 
-See our native n8n integration at [https://n8n.io/integrations/bitbucket/](https://n8n.io/integrations/bitbucket/)
+### The Integration Process Overview
 
-#### **Step 1: Integration Planning & Mapping**
+The integration is structured around a standard Extract, Transform, Load (ETL) pipeline. The process commences with the **extraction** of files from a designated Bitbucket repository using the Bitbucket API. These files are then **transformed** by combining them into a single, cohesive markdown file. During this transformation phase, the Manus API is utilized to generate a derivative knowledge base, enriching the content. Finally, this processed information is **loaded** into a PostgreSQL data lake hosted on Supabase. The RAIA agent accesses this data, and the entire ETL process is automated to run on a monthly schedule, ensuring the agent's knowledge remains current.
 
-* **Time:** \~2-4 hours
-* **Owner:** Workflow Dev
+### Roles and Responsibilities
 
-**Checklist:**
+Two key roles are central to the successful implementation of this integration. The **n8n Workflow Developer** holds the primary responsibility for setting up and deploying the n8n workflows that drive the ETL process. The **RAIA Agent Engineer** provides support by assisting with the RAIA agent's configuration, ensuring that the data is correctly ingested and utilized by the AI.For more technical details on connecting n8n with Bitbucket, you can refer to the native n8n integration documentation at [https://n8n.io/integrations/bitbucket/](https://n8n.io/integrations/bitbucket/).
 
-* [ ] Identify the target Bitbucket repository and generate API credentials with read access.
-* [ ] Define the scope of files to be synced (e.g., specific directories, file types ).
-* [ ] Map the file content and structure to the target schema in the data lake.
-* [ ] Document system APIs, access needs, and authentication methods.
+#### Phase 1: Planning and Preparation
 
-**Deliverables:**
+The initial phase, which typically takes 2-4 hours, is focused on planning and mapping the integration. The Workflow Developer will start by identifying the target Bitbucket repository and generating the necessary API credentials with read access. A crucial part of this stage is defining the scope of the synchronization, which involves specifying the exact directories or file types to be included. The developer then maps the file content and its structure to the target schema of the data lake. This planning phase concludes with the creation of an integration architecture diagram, a list of all required APIs and credentials, and a risk mitigation plan.
 
-* Integration architecture diagram.
-* List of required APIs and credentials.
-* Risk mitigation plan.
+#### Phase 2: Data Extraction and Transformation
 
-#### **Step 2: Extract & Transform Bitbucket Data**
+This phase, estimated to take 4-6 hours, involves the technical work of extracting and transforming the data. The Workflow Developer will configure two distinct n8n sub-workflows. The first, the `Fetch and Process Bitbucket Files` sub-workflow, is responsible for retrieving the specified files from the repository. The second, the `Combine Files into Markdown` sub-workflow, then consolidates all the extracted file content into a single markdown document. During this process, data shaping logic is applied, and the Manus API is called to generate a derivative knowledge base from the combined content. The deliverables for this phase are the completed n8n sub-workflows and a sample of the final markdown file for validation.
 
-* **Time:** \~4-6 hours
-* **Owner:** Workflow Dev
+#### Phase 3: Loading, Automation, and Synchronization
 
-**Checklist:**
-
-* [ ] Configure the `Bitbucket - Files -> raia (2 of 3)` sub-workflow to fetch the specified files from the repository.
-* [ ] Configure the `Bitbucket - Files -> raia (3 of 3)` sub-workflow to combine the extracted files into a single markdown file.
-* [ ] Implement data shaping logic to transform the file content into a structured JSON format.
-* [ ] Use the Manus API for derivative knowledge base generation from the combined file.
-
-**Deliverables:**
-
-* Completed n8n sub-workflows for data extraction and transformation.
-* A sample of the combined markdown file and the transformed JSON data.
-
-#### **Step 3: Load Data into Data Lake and Raia**
-
-* **Time:** \~3-5 hours
-* **Owner:** Workflow Dev
-
-**Checklist:**
-
-* [ ] Configure the main workflow (`Bitbucket - Files -> raia (1 of 3)`) to orchestrate the complete ETL process.
-* [ ] Use the "upsert" operation to load the transformed data into the PostgreSQL database on Supabase.
-* [ ] Trigger the Raia API to process the new data and add it to the vector store.
-* [ ] Schedule the main workflow to run monthly to ensure the data remains current.
-
-**Deliverables:**
-
-* Completed n8n main workflow for data loading.
-* Confirmation of data successfully loaded into the data lake and Raia.
-* Monthly execution schedule configured.
+The final phase, requiring approximately 3-5 hours, is centered on loading the data and activating the automated synchronization. The Workflow Developer configures the main `Bitbucket Files ETL Orchestrator` workflow, which manages the entire ETL pipeline from start to finish. This workflow uses an "upsert" operation to efficiently load the transformed data into the PostgreSQL database, updating existing records and inserting new ones. Once the data is loaded, the Raia API is triggered to process the new information and add it to its vector store. The process concludes with scheduling the main orchestrator workflow to run automatically each month. The final deliverables include the completed main workflow, confirmation of a successful data load, and the configured monthly execution schedule.

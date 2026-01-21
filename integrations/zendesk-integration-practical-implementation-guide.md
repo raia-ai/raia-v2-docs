@@ -1,61 +1,25 @@
 # Zendesk Integration — Practical Implementation Guide
 
-**Goal:** Connect Zendesk to the AI Agent to sync support tickets and knowledge base articles for automated workflow and improved agent responses.**Who's Involved:**
+### Introduction
 
-* n8n Workflow Developer (Primary)
-* RAIA Agent Engineer (Support)
+This guide provides a comprehensive walkthrough for integrating Zendesk with the RAIA agent. The primary objective of this integration is to create a seamless flow of information, syncing support tickets and knowledge base articles from Zendesk into the AI Agent's ecosystem. This process not only enables automated workflows but also significantly enriches the agent's knowledge, leading to more accurate and context-aware responses.
 
-See our native n8n integration at [https://n8n.io/integrations/zendesk/](https://n8n.io/integrations/zendesk/)
+### The Integration Process Overview
 
-#### **Step 1: Integration Planning & Mapping**
+The integration follows a robust Extract, Transform, Load (ETL) methodology. Initially, data such as tickets, comments, and articles are **extracted** from your Zendesk instance using its API. This data is then **transformed** into a structured, standardized JSON format, which includes a step where the Manus API generates a derivative knowledge base to enhance the content. Finally, the processed information is **loaded** into a PostgreSQL data lake hosted on Supabase. From there, the Raia agent can access and utilize the data, with the entire process being automated to run on a monthly schedule to ensure the information remains current.
 
-* **Time:** \~2-4 hours
-* **Owner:** Workflow Dev
+### Roles and Responsibilities
 
-**Checklist:**
+Successful implementation of this integration typically involves two key roles. The **n8n Workflow Developer** takes the primary responsibility for configuring and deploying the n8n workflows that drive the ETL process. Supporting this role is the **RAIA Agent Engineer**, who assists with the configuration of the Raia agent and ensures the data is correctly ingested and utilized by the AI.For more technical details on the n8n-Zendesk connection, you can refer to the native n8n integration documentation at [https://n8n.io/integrations/zendesk/](https://n8n.io/integrations/zendesk/).
 
-* [ ] Identify Zendesk instance URL and generate API credentials.
-* [ ] Define the scope of data to be synced (e.g., specific ticket statuses, article categories ).
-* [ ] Map Zendesk data fields to the target schema in the data lake.
-* [ ] Document system APIs, access needs, and authentication methods.
+#### Phase 1: Planning and Preparation
 
-**Deliverables:**
+The first phase, typically requiring 2-4 hours, is dedicated to planning and mapping out the integration. The Workflow Developer will begin by identifying the Zendesk instance URL and generating the necessary API credentials for secure access. A critical step in this phase is to define the precise scope of the data to be synchronized. This involves deciding which ticket statuses or article categories are relevant to the AI agent's function. The developer will then map the Zendesk data fields—such as those for tickets, comments, and articles—to the target schema of the data lake. This initial planning stage concludes with the creation of an integration architecture diagram, a list of required APIs and credentials, and a risk mitigation plan to address any potential challenges.
 
-* Integration architecture diagram.
-* List of required APIs and credentials.
-* Risk mitigation plan.
+#### Phase 2: Data Extraction and Transformation
 
-#### **Step 2: Extract & Transform Zendesk Data**
+With a solid plan in place, the next phase, estimated to take 4-6 hours, focuses on the technical implementation of the data extraction and transformation. The Workflow Developer will configure two key n8n sub-workflows: `Zendesk - Tickets -> raia` to fetch tickets and their associated comments, and `Zendesk - Articles -> raia` to retrieve knowledge base articles. Within these workflows, data shaping and enrichment logic is applied to convert the raw Zendesk data into a structured JSON format. A key part of this transformation is leveraging the Manus API to generate a derivative knowledge base, which adds another layer of valuable information. The successful completion of this phase is marked by the delivery of the configured n8n sub-workflows and a sample of the transformed JSON data for validation.
 
-* **Time:** \~4-6 hours
-* **Owner:** Workflow Dev
+#### Phase 3: Loading, Automation, and Synchronization
 
-**Checklist:**
-
-* [ ] Configure the `Zendesk - Tickets -> raia (2 of 2)` sub-workflow to fetch tickets and comments.
-* [ ] Configure the `Zendesk - Articles -> raia (2 of 2)` sub-workflow to fetch knowledge base articles.
-* [ ] Implement data shaping and enrichment logic to transform the data into a structured JSON format.
-* [ ] Use the Manus API for derivative knowledge base generation from the extracted data.
-
-**Deliverables:**
-
-* Completed n8n sub-workflows for data extraction and transformation.
-* Sample of transformed JSON data.
-
-#### **Step 3: Load Data into Data Lake and Raia**
-
-* **Time:** \~3-5 hours
-* **Owner:** Workflow Dev
-
-**Checklist:**
-
-* [ ] Configure the main workflows (`Zendesk - Tickets -> raia (1 of 2)` and `Zendesk - Articles -> raia (1 of 2)`) to orchestrate the ETL process.
-* [ ] Use the "upsert" operation to load the transformed data into the PostgreSQL database on Supabase.
-* [ ] Trigger the Raia API to process the new data and add it to the vector store.
-* [ ] Schedule the main workflows to run monthly.
-
-**Deliverables:**
-
-* Completed n8n main workflows for data loading.
-* Confirmation of data successfully loaded into the data lake and Raia.
-* Monthly execution schedule configured.
+The final phase, requiring approximately 3-5 hours, involves loading the prepared data into the data lake and activating the automated synchronization. The Workflow Developer will configure the main n8n workflows, `Zendesk - Tickets -> raia` and `Zendesk - Articles -> raia`, to orchestrate the entire ETL pipeline. These workflows use an "upsert" operation to efficiently load the data into the PostgreSQL database, updating existing records and inserting new ones as needed. Once the data is in the data lake, a final step triggers the Raia API to process the information and integrate it into its vector store. To ensure the AI agent always has access to the latest information, the main workflows are scheduled to run automatically on a monthly basis. The deliverables for this phase include the completed main workflows, confirmation of a successful data load, and the configured monthly execution schedule.

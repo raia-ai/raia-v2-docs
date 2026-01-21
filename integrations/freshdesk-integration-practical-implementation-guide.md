@@ -1,62 +1,25 @@
 # Freshdesk Integration — Practical Implementation Guide
 
-**Goal:** Connect Freshdesk to the AI Agent to sync support tickets and solution articles for automated workflows and improved agent responses.**Who's Involved:**
+### Introduction
 
-* n8n Workflow Developer (Primary)
-* RAIA Agent Engineer (Support)
+This guide provides a narrative walkthrough for integrating Freshdesk with the RAIA agent. The primary objective is to synchronize support tickets, conversations, and solution articles from Freshdesk into the AI Agent's knowledge base. This integration empowers the agent with real-time data, enabling automated workflows and enhancing the quality and context of its responses.
 
-See our native n8n integration at [https://n8n.io/integrations/freshdesk/](https://n8n.io/integrations/freshdesk/)
+### The Integration Process Overview
 
-#### **Step 1: Integration Planning & Mapping**
+The integration follows a standard Extract, Transform, Load (ETL) methodology. The process begins by **extracting** data—specifically tickets, conversations, and solution articles—from your Freshdesk instance using its API. This data is then **transformed** into a structured JSON format, a process that includes leveraging the Manus API to generate a derivative knowledge base for enriched content. Finally, the processed information is **loaded** into a PostgreSQL data lake hosted on Supabase. The RAIA agent accesses this data, and the entire process is automated to run monthly, ensuring the agent's knowledge is always up-to-date.
 
-* **Time:** \~2-4 hours
-* **Owner:** Workflow Dev
+### Roles and Responsibilities
 
-**Checklist:**
+Two key roles are essential for a successful integration. The **n8n Workflow Developer** is primarily responsible for configuring and deploying the n8n workflows that power the ETL pipeline. The **RAIA Agent Engineer** provides support by assisting with the agent's configuration and ensuring the data is correctly ingested and utilized by the AI.For more technical details on the n8n-Freshdesk connection, you can refer to the native n8n integration documentation at [https://n8n.io/integrations/freshdesk/](https://n8n.io/integrations/freshdesk/).
 
-* [ ] Identify Freshdesk instance URL and generate API credentials.
-* [ ] Define the scope of data to be synced (e.g., specific ticket statuses, solution categories ).
-* [ ] Map Freshdesk data fields (Tickets, Conversations, Solutions) to the target schema in the data lake.
-* [ ] Document system APIs, access needs, and authentication methods.
+#### Phase 1: Planning and Preparation
 
-**Deliverables:**
+The initial phase, typically requiring 2-4 hours, is dedicated to planning and mapping the integration. The Workflow Developer will start by identifying the Freshdesk instance URL and generating the necessary API credentials. A critical step in this phase is to define the scope of the data to be synchronized, such as specific ticket statuses or solution categories. The developer then maps the Freshdesk data fields—Tickets, Conversations, and Solutions—to the target schema of the data lake. This planning stage concludes with the creation of an integration architecture diagram, a list of required APIs and credentials, and a risk mitigation plan.
 
-* Integration architecture diagram.
-* List of required APIs and credentials.
-* Risk mitigation plan.
+#### Phase 2: Data Extraction and Transformation
 
-#### **Step 2: Extract & Transform Freshdesk Data**
+This phase, estimated to take 4-6 hours, focuses on the technical implementation of the data extraction and transformation. The Workflow Developer will configure two separate workflows. The `Fetch and Process Freshdesk Tickets` sub-workflow is designed to retrieve tickets and their associated conversations. Concurrently, the `Freshdesk Solutions ETL` workflow is configured to fetch solution articles. In both workflows, data shaping logic is applied to convert the raw data into a structured JSON format, and the Manus API is used to generate a derivative knowledge base. The deliverables for this phase are the completed n8n workflows and samples of the transformed JSON data for both tickets and solutions.
 
-* **Time:** \~4-6 hours
-* **Owner:** Workflow Dev
+#### Phase 3: Loading, Automation, and Synchronization
 
-**Checklist:**
-
-* [ ] Configure the `Freshdesk - Tickets -> raia (2 of 2)` sub-workflow to fetch tickets and their conversations.
-* [ ] Configure the `Freshdesk Solutions` workflow to fetch solution articles.
-* [ ] Implement data shaping and enrichment logic to transform the data into a structured JSON format.
-* [ ] Use the Manus API for derivative knowledge base generation from the extracted data.
-
-**Deliverables:**
-
-* Completed n8n sub-workflow for ticket extraction and the full workflow for solutions.
-* Sample of transformed JSON data for both tickets and solutions.
-
-#### **Step 3: Load Data into Data Lake and Raia**
-
-* **Time:** \~3-5 hours
-* **Owner:** Workflow Dev
-
-**Checklist:**
-
-* [ ] Configure the main workflow (`Freshdesk - Tickets -> raia (1 of 2)`) to orchestrate the ETL process for tickets.
-* [ ] Verify the `Freshdesk Solutions` workflow is correctly configured to load data into the data lake.
-* [ ] Use the "upsert" operation to load the transformed data into the PostgreSQL database on Supabase.
-* [ ] Trigger the Raia API to process the new data and add it to the vector store.
-* [ ] Schedule the main workflows to run monthly.
-
-**Deliverables:**
-
-* Completed n8n main workflows for data loading.
-* Confirmation of data successfully loaded into the data lake and Raia.
-* Monthly execution schedule configured.
+The final phase, requiring approximately 3-5 hours, involves loading the data and activating the automated synchronization. The Workflow Developer configures the main `Freshdesk Ticket ETL Orchestrator` workflow to manage the ticket data pipeline. They also verify that the `Freshdesk Solutions ETL` workflow is correctly loading data. Both workflows use an "upsert" operation to efficiently load data into the PostgreSQL database. Once the data is loaded, the Raia API is triggered to process the new information. The process concludes by scheduling both workflows to run automatically each month. The final deliverables include the completed workflows, confirmation of a successful data load, and the configured monthly execution schedule.

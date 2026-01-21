@@ -1,60 +1,25 @@
 # ServiceNow Integration — Practical Implementation Guide
 
-**Goal:** Connect ServiceNow to the AI Agent to sync case data for automated workflows and improved agent responses.**Who's Involved:**
+### Introduction
 
-* n8n Workflow Developer (Primary)
-* RAIA Agent Engineer (Support)
+This guide provides a narrative walkthrough for integrating ServiceNow with the RAIA agent. The primary objective of this integration is to synchronize case data from your ServiceNow instance directly into the AI Agent's knowledge base. This connection provides the agent with real-time incident and case management information, enabling it to support automated workflows and deliver more accurate, context-aware responses.
 
-See our native n8n integration at [https://n8n.io/integrations/servicenow/](https://n8n.io/integrations/servicenow/)
+### The Integration Process Overview
 
-#### **Step 1: Integration Planning & Mapping**
+The integration is built on a streamlined Extract, Transform, Load (ETL) framework. The process begins with the **extraction** of case data from your ServiceNow instance using its API. This data is then **transformed** into a structured JSON format. A key part of this stage is leveraging the Manus API to generate a derivative knowledge base, which enriches the raw case data. Finally, the processed information is **loaded** into a PostgreSQL data lake hosted on Supabase. The RAIA agent accesses this data, and the entire workflow is automated to run monthly, ensuring the agent's knowledge remains current.
 
-* **Time:** \~2-4 hours
-* **Owner:** Workflow Dev
+### Roles and Responsibilities
 
-**Checklist:**
+Two key roles are essential for a successful integration. The **n8n Workflow Developer** is responsible for configuring and deploying the n8n workflow that powers the ETL process. The **RAIA Agent Engineer** provides support by assisting with the agent's configuration and ensuring the synchronized data is correctly ingested and utilized by the AI.For more technical details on the n8n-ServiceNow connection, you can refer to the native n8n integration documentation at [https://n8n.io/integrations/servicenow/](https://n8n.io/integrations/servicenow/).
 
-* [ ] Identify your ServiceNow instance URL and create API credentials.
-* [ ] Define the scope of cases to be synced (e.g., specific states, assignment groups ).
-* [ ] Map ServiceNow case fields to the target schema in the data lake.
-* [ ] Document system APIs, access needs, and authentication methods.
+#### Phase 1: Planning and Preparation
 
-**Deliverables:**
+The initial phase, typically requiring 2-4 hours, is dedicated to planning the integration. The Workflow Developer will start by identifying your ServiceNow instance URL and creating the necessary API credentials. A critical step in this phase is to define the scope of the cases to be synced, for example, by specifying certain case states or assignment groups. The developer then maps the ServiceNow case fields to the target schema of the data lake. This planning stage concludes with the creation of an integration architecture diagram, a list of required APIs and credentials, and a risk mitigation plan.
 
-* Integration architecture diagram.
-* List of required APIs and credentials.
-* Risk mitigation plan.
+#### Phase 2: Data Extraction and Transformation
 
-#### **Step 2: Extract & Transform ServiceNow Data**
+This phase, estimated to take 3-5 hours, focuses on the technical implementation of the data extraction and transformation. The Workflow Developer will configure a single, comprehensive `ServiceNow Cases ETL` workflow. This workflow is responsible for fetching case data from ServiceNow based on the scope defined in the planning phase. Within the workflow, data shaping logic is applied to convert the raw case data into a structured JSON format, and the Manus API is used to generate a derivative knowledge base. The deliverable for this phase is the completed n8n workflow and a sample of the transformed JSON data for validation.
 
-* **Time:** \~3-5 hours
-* **Owner:** Workflow Dev
+#### Phase 3: Loading, Automation, and Synchronization
 
-**Checklist:**
-
-* [ ] Configure the `ServiceNow - Cases -> raia` workflow to fetch case data based on the defined scope.
-* [ ] Implement data shaping logic to transform the data into a structured JSON format.
-* [ ] Use the Manus API for derivative knowledge base generation from the extracted data.
-
-**Deliverables:**
-
-* Completed n8n workflow for data extraction and transformation.
-* Sample of transformed JSON data.
-
-#### **Step 3: Load Data into Data Lake and Raia**
-
-* **Time:** \~3-5 hours
-* **Owner:** Workflow Dev
-
-**Checklist:**
-
-* [ ] Configure the `ServiceNow - Cases -> raia` workflow to orchestrate the complete ETL process.
-* [ ] Use the "upsert" operation to load the transformed data into the PostgreSQL database on Supabase.
-* [ ] Trigger the Raia API to process the new data and add it to the vector store.
-* [ ] Schedule the workflow to run monthly.
-
-**Deliverables:**
-
-* Completed n8n workflow for data loading.
-* Confirmation of data successfully loaded into the data lake and Raia.
-* Monthly execution schedule configured.
+The final phase, requiring approximately 3-5 hours, involves loading the data and activating the automated synchronization. The `ServiceNow Cases ETL` workflow is configured to orchestrate the entire process. It uses an "upsert" operation to efficiently load the transformed data into the PostgreSQL database. Once the data is loaded, the Raia API is triggered to process the new information and add it to its vector store. The process concludes by scheduling the workflow to run automatically each month. The final deliverables include the completed workflow, confirmation of a successful data load, and the configured monthly execution schedule.

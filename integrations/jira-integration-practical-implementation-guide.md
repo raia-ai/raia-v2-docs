@@ -1,60 +1,25 @@
 # Jira Integration — Practical Implementation Guide
 
-**Goal:** Connect Jira to the AI Agent to sync issues for automated workflows and to provide the agent with up-to-date project information.**Who's Involved:**
+### Introduction
 
-* n8n Workflow Developer (Primary)
-* RAIA Agent Engineer (Support)
+This guide provides a narrative walkthrough for integrating Jira with the RAIA agent. The primary objective of this integration is to synchronize issues from your Jira projects directly into the AI Agent's knowledge base. This connection provides the agent with real-time project information, enabling it to support automated workflows and deliver more accurate, context-aware responses regarding your projects.
 
-See our native n8n integration at [https://n8n.io/integrations/jira/](https://n8n.io/integrations/jira/)
+### The Integration Process Overview
 
-#### **Step 1: Integration Planning & Mapping**
+The integration is built on a streamlined Extract, Transform, Load (ETL) framework. The process begins with the **extraction** of issues from your Jira instance using a custom JQL (Jira Query Language) query. This data, including issue details and comments, is then **transformed** into a structured JSON format. A key part of this stage is leveraging the Manus API to generate a derivative knowledge base, which enriches the raw issue data. Finally, the processed information is **loaded** into a PostgreSQL data lake hosted on Supabase. The RAIA agent accesses this data, and the entire workflow is automated to run monthly, ensuring the agent's project knowledge remains current.
 
-* **Time:** \~2-4 hours
-* **Owner:** Workflow Dev
+### Roles and Responsibilities
 
-**Checklist:**
+Two key roles are essential for a successful integration. The **n8n Workflow Developer** is responsible for configuring and deploying the n8n workflow that powers the ETL process. The **RAIA Agent Engineer** provides support by assisting with the agent's configuration and ensuring the synchronized data is correctly ingested and utilized by the AI.For more technical details on the n8n-Jira connection, you can refer to the native n8n integration documentation at [https://n8n.io/integrations/jira/](https://n8n.io/integrations/jira/).
 
-* [ ] Identify your Jira instance URL and generate an API token.
-* [ ] Define the scope of issues to be synced by creating a JQL (Jira Query Language ) query.
-* [ ] Map Jira issue fields (including comments) to the target schema in the data lake.
-* [ ] Document system APIs, access needs, and authentication methods.
+#### Phase 1: Planning and Preparation
 
-**Deliverables:**
+The initial phase, typically requiring 2-4 hours, is dedicated to planning the integration. The Workflow Developer will start by identifying your Jira instance URL and generating an API token for secure access. A critical step in this phase is to define the scope of the issues to be synced by creating a specific JQL query. The developer then maps the Jira issue fields, including comments, to the target schema of the data lake. This planning stage concludes with the creation of an integration architecture diagram, a list of required APIs and credentials, and a risk mitigation plan.
 
-* Integration architecture diagram.
-* List of required APIs and credentials.
-* Risk mitigation plan.
+#### Phase 2: Data Extraction and Transformation
 
-#### **Step 2: Extract & Transform Jira Data**
+This phase, estimated to take 3-5 hours, focuses on the technical implementation of the data extraction and transformation. The Workflow Developer will configure a single, comprehensive `Jira Issues ETL` workflow. This workflow is responsible for fetching issues from Jira based on the JQL query defined in the planning phase. Within the workflow, data shaping logic is applied to convert the raw issue data into a structured JSON format, and the Manus API is used to generate a derivative knowledge base. The deliverable for this phase is the completed n8n workflow and a sample of the transformed JSON data for validation.
 
-* **Time:** \~3-5 hours
-* **Owner:** Workflow Dev
+#### Phase 3: Loading, Automation, and Synchronization
 
-**Checklist:**
-
-* [ ] Configure the `JIRA - Issues -> raia` workflow to fetch issues using the defined JQL query.
-* [ ] Implement data shaping and enrichment logic to transform the issue data into a structured JSON format.
-* [ ] Use the Manus API for derivative knowledge base generation from the extracted issue data.
-
-**Deliverables:**
-
-* Completed n8n workflow for data extraction and transformation.
-* A sample of the transformed JSON data.
-
-#### **Step 3: Load Data into Data Lake and Raia**
-
-* **Time:** \~3-5 hours
-* **Owner:** Workflow Dev
-
-**Checklist:**
-
-* [ ] Configure the `JIRA - Issues -> raia` workflow to orchestrate the complete ETL process.
-* [ ] Use the "upsert" operation to load the transformed data into the PostgreSQL database on Supabase.
-* [ ] Trigger the Raia API to process the new data and add it to the vector store.
-* [ ] Schedule the workflow to run monthly to ensure the data remains current.
-
-**Deliverables:**
-
-* Completed n8n workflow for data loading.
-* Confirmation of data successfully loaded into the data lake and Raia.
-* Monthly execution schedule configured.
+The final phase, requiring approximately 3-5 hours, involves loading the data and activating the automated synchronization. The `Jira Issues ETL` workflow is configured to orchestrate the entire process. It uses an "upsert" operation to efficiently load the transformed data into the PostgreSQL database. Once the data is loaded, the Raia API is triggered to process the new information and add it to its vector store. The process concludes by scheduling the workflow to run automatically each month. The final deliverables include the completed workflow, confirmation of a successful data load, and the configured monthly execution schedule.
