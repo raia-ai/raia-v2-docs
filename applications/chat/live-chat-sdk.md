@@ -36,7 +36,7 @@ Both methods support a similar set of commands for interacting with the chat.&#x
 
 This method is recommended for most users. It adds a floating chat widget to your site with minimal configuration.&#x20;
 
-#### 1. Basic Setup&#x20;
+### 1. Basic Setup&#x20;
 
 To get started, add the following script tag to your HTML. The widget will automatically load and appear on your site.&#x20;
 
@@ -52,7 +52,7 @@ To get started, add the following script tag to your HTML. The widget will autom
 
 
 
-#### 2. Working Example&#x20;
+### 2. Working Example&#x20;
 
 The following example demonstrates how to use the Embed JS SDK to interact with the chat widget. This code shows how to set context, define user information, and send messages programmatically.&#x20;
 
@@ -117,7 +117,7 @@ The following example demonstrates how to use the Embed JS SDK to interact with 
 </html> 
 ```
 
-#### 3. SDK Command Reference
+### 3. SDK Command Reference
 
 Once the widget script is loaded, you can control it using `window.raiaChat.sendCommand()` Because the script loads asynchronously, wait until the SDK is ready before calling commands.
 
@@ -139,7 +139,7 @@ whenRaiaChatReady((raiaChat) => {
 
 <table><thead><tr><th>Command</th><th>Description</th><th width="232">Payload (example)</th></tr></thead><tbody><tr><td><code>INIT</code></td><td>Initializes the chat session (API key only if required in your environment).</td><td><p><code>{ apiKey?:</code> </p><p><code>"YOUR_API_KEY" }</code></p></td></tr><tr><td><code>OPEN_CHAT</code></td><td>Opens the chat window.</td><td><code>{ page?: 'home'| 'chat' }</code></td></tr><tr><td><code>CLOSE_CHAT</code></td><td>Closes the chat window.</td><td>-</td></tr><tr><td><code>SEND_MESSAGE</code></td><td>Sends a message as the user.</td><td><code>{ message: string }</code></td></tr><tr><td><code>SET_USER</code></td><td>Sets the user’s information.</td><td><code>{ user: { fkId?, fkUserId?, firstName?, lastName?, email?, phoneNumber?, customData? } }</code></td></tr><tr><td><code>CLEAR_USER</code></td><td>Clears the user's information.</td><td>-</td></tr><tr><td><code>SET_CONTEXT</code></td><td>Sets context used for the next interaction/message.</td><td><code>{ context: string }</code></td></tr><tr><td><code>CLEAR_CONTEXT</code></td><td>Clears message-level context.</td><td>-</td></tr><tr><td><code>SET_CONVERSATION_CONTEXT</code></td><td>Sets context for the entire conversation.</td><td><code>{ context: string }</code></td></tr><tr><td><code>SET_WELCOME_MESSAGE</code></td><td>Overrides the default welcome message.</td><td><code>{ message: string }</code></td></tr><tr><td><code>ENABLE_CURRENT_PAGE_TEXT</code></td><td>Allows the AI to use the current page text as context.</td><td>-</td></tr><tr><td><code>DISABLE_CURRENT_PAGE_TEXT</code></td><td>Prevents the AI from using the current page text as context.</td><td>-</td></tr><tr><td><code>RELOAD</code></td><td>Reloads the chat application.</td><td>-</td></tr><tr><td><code>REFETCH_CONFIG</code></td><td>Forces the chat to pull the latest configuration from the server.</td><td>-</td></tr><tr><td><code>DELETE_CHAT</code></td><td>Wipes the current conversation.</td><td>-</td></tr></tbody></table>
 
-#### 4. CSS Customization (Embed JS)&#x20;
+### 4. CSS Customization (Embed JS)&#x20;
 
 You can override the default widget styles with your own CSS. Make sure your custom stylesheet is loaded after the widget script or use `!important` to ensure your styles are applied.&#x20;
 
@@ -206,7 +206,7 @@ _**Hide the default button and open the chat from your own UI element:**_
 
 Use the Iframe SDK for advanced cases where you need full control over the chat container placement. You embed the chat inside an that you manage.
 
-#### 1. Iframe setup&#x20;
+### 1. Iframe setup&#x20;
 
 Add an `<iframe>` to your HTML. Then, include the `raia-chatbot-iframe.js`  script and instantiate the `raiaiframechat` class.
 
@@ -238,7 +238,7 @@ Add an `<iframe>` to your HTML. Then, include the `raia-chatbot-iframe.js`  scri
 
 
 
-#### 2. SDK Command Reference (Iframe)&#x20;
+### 2. SDK Command Reference (Iframe)&#x20;
 
 The commands for the Iframe SDK are identical to the Embed JS SDK. You use them via the `raiaiframechat` instance you created.
 
@@ -247,7 +247,7 @@ raiaIframeChat.sendCommand("OPEN_CHAT", { page: "chat" });
 raiaIframeChat.sendCommand("SEND_MESSAGE", { message: "Hello!" }); 
 ```
 
-#### 3. CSS Customization (Iframe)&#x20;
+### 3. CSS Customization (Iframe)&#x20;
 
 With the Iframe SDK, you have full control over the `<iframe>` and its container. The internal chat UI is styled via your Live Chat Design settings.&#x20;
 
