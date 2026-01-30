@@ -75,6 +75,7 @@
 * [Chat](applications/chat/README.md)
   * [raia Chat User Guide](applications/chat/raia-chat-user-guide.md)
   * [Live Chat SDK](applications/chat/live-chat-sdk.md)
+  * [Live Chat Security Key](applications/chat/live-chat-security-key.md)
   * [Live Chat in Zendesk](applications/chat/live-chat-in-zendesk.md)
 * [Connect](applications/connect/README.md)
   * [raia Connect User Guide](applications/connect/raia-connect-user-guide.md)
