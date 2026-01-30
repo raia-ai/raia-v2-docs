@@ -19,7 +19,7 @@ This article will walk you through generating a key and implementing the necessa
 
 Once saved, your live chat widget will be blocked on your website until you complete the next step.
 
-### Step 2: Implement the Security Key in Your Code
+### Step 2: Add the Security Key to your embed
 
 To unblock the chat, you must pass the security key when the widget loads. This is done by using the `onload` attribute on your script tag to call a function that sends the `INIT` command.
 
@@ -49,7 +49,7 @@ Here is the complete code you need to add to your website. Replace the placehold
       // This function is called automatically when the chat widget script has loaded
       async function onRaiaChatLoaded() {
         // Send the INIT command with the Security Key
-        window.raiaChat.sendCommand("INIT", {
+        raiaChat.sendCommand("INIT", {
           apiKey: "YOUR_SECURITY_KEY_HERE", // Paste the key you generated here
         });
       }
@@ -64,7 +64,7 @@ Here is the complete code you need to add to your website. Replace the placehold
       async
       src="https://raiabot.raia2.com/assets/raia-chatbot-widget.js"
       data-api-key="YOUR_AGENT_ID_HERE"
-      onload="onRaiaChatLoaded( )"
+      onload="onRaiaChatLoaded()"
     ></script>
   </body>
 </html>
