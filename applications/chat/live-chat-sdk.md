@@ -119,7 +119,7 @@ The following example demonstrates how to use the Embed JS SDK to interact with 
 
 ### 3. SDK Command Reference
 
-Once the widget script is loaded, you can control it using `window.raiaChat.sendCommand()` Because the script loads asynchronously, wait until the SDK is ready before calling commands.
+Once the widget script is loaded, you can control it using `raiaChat.sendCommand()` Because the script loads asynchronously, wait until the SDK is ready before calling commands.
 
 ```
 function whenRaiaChatReady(callback) { 
@@ -135,20 +135,27 @@ whenRaiaChatReady((raiaChat) => {
 }); 
 ```
 
+
+
 **Available commands:**
 
 <table><thead><tr><th>Command</th><th>Description</th><th width="232">Payload (example)</th></tr></thead><tbody><tr><td><code>INIT</code></td><td>Initializes the chat session (API key only if required in your environment).</td><td><p><code>{ apiKey?:</code> </p><p><code>"YOUR_API_KEY" }</code></p></td></tr><tr><td><code>OPEN_CHAT</code></td><td>Opens the chat window.</td><td><code>{ page?: 'home'| 'chat' }</code></td></tr><tr><td><code>CLOSE_CHAT</code></td><td>Closes the chat window.</td><td>-</td></tr><tr><td><code>SEND_MESSAGE</code></td><td>Sends a message as the user.</td><td><code>{ message: string }</code></td></tr><tr><td><code>SET_USER</code></td><td>Sets the user’s information.</td><td><code>{ user: { fkId?, fkUserId?, firstName?, lastName?, email?, phoneNumber?, customData? } }</code></td></tr><tr><td><code>CLEAR_USER</code></td><td>Clears the user's information.</td><td>-</td></tr><tr><td><code>SET_CONTEXT</code></td><td>Sets context used for the next interaction/message.</td><td><code>{ context: string }</code></td></tr><tr><td><code>CLEAR_CONTEXT</code></td><td>Clears message-level context.</td><td>-</td></tr><tr><td><code>SET_CONVERSATION_CONTEXT</code></td><td>Sets context for the entire conversation.</td><td><code>{ context: string }</code></td></tr><tr><td><code>SET_WELCOME_MESSAGE</code></td><td>Overrides the default welcome message.</td><td><code>{ message: string }</code></td></tr><tr><td><code>ENABLE_CURRENT_PAGE_TEXT</code></td><td>Allows the AI to use the current page text as context.</td><td>-</td></tr><tr><td><code>DISABLE_CURRENT_PAGE_TEXT</code></td><td>Prevents the AI from using the current page text as context.</td><td>-</td></tr><tr><td><code>RELOAD</code></td><td>Reloads the chat application.</td><td>-</td></tr><tr><td><code>REFETCH_CONFIG</code></td><td>Forces the chat to pull the latest configuration from the server.</td><td>-</td></tr><tr><td><code>DELETE_CHAT</code></td><td>Wipes the current conversation.</td><td>-</td></tr></tbody></table>
 
-### 4. CSS Customization (Embed JS)&#x20;
+### 4. Customizing the Chat Widget Appearance (CSS)
 
 You can override the default widget styles with your own CSS. Make sure your custom stylesheet is loaded after the widget script or use `!important` to ensure your styles are applied.&#x20;
 
 #### Targetable CSS Classes:&#x20;
 
-* `.raia-chat-container`  — The main chat window container.&#x20;
-* `.raia-chat-container-open` — Added when the chat window is open.&#x20;
-* `.raia-chat-button` — The floating launcher button.&#x20;
-* `.raia-chat-button-icon` — The `<img>` element inside the launcher button.&#x20;
+* `.raia-chat-container` – The main chat widget container that holds the iframe with the chat UI. This is the element that’s fixed in the bottom-right corner and controls size, position, border-radius, box-shadow, etc.&#x20;
+* `.raia-chat-container-open` – Applied to the same container when the chat is opened. Controls visibility, opacity, pointer-events, and the open/closed transition. Toggling this class is what shows/hides the widget.
+* `.raia-chat-button` – The floating launcher button container (the round button you click to open the chat). Controls fixed positioning, cursor, border-radius, margins, and the hover transform.
+*   `.raia-chat-button-icon` – The `<img>` inside the launcher button (the avatar/icon). Controls its size and circular shape.
+
+
+
+These class names are defined as constants in `src/chatbotWidget/constants.ts` and then used both for DOM creation and for the default injected styles, so overriding them in your own stylesheet (loaded after the widget script) is the supported way to customize positioning and appearance from the host page.\
+<br>
 
 **Example: reposition and restyle the widget:**
 
