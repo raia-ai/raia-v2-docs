@@ -7,6 +7,91 @@ description: >-
 
 # Release Notes - raia
 
+**January 29, 2026**\
+**New Features**
+
+*   **Auto-Archive Inactive Live Chats**
+
+    Introduced a setting in Live Chat to automatically archive conversations after a period of inactivity. When enabled, chats are closed and archived after X minutes without activity.
+*   **Live Chat Button Customization**
+
+    Introduced enhanced button customization for Live Chat, allowing variable sizes, hover text effects, and optional popup messages to create more interactive and engaging experiences.
+
+**Improvements**
+
+* **Voice Chat Trigger Button in Live Chat Input**\
+  Users can now start a voice chat directly from the message input field. The new microphone icon appears when voice is supported and replaces the previous dropdown menu option.
+*   **Allow Multiple Messages in HIL Manual Mode**
+
+    Updated Human-in-the-Loop (manual mode) to support sending multiple messages consecutively, aligning behavior with AI chat mode and improving usability for live agents.
+*   **Enhanced Conversation Search and Export in Launch Pad**
+
+    Added the ability to filter conversations by agent name and introduced an option to export all conversations at once. Export format now focuses on core conversation data for more efficient review.
+
+**Fixes**
+
+* **TOTP Configuration Issue When 2FA is Disabled**\
+  Resolved a bug where TOTP settings were not saved and the secret key appeared empty when Two-Factor Authentication was turned off.
+*   **Unexpected 2FA Method Triggered During Login**
+
+    Resolved an issue where users received SMS verification codes instead of using the configured authenticator app during login due to fallback logic misfiring.
+*   **Missing UserID in Conversation API Response**
+
+    Resolved an issue where GET Conversation by ID endpoint failed to return the userId, while the GET Conversations (search) did. Now both endpoints consistently return the correct user information.
+*   **Voice Skill Functionality Review**
+
+    Reviewed and validated Voice Skill functionality to ensure consistent performance, voice source sync, document handling, and error resilience across the platform. Fixes were made where discrepancies or outdated configurations were found.
+*   **Feedback Duplication and Deletion Error**
+
+    Resolved an issue where deleted feedback still appeared in the interface and triggered errors on deletion. Now only active feedback is shown, and deletion works correctly based on role permissions.
+
+***
+
+**January 22, 2026**\
+**New Features**
+
+* **Smart Action Buttons in Live Chat**\
+  Added configurable buttons to Live Chat that appear based on user behavior (e.g., inactivity, keyword match). Buttons can trigger actions like ending chat or calling a webhook, and follow platform styling for seamless UI integration.
+* **New Copilot Setting: Control Message Deletion Permissions for Users**\
+  Added a new setting in Copilot Skill: “Allow Delete Messages.” When disabled, only Admins/Owners can delete conversations. Copilot Users retain the ability to archive but not delete. This supports stricter content retention policies for certain clients.
+*   **Escalation & Audit Alerts**
+
+    Live Chat and Copilot now show real-time alerts when a conversation is escalated or audited.
+*   **TOTP-Based 2FA Login Support**
+
+    Added support for Time-Based One-Time Password (TOTP) login, allowing users to use any TOTP-compatible authenticator app (like Google Authenticator or Authy) for two-factor authentication.
+*   **Escalation Mode for Live Chat**
+
+    Introduced a new Escalation Mode that allows AI agents to escalate conversations for human takeover. This ensures critical issues are addressed promptly by notifying the appropriate Copilot users in real time.
+*   **New “Complete” State for Conversations**
+
+    A new required conversation state — “Complete” — has been added. Now, when a conversation ends (via user or system action), its status is automatically updated to Complete, ensuring accurate tracking of conversation lifecycle.
+*   **Auto-Complete Status for Ended Live Chats**
+
+    Conversations in Live Chat will now automatically move to “Complete” status when ended — either manually or via timeout. This applies only to Live Chat (not Copilot or other channels).&#x20;
+*   **Swagger Token Type Tags**
+
+    We’ve added clear Swagger API tags to indicate which token type is required for each endpoint (Agent, Organization, or SuperAdmin). This improves integration clarity and reduces the risk of authorization errors.
+*   **Filter for Deleted Conversations**
+
+    Added a “Deleted” status filter in Launchpad conversation search. Now users can view and manage deleted conversations without losing access to them. All standard filters continue to apply.\
+    \
+    **Improvements**
+*   **Clickable Alerts in Copilot**
+
+    Notification alerts for escalated conversations now include a direct link to the conversation and show the agent name — making it easier to track and respond quickly.
+*   **Live Chat Avatar Customization**
+
+    You can now upload a custom avatar specifically for the Live Chat widget — independently from the agent avatar. If no avatar is set, the default will be shown. Changes to one no longer affect the other.
+*   **File Size Metadata Enhancement**
+
+    We’ve extended the Files Table to store additional file size metadata, improving file management and enabling more detailed tracking for uploaded content.
+*   **Improved Cross-Origin Communication Security**
+
+    Implemented stricter controls for Cross-Origin Resource Sharing (CORS) to enhance platform security and ensure safer interaction between services.
+
+***
+
 **January 16, 2026**\
 **New Features**
 
