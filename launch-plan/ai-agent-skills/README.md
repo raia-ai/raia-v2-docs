@@ -21,7 +21,7 @@ Skills in raia provide the crucial link between passive AI interactions and tang
 \
 Whether sending out reminders, updating customer records, or triggering new workflows, these skills transform AI Agents into active digital assistants. As a result, businesses can entrust a portion of their operational tasks to intelligent, self-directed agents, freeing human teams to focus on high-level strategy and innovation.
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-03-07 at 3.55.54 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-03-07 at 3.55.54 PM.png" alt=""><figcaption></figcaption></figure>
 
 **Skills in raia: Features & Importance**
 

@@ -10,7 +10,7 @@ Detected alerts are **normalized, logged**, and can be **sent to external monito
 
 ### 🛡️ Configuration Overview
 
-<figure><img src="../.gitbook/assets/VgKrhxKQYZMJGkUJ.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/VgKrhxKQYZMJGkUJ.png" alt=""><figcaption></figcaption></figure>
 
 The Auditor Skill configuration is broken into two parts:
 
@@ -73,7 +73,7 @@ The Auditor Skill configuration is broken into two parts:
 
 ### 📊 Alerts View
 
-<figure><img src="../.gitbook/assets/XEKEVKaBlwdNqJxf.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/XEKEVKaBlwdNqJxf.png" alt=""><figcaption></figcaption></figure>
 
 The **Alerts** tab provides centralized monitoring of triggered audit events.
 

@@ -6,7 +6,7 @@ description: 'Packs in raia: Modular Training & Content Reuse'
 
 Packs in Raia are modular bundles of training data and instructions designed to power AI Agents with the right knowledge. By offering both pre-built and customizable Packs, Raia enables organizations to quickly deploy new agents with ready-to-use content or specialized domain expertise. These Packs are easy to update, meaning one change seamlessly propagates across all connected agents, guaranteeing consistent communication and compliance. Whether an agent focuses on technical support or policy compliance, Packs provide a scalable, mix-and-match approach to equipping AI with exactly what it needs to perform effectively.
 
-<figure><img src=".gitbook/assets/Screenshot 2025-03-07 at 4.01.15 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-03-07 at 4.01.15 PM.png" alt=""><figcaption></figcaption></figure>
 
 1. **Pre-Built Knowledge Libraries**
    * **Ready-to-Use Content:** Raia offers baseline Packs containing common instructions and data (e.g., FAQs, policies, brand guidelines) that agents can immediately leverage.

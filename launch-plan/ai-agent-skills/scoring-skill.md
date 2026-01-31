@@ -6,7 +6,7 @@ Here’s a complete breakdown of how to **configure and set up the Scoring Skill
 
 ####
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-04-17 at 10.15.18 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-04-17 at 10.15.18 AM.png" alt=""><figcaption></figcaption></figure>
 
 #### 🧠 **Scoring Skill Setup Guide**
 

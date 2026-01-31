@@ -12,7 +12,7 @@ The **Live Chat Skill** allows customers to instantly interact with your AI assi
 
 ### ✨ Welcome & Predefined Options
 
-<figure><img src="../.gitbook/assets/e7ae0f3f-609a-467c-ad51-5ffe3cebdbcc.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/e7ae0f3f-609a-467c-ad51-5ffe3cebdbcc.png" alt=""><figcaption></figcaption></figure>
 
 These settings determine what users see when they first open the chat.
 
@@ -37,7 +37,7 @@ These settings determine what users see when they first open the chat.
 
 ### 🔗 Links
 
-<figure><img src="../.gitbook/assets/1f9f19ea-5e90-481a-9ecc-76ec42257ebe.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1f9f19ea-5e90-481a-9ecc-76ec42257ebe.png" alt=""><figcaption></figcaption></figure>
 
 You can add quick-access links to resources such as:
 
@@ -55,7 +55,7 @@ These appear inside the chat, giving users faster resolutions with fewer message
 
 ### 🎨 Design Customization
 
-<figure><img src="../.gitbook/assets/fc69d143-8bfe-471b-b492-8d3d204f27e6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/fc69d143-8bfe-471b-b492-8d3d204f27e6.png" alt=""><figcaption></figcaption></figure>
 
 Brand the chat experience to match your product.
 
@@ -111,7 +111,7 @@ Configure when the AI chat is available.
 
 ### 🔐 Live Chat Restrictions
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-11-03 122206.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-11-03 122206.png" alt=""><figcaption></figcaption></figure>
 
 The Live Chat Restrictions settings help ensure that only permitted users can access the chat and that you remain compliant with local regulations.
 

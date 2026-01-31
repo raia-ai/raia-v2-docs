@@ -6,7 +6,7 @@ Here’s a complete breakdown of how to **configure and set up the SMS Skill** i
 
 
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-04-17 at 9.30.40 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-04-17 at 9.30.40 AM.png" alt=""><figcaption></figcaption></figure>
 
 #### &#x20;**SMS Skill Setup Guide in Launch Pad**
 

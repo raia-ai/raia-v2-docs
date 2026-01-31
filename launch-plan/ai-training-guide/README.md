@@ -14,7 +14,7 @@ Every RAIA Agent starts with a powerful foundation: OpenAI’s industry-leading 
 
 But here’s the magic: RAIA lets you **layer on your internal knowledge** and **shape your AI's behavior** with tools that make it uniquely yours.
 
-<figure><img src="../.gitbook/assets/The 4-Layer Training System - visual selection (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/The 4-Layer Training System - visual selection (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -26,7 +26,7 @@ To ensure RAIA Agents deliver high-quality, context-aware responses, we use a **
 
 #### 1. **General AI Model**
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-04-17 at 12.04.02 PM.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-04-17 at 12.04.02 PM.png" alt="" width="375"><figcaption></figcaption></figure>
 
 _Powered by OpenAI_\
 This is the base layer. It allows your Agent to answer general questions, use logic, and write in natural language. But on its own, it doesn’t know your company, your customers, or your specific processes.
@@ -35,7 +35,7 @@ This is the base layer. It allows your Agent to answer general questions, use lo
 
 #### 2. **Vector Store (Custom Knowledge Layer)**
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-04-17 at 12.03.03 PM.png" alt="" width="344"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-04-17 at 12.03.03 PM.png" alt="" width="344"><figcaption></figcaption></figure>
 
 _Your documents, embedded into your Agent_
 
@@ -60,7 +60,7 @@ RAIA automatically converts this content into **semantic embeddings** and stores
 
 #### 3. **Instructional Prompt (Agent Identity & Behavior)**
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-04-17 at 12.01.34 PM.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-04-17 at 12.01.34 PM.png" alt="" width="375"><figcaption></figcaption></figure>
 
 _Controls how the Agent thinks and responds_
 
@@ -99,7 +99,7 @@ This prompt is passed at runtime via:
 
 Training doesn't stop at setup. RAIA’s **Copilot** experience lets you test your AI Agent in real conversations and improve it continuously with human feedback.
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-04-17 at 12.04.35 PM.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-04-17 at 12.04.35 PM.png" alt="" width="375"><figcaption></figcaption></figure>
 
 #### Copilot Feedback Tools:
 

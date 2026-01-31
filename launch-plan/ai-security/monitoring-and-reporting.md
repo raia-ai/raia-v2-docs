@@ -6,7 +6,7 @@ description: 'Monitoring & Reporting in Raia: Ensuring Full Conversation Visibil
 
 Monitoring and reporting are the backbone of any robust AI deployment, ensuring organizations maintain absolute clarity over how agents interact with users. Raia’s centralized dashboards and comprehensive logs consolidate SMS, live chat, email, voice, and API conversations into one interface—giving teams complete oversight from a single vantage point. By providing real-time visibility, in-depth analytics, and secure audit trails, Raia empowers businesses to refine their agents’ performance, uphold compliance standards, and reinforce trust among users and stakeholders.
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-03-07 at 4.25.51 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-03-07 at 4.25.51 PM.png" alt=""><figcaption></figcaption></figure>
 
 1. **Centralized Conversation Logs**
    * **Unified View:** Raia aggregates messages across all channels—SMS, Live Chat, Email, API, Voice—into a single record. This makes it simple for admins to review interactions without juggling multiple tools.
@@ -28,7 +28,7 @@ Monitoring and reporting are the backbone of any robust AI deployment, ensuring 
    * **Continuous Optimization:** Data-driven insights help teams refine everything from training materials to skill settings, fueling more effective AI interactions over time.
    * **Accountability & Trust:** When stakeholders can see precisely how and why an agent responded a certain way, confidence in AI-driven processes rises, and user trust solidifies.
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-03-07 at 4.26.20 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-03-07 at 4.26.20 PM.png" alt=""><figcaption></figcaption></figure>
 
 Raia’s Monitoring & Reporting features provide the transparency organizations need to confidently scale AI Agents. By consolidating logs from SMS, Email, Live Chat, APIs, and even Voice interactions, teams gain a holistic view of each agent’s behavior—allowing them to fine-tune performance, uphold compliance, and maintain seamless communication experiences.
 

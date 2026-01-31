@@ -62,7 +62,7 @@ raia uses a **step-by-step wizard**. Here’s how the process typically flows:
 
 ***
 
-#### **Step 4:** [**Select Skills**](../ai-agent-skills/)
+#### **Step 4:** [**Select Skills**](../launch-plan/ai-agent-skills/)
 
 * raia agents come with built-in skills: **Live Chat, SMS, Email, Voice, APIs, Calendar, Campaigns, Webhooks**, etc.
 * Choose the communication channels and integrations your agent needs.
@@ -70,7 +70,7 @@ raia uses a **step-by-step wizard**. Here’s how the process typically flows:
 
 ***
 
-#### **Step 5:** [**Connect Integrations**](../integration/)
+#### **Step 5:** [**Connect Integrations**](../integrations/workflow-integration/)
 
 * Link to your CRM, calendar, or other apps via API keys or OAuth.
 * Configure permissions (least privilege is best).

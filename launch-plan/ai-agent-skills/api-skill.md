@@ -4,7 +4,7 @@ Here’s a full breakdown of how to **configure and set up the API Skill** in **
 
 ***
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-04-17 at 10.21.18 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-04-17 at 10.21.18 AM.png" alt=""><figcaption></figcaption></figure>
 
 The API Documentation can be [found here](https://api.raia2.com/api/external/docs).
 

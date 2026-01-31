@@ -59,14 +59,14 @@ This reduces response delays, improves customer satisfaction, and safeguards aga
 \
 Shows the overview of configured escalation topics and their statuses.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt="" width="414"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt="" width="414"><figcaption></figcaption></figure>
 
 #### Creating an Escalation
 
 \
 Displays the configuration panel with topic, prompts, auto-switch toggle, and recipient setup.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ***
 

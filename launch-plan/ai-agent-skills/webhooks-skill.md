@@ -4,7 +4,7 @@ Here’s a full breakdown of how to **configure and set up the Webhook Skill** i
 
 ***
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-04-17 at 10.18.29 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-04-17 at 10.18.29 AM.png" alt=""><figcaption></figcaption></figure>
 
 #### 🌐 **Webhook Skill Setup Guide**
 

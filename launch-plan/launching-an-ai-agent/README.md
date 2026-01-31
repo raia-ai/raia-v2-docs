@@ -8,11 +8,11 @@ For a more comprehensive training program on AI and how to build AI Agents [chec
 
 ### Creating an AI Agent is a 7 step process
 
-<figure><img src="../.gitbook/assets/buildAgent.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/buildAgent.png" alt=""><figcaption></figcaption></figure>
 
 raia’s Wizard-Based Setup transforms the typically complex process of AI Agent creation into an accessible, user-friendly experience. By guiding teams through each step—defining roles, uploading instructions, assigning training packs, and configuring skills—this streamlined approach ensures every agent is built with precision and clarity. With intuitive, phased prompts and smart defaults, organizations can rapidly spin up new agents while maintaining consistency, governance, and quality across their entire AI workforce.
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-03-07 at 4.08.28 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-03-07 at 4.08.28 PM.png" alt=""><figcaption></figcaption></figure>
 
 1. **Guided, Step-by-Step Process**
    * **Clear Progression:** raia’s Wizard offers a structured approach, walking users through each phase of agent creation—from defining the agent’s role to configuring advanced skills. A visible progress bar ensures teams know exactly how far they’ve come and what remains.

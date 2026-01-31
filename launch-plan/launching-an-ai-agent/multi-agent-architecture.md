@@ -2,7 +2,7 @@
 
 raia’s vision is to empower organizations to deploy and manage hundreds or even thousands of AI agents at scale, ensuring every operational need is met while maintaining strict compliance and efficiency. By centralizing roles, skills, and training data, raia keeps the expansion of these specialized agents organized, enabling seamless collaboration between teams. Whether an organization needs a handful of agents or thousands, raia’s platform ensures each agent’s lifecycle—from creation to retirement—is handled systematically, preserving compliance standards and keeping everything easy to manage.
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-03-07 at 3.26.40 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-03-07 at 3.26.40 PM.png" alt=""><figcaption></figcaption></figure>
 
 **Multi-Agent Architecture: Core Features & Importance**
 

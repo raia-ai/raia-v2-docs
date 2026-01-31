@@ -1,6 +1,6 @@
 # Notifications Skill
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-06-25 at 3.01.51 PM.png" alt=""><figcaption><p>'</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-06-25 at 3.01.51 PM.png" alt=""><figcaption><p>'</p></figcaption></figure>
 
 The Notifications Skill allows the AI agent to generate and send notifications to users based on specific triggers. By supporting multiple delivery channels such as SMS and email, it ensures timely and relevant communication.&#x20;
 
@@ -12,7 +12,7 @@ This skill enables seamless integration of automated alerts into workflows, help
 * Agent sends Notification to Support Team for follow up or human feedback on support ticket resolution.
 * Agent sends low scoring conversations to escalate to a team member to follow up and resolve what AI could not resolve.
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-06-25 at 3.05.44 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-06-25 at 3.05.44 PM.png" alt=""><figcaption></figcaption></figure>
 
 **Agent Notifying you when a conversation is done**
 

@@ -6,7 +6,7 @@ description: Multi-Level Access & Agent Security in raia.
 
 Securing AI Agents starts with a clear, multi-level access framework designed to protect both sensitive data and core business processes. In Raia, administrators define distinct roles and permissions—ranging from organization-wide authorities to agent-specific restrictions—so that each user only interacts with AI on a strictly need-to-know basis. Whether dealing with public-facing queries or confidential internal tasks, agent-level security and ongoing monitoring ensure no detail slips through the cracks. This balanced approach helps organizations confidently deploy numerous AI Agents, safe in the knowledge that compliance, accountability, and data integrity remain intact at every stage.
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-03-07 at 4.22.57 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-03-07 at 4.22.57 PM.png" alt=""><figcaption></figcaption></figure>
 
 1. **Role-Based Access Across the Organization**
    * **Hierarchical Permissions:** Raia’s permission model spans moderator (Super Admin), organization (Org Owner, Org Admin, User), and agent (Owner, Admin, Editor, Public) levels. Each role has defined privileges, ensuring users can only interact with agents as intended.
