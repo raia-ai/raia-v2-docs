@@ -7,6 +7,40 @@ description: >-
 
 # Release Notes - raia
 
+**February 4, 2026**\
+**New Features**
+
+* **Button Injection Now Supported in Copilot Conversations**\
+  The button injection logic from Live Chat has been implemented in Copilot. All logic, trigger conditions, and appearance settings are now mirrored to ensure consistent functionality across both experiences.
+* **Voice Chat Trigger Button Added to Live Chat Input**\
+  Users can now start a voice chat directly from the Live Chat input field when voice communication is supported. This improves visibility and accessibility by offering a dedicated trigger icon within the message input area, replacing the previous menu option.
+
+**Improvements**
+
+* **Formatted Agent Name Added to Vapi “Create Assistant” API Call**\
+  Vapi Assistant names now include formatted org, role, and public agent name to improve identification by org/role/agent in Vapi systems.
+* **Agent Filter Added to Conversation Search in Launch Pad**\
+  Users can now filter conversations by agent name in the Launch Pad, making it easier to find relevant chats.
+* **Auto-End Archived Chats in Live Chat Widget**\
+  Improved chat handling in the Live Chat widget by automatically ending conversations when they are auto-archived. This ensures users don’t see outdated sessions as active when reopening the widget. A fresh session now starts by default.
+* **Simplified Access to Agent User Data via Agent API Key**\
+  Access to agent user data via the /external/agents/{id}/users endpoint now supports using an Agent API Key instead of requiring an Organization API Key. This update simplifies integration and improves security.
+* **Live Chat Widget UI Updated**\
+  Redesigned the Live Chat widget with improved layout and usability: new collapse button, relocated menu, updated dropdown options, voice chat icon in input field, and automatic rating trigger at chat end.
+* **Enhanced Live Chat Button Customization**\
+  Added support for fully customizable Live Chat buttons, including variable sizes, icon or text modes, hover effects, and optional popup messages—improving flexibility and user engagement.
+
+**Fixes**
+
+* **Fixed HITL Chat Stuck Issue After Switching Back to AI**\
+  Resolved an issue where a chat would remain stuck in waiting mode if a user switched from Human-in-the-Loop (HITL) back to AI mode before the agent had answered a pending question.
+* **Fixed Distorted Icon in Live Chat Launcher**\
+  Resolved an issue where the icon in the Live Chat launcher appeared skewed or squeezed due to incorrect aspect ratio rendering. Icons now display at their intended dimensions.
+* **Fixed Markdown Formatting Issue in Web Scraping**\
+  Resolved an issue where markdown headers were not formatted correctly during web scraping from Appify. Headings now render properly with ### on the same line.
+
+***
+
 **January 29, 2026**\
 **New Features**
 
