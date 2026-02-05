@@ -235,4 +235,64 @@ Your bot can now be added to Teams chats, channels, and meetings.
 
 ***
 
+### Architecture Overview
+
+#### High-Level Architecture
+
+```
++-------------------+        +-------------------+        +-------------------+
+|                   |        |                   |        |                   |
+|  Microsoft Teams  | -----> |   Azure Bot       | -----> |        n8n        |
+|  (User Messages)  |        |   Service         |        |  (Webhook + Flow) |
+|                   | <----- |                   | <----- |                   |
++-------------------+        +-------------------+        +---------+---------+
+                                                                      |
+                                                                      v
+                                                           +-------------------+
+                                                           |                   |
+                                                           |   raia Agent      |
+                                                           | (Reasoning + AI)  |
+                                                           |                   |
+                                                           +-------------------+
+```
+
+**What happens:**
+
+1. A user sends a message in Microsoft Teams
+2. Teams delivers the message to **Azure Bot Service**
+3. Azure Bot forwards the activity to the **n8n Webhook**
+4. n8n calls the **raia Agent** to generate a response
+5. n8n posts the response back through Azure Bot
+6. Azure Bot delivers the reply into the Teams conversation
+
+***
+
+#### Authentication & Trust Boundaries
+
+```
++----------------------+        OAuth 2.0        +----------------------+
+|                      | <--------------------> |                      |
+|   Azure Bot Service  |                        |  Microsoft Entra ID  |
+|                      |   client_credentials  |  (App Registration)  |
++----------+-----------+                        +----------+-----------+
+           |
+           | Bearer Token
+           v
++----------------------+
+|                      |
+|         n8n          |
+|  (Bot Framework API) |
+|                      |
++----------------------+
+```
+
+**Key points:**
+
+* Azure Bot and n8n authenticate using a **Single-Tenant Entra App**
+* n8n requests a Bot Framework token using `client_credentials`
+* Tokens are scoped to `https://api.botframework.com/.default`
+* No user-level OAuth is required for basic message handling
+
+***
+
 ### &#x20;
