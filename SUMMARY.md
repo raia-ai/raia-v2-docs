@@ -115,6 +115,7 @@
 * [Agent-to-Agent Setup](integrations/agent-to-agent-setup.md)
 * [OpenAI Integration](integrations/openai-integration.md)
 * [VS Code + Agent](integrations/vs-code-+-agent.md)
+* [Microsoft Teams Integration](integrations/microsoft-teams-integration.md)
 
 ## Launch Plan
 
