@@ -112,7 +112,7 @@
   * [Bitbucket Integration — Practical Implementation Guide](integrations/bitbucket-integration-practical-implementation-guide.md)
   * [Salesforce Integration — Practical Implementation Guide](integrations/salesforce-integration-practical-implementation-guide.md)
   * [Zendesk Integration — Practical Implementation Guide](integrations/zendesk-integration-practical-implementation-guide.md)
-* [Agent -to-Agent Setup](integrations/agent-to-agent-setup.md)
+* [Agent-to-Agent Setup](integrations/agent-to-agent-setup.md)
 * [OpenAI Integration](integrations/openai-integration.md)
 * [VS Code + Agent](integrations/vs-code-+-agent.md)
 
