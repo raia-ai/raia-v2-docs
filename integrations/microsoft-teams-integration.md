@@ -2,196 +2,71 @@
 
 ## Build an Azure Bot That Connects to a raia Agent in Microsoft Teams
 
-This guide walks you through creating an **Azure Bot** and wiring it to a **raia Agent** so it can actively participate in **Microsoft Teams chats**.
+Got it — here’s the cleaned-up, well-structured **Markdown version** of the document you uploaded. I’ve preserved the technical details, clarified headings, and formatted code blocks properly for easy reuse in docs, README files, or internal guides.
 
-The approach is intentionally lightweight:
-
-* Azure Bot Service handles Teams connectivity
-* **n8n** acts as the middleware
-* raia handles the intelligence and response logic
-
-The screenshots you’ve seen cover **Phase 1: Azure Bot setup**. This article stitches everything together into a clear, repeatable workflow.
+{% file src="../.gitbook/assets/app-package.zip" %}
 
 ***
 
-### Architecture Overview
+## Azure Bot & Workflow Configuration
 
-**Flow at a glance:**
+### Create Azure Bot
 
-Microsoft Teams → Azure Bot Service → n8n Webhook → raia Agent → n8n → Azure Bot → Microsoft Teams
+1. **Create an Azure Bot**
+   * Type of App: **Single Tenant**
+   * Create a **new Microsoft App ID**
+2. Navigate to:
+   * **Azure Bot → Settings → Configuration**
+3. Copy the **App Tenant ID**
+4. Open **n8n**
+5. Create a **POST Webhook**
+   * Name it: `Webhook`
+   * Configure it to **respond immediately**
+6. Add an **IF node**
+   *   Condition:
 
-Key responsibilities:
+       ```
+       {{ $json.body.type }} == "message"
+       ```
+7. On the **TRUE** path, add an **HTTP Request** node to get an OAuth token:
+   * **Method:** POST
+   *   **URL:**
 
-* **Azure Bot**: Auth, Teams channel, conversation routing
-* **Microsoft Entra App**: Secure identity + OAuth
-* **n8n**: Message processing and response delivery
-* **raia Agent**: Generates the response content
+       ```
+       https://login.microsoftonline.com/{APP_TENANT_ID}/oauth2/v2.0/token
+       ```
+   * **Authentication:** None
+   *   **Send Body:** Form URL Encoded (Using Fields Below)
 
-***
+       | Key            | Value                                                                          |
+       | -------------- | ------------------------------------------------------------------------------ |
+       | grant\_type    | client\_credentials                                                            |
+       | client\_id     | {FROM OAUTH}                                                                   |
+       | client\_secret | {FROM OAUTH}                                                                   |
+       | scope          | [https://api.botframework.com/.default](https://api.botframework.com/.default) |
+   * The response will return a **Bearer access token**
+8. Add another **HTTP Request** node to send a message:
+   * **Method:** POST
+   *   **URL:**
 
-### Prerequisites
+       ```
+       {{ $('Webhook').item.json.body.serviceUrl }}v3/conversations/{{ $('Webhook').item.json.body.conversation.id }}/activities
+       ```
+   * **Authentication:** None
+   *   **Headers:**
 
-Before starting, make sure you have:
-
-* An Azure subscription
-* Access to Microsoft Teams
-* An n8n instance (cloud or self-hosted)
-* A raia Agent ready to receive and respond to messages
-* Permission to create apps in **Microsoft Entra ID**
-
-***
-
-### Phase 0: Create a Microsoft Entra Application (Required)
-
-> ⚠️ This step is critical. The Azure Bot depends on an Entra App for authentication.
-
-1. Go to **Microsoft Entra ID** in the Azure Portal
-2. Navigate to **App registrations → New registration**
-3. Configure:
-   * **Name**: `raia-teams-agent`
-   * **Supported account types**: Single tenant
-   * Redirect URI: _Leave blank_
-4. Click **Register**
-
-After creation, capture the following values (you will need them later):
-
-* **Application (client) ID**
-* **Directory (tenant) ID**
-
-#### Create a Client Secret
-
-1. In the app, go to **Certificates & secrets**
-2. Click **New client secret**
-3. Copy the secret value immediately
-
-You now have:
-
-* `client_id`
-* `client_secret`
-* `tenant_id`
-
-***
-
-### Phase 1: Create the Azure Bot
-
-#### Step 1: Create the Bot Resource
-
-1. In Azure Portal, search for **Azure Bot**
-2. Click **Create**
-3. Configure:
-   * **Bot handle**: `raia-teams-agent`
-   * **Subscription**: Your Azure subscription
-   * **Resource group**: Create new (e.g. `raia-group`)
-   * **Region**: East US (or your preference)
-   * **Data residency**: Global
-
-#### Step 2: Bot Configuration
-
-* **Type of App**: Single Tenant
-* **Microsoft App ID**: Use _existing app registration_
-* Select the Entra App you created earlier
-
-Complete **Review + Create** and deploy the bot.
-
-Once deployment completes, click **Go to resource**.
+       | Key           | Value                  |
+       | ------------- | ---------------------- |
+       | Authorization | Bearer {access\_token} |
+       | Content-Type  | application/json       |
+   * **Body:** JSON (see below)
+9. Return to **Azure Bot → Settings → Configuration**
+10. Set:
+    * **Messaging Endpoint:** `{YOUR N8N WEBHOOK URL}`
 
 ***
 
-### Phase 2: Capture Required Bot Values
-
-In the Azure Bot resource:
-
-1. Go to **Settings → Configuration**
-2. Capture:
-   * **Microsoft App ID**
-   * **App Tenant ID**
-
-You’ll use these values in n8n for OAuth token generation.
-
-***
-
-### Phase 3: Configure n8n Workflow
-
-This workflow receives Teams messages, authenticates with Azure, and posts responses back.
-
-#### Step 1: Create Webhook Node
-
-* **Method**: POST
-* **Name**: `Webhook`
-* **Respond**: Immediately
-
-This will be your Azure Bot **Messaging Endpoint** later.
-
-***
-
-#### Step 2: Filter Only Message Events
-
-Add an **IF** node:
-
-*   Condition:
-
-    ```
-    {{ $json.body.type }} equals message
-    ```
-
-Only continue when the event is a message.
-
-***
-
-#### Step 3: Get Bot Framework Access Token
-
-Add an **HTTP Request** node (Token Request):
-
-* **Method**: POST
-*   **URL**:
-
-    ```
-    https://login.microsoftonline.com/{APP_TENANT_ID}/oauth2/v2.0/token
-    ```
-* **Authentication**: None
-* **Send Body**: Form URL Encoded
-
-**Fields:**
-
-```
-grant_type=client_credentials
-client_id={FROM ENTRA APP}
-client_secret={FROM ENTRA APP}
-scope=https://api.botframework.com/.default
-```
-
-The response will return:
-
-```
-access_token
-```
-
-***
-
-#### Step 4: Send Message Back to Teams
-
-Add another **HTTP Request** node (Send Activity):
-
-* **Method**: POST
-*   **URL**:
-
-    ```
-    {{ $('Webhook').item.json.body.serviceUrl }}v3/conversations/{{ $('Webhook').item.json.body.conversation.id }}/activities
-    ```
-* **Authentication**: None
-
-**Headers:**
-
-```
-Authorization=Bearer {access_token}
-Content-Type=application/json
-```
-
-**Body**: JSON (see below)
-
-***
-
-### Fig. 1 – JSON Body for Posting a Message
+### Message Payload (Fig. 1)
 
 ```json
 {
@@ -210,89 +85,117 @@ Content-Type=application/json
 }
 ```
 
-At this point, replace the `text` value with the response generated by your **raia Agent**.
+***
+
+### Create the Custom Teams App
+
+1. Create `outline.png` (32×32 exactly)
+2. Create `color.png` (192×192 exactly)
+3. Create `manifest.json`
+4.  Zip all three files into:
+
+    ```
+    app-package.zip
+    ```
 
 ***
 
-### Phase 4: Connect Azure Bot to n8n
+### Example `manifest.json`
 
-1. Return to **Azure Bot → Settings → Configuration**
-2. Set:
-   * **Messaging Endpoint** = `{YOUR_N8N_WEBHOOK_URL}`
-3. Click **Apply**
-
-Azure will immediately begin sending Teams events to n8n.
-
-***
-
-### Phase 5: Enable Microsoft Teams Channel
-
-1. In Azure Bot, go to **Channels**
-2. Add **Microsoft Teams**
-3. Save
-
-Your bot can now be added to Teams chats, channels, and meetings.
-
-***
-
-### Architecture Overview
-
-#### High-Level Architecture
-
-```
-+-------------------+        +-------------------+        +-------------------+
-|                   |        |                   |        |                   |
-|  Microsoft Teams  | -----> |   Azure Bot       | -----> |        n8n        |
-|  (User Messages)  |        |   Service         |        |  (Webhook + Flow) |
-|                   | <----- |                   | <----- |                   |
-+-------------------+        +-------------------+        +---------+---------+
-                                                                      |
-                                                                      v
-                                                           +-------------------+
-                                                           |                   |
-                                                           |   raia Agent      |
-                                                           | (Reasoning + AI)  |
-                                                           |                   |
-                                                           +-------------------+
-```
-
-**What happens:**
-
-1. A user sends a message in Microsoft Teams
-2. Teams delivers the message to **Azure Bot Service**
-3. Azure Bot forwards the activity to the **n8n Webhook**
-4. n8n calls the **raia Agent** to generate a response
-5. n8n posts the response back through Azure Bot
-6. Azure Bot delivers the reply into the Teams conversation
-
-***
-
-#### Authentication & Trust Boundaries
-
-```
-+----------------------+        OAuth 2.0        +----------------------+
-|                      | <--------------------> |                      |
-|   Azure Bot Service  |                        |  Microsoft Entra ID  |
-|                      |   client_credentials  |  (App Registration)  |
-+----------+-----------+                        +----------+-----------+
-           |
-           | Bearer Token
-           v
-+----------------------+
-|                      |
-|         n8n          |
-|  (Bot Framework API) |
-|                      |
-+----------------------+
+```json
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.17/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.17",
+  "version": "1.0.0",
+  "id": "886dfe00-189b-4b39-a9a7-94b5c518c769",
+  "developer": {
+    "name": "RAIA AI",
+    "websiteUrl": "https://raiaai.com",
+    "privacyUrl": "https://www.raiaai.com/raia-privacy-policy",
+    "termsOfUseUrl": "https://www.raiaai.com/raia-terms-of-services"
+  },
+  "name": {
+    "short": "RAIA Agent",
+    "full": "RAIA Teams Agent"
+  },
+  "description": {
+    "short": "Your AI-powered assistant for Teams.",
+    "full": "RAIA is an intelligent bot that helps your team with various tasks and provides quick access to information."
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#FFFFFF",
+  "bots": [
+    {
+      "botId": "886dfe00-189b-4b39-a9a7-94b5c518c769",
+      "scopes": ["personal", "team", "groupChat"],
+      "supportsFiles": false,
+      "isNotificationOnly": false
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "raia.app.n8n.cloud"
+  ]
+}
 ```
 
-**Key points:**
+***
 
-* Azure Bot and n8n authenticate using a **Single-Tenant Entra App**
-* n8n requests a Bot Framework token using `client_credentials`
-* Tokens are scoped to `https://api.botframework.com/.default`
-* No user-level OAuth is required for basic message handling
+### Upload the Custom App
+
+#### 1. Enable Microsoft Teams Channel in Azure
+
+* Open **Azure Portal**
+* Navigate to your **Azure Bot resource**
+* Go to **Settings → Channels**
+* Select **Microsoft Teams**
+* Accept the Terms of Service
+* Ensure **Cloud Environment** is set to _Microsoft Teams Commercial_
+* Click **Apply**
+* Confirm the Teams channel shows a green checkmark
 
 ***
 
-### &#x20;
+#### 2. Configure Teams Admin Center
+
+* Sign in to **Teams Admin Center**
+* Go to **Teams apps → Setup policies**
+* Edit **Global (Org-wide default)** policy
+* Enable **Upload custom apps**
+* Go to **Teams apps → Manage apps**
+* Enable **Let users interact with custom apps in preview**
+
+***
+
+#### 3. Sideload and Install the Bot
+
+* Open **Microsoft Teams**
+* Click **Apps**
+* Select **Manage your apps**
+* Click **Upload an app → Upload a custom app**
+* Select `app-package.zip`
+* Click **Add**
+* Optionally install into:
+  * A Team
+  * A Channel
+  * A Group Chat
+
+***
+
+### Test Your Bot in Teams
+
+* **Personal Chat**
+  * Send messages like `hello` or `help`
+* **Team / Channel**
+  * Use `@raia-teams-agent help`
+* **Group Chat**
+  * Add the bot and @mention it
+* **Functionality**
+  * Verify all core workflows behave correctly
+
