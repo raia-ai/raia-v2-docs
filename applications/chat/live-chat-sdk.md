@@ -143,23 +143,22 @@ whenRaiaChatReady((raiaChat) => {
 
 ### 4. Customizing the Chat Widget Appearance (CSS)
 
-You can override the default widget styles with your own CSS. Make sure your custom stylesheet is loaded after the widget script or use `!important` to ensure your styles are applied.&#x20;
+You can override the default widget styles with your own CSS. The widget injects its base styles into the host page at runtime (via an inline `<style>` tag). Make sure your custom stylesheet is loaded **after** the widget script or use `!important` to ensure your styles are applied (sparingly).
 
-#### Targetable CSS Classes:&#x20;
+#### 4.1 Quick customization (common classes)
 
-* `.raia-chat-container` – The main chat widget container that holds the iframe with the chat UI. This is the element that’s fixed in the bottom-right corner and controls size, position, border-radius, box-shadow, etc.&#x20;
-* `.raia-chat-container-open` – Applied to the same container when the chat is opened. Controls visibility, opacity, pointer-events, and the open/closed transition. Toggling this class is what shows/hides the widget.
-* `.raia-chat-button` – The floating launcher button container (the round button you click to open the chat). Controls fixed positioning, cursor, border-radius, margins, and the hover transform.
-*   `.raia-chat-button-icon` – The `<img>` inside the launcher button (the avatar/icon). Controls its size and circular shape.
+**Targetable CSS Classes:**
 
+* **`.raia-chat-container`** – The main chat widget container that holds the iframe with the chat UI. This is the element that’s fixed in the bottom-right corner and controls size, position, border-radius, box-shadow, etc.
+* **`.raia-chat-container-open`** – Applied to the same container when the chat is opened. Controls visibility, opacity, pointer-events, and the open/closed transition. Toggling this class is what shows/hides the widget.
+* **`.raia-chat-button`** – The floating launcher button container (the round button you click to open the chat). Controls fixed positioning, cursor, border-radius, margins, and the hover transform.
+* **`.raia-chat-button-icon`** – The `<img>` inside the launcher button (the avatar/icon). Controls its size and circular shape.
 
+These class names are defined as constants in `src/chatbotWidget/constants.ts` and then used both for DOM creation and for the default injected styles, so overriding them in your own stylesheet (loaded after the widget script) is the supported way to customize positioning and appearance from the host page.
 
-These class names are defined as constants in `src/chatbotWidget/constants.ts` and then used both for DOM creation and for the default injected styles, so overriding them in your own stylesheet (loaded after the widget script) is the supported way to customize positioning and appearance from the host page.\
-<br>
+**Example: reposition and restyle the widget**
 
-**Example: reposition and restyle the widget:**
-
-```
+```css
 /* Reposition the chat window to the bottom-left */ 
 .raia-chat-container { 
   right: auto !important; 
@@ -176,17 +175,18 @@ These class names are defined as constants in `src/chatbotWidget/constants.ts` a
 } 
 ```
 
-**Example: use a custom launcher button:**
+**Example: use a custom launcher button**
 
 A common use case is to hide the default button and open the chat from another element, like a button in your navigation bar.
 
-_**Hide the default button and open the chat from your own UI element:**_
+Hide the default button and open the chat from your own UI element:
 
 ```
 /* Hide the default floating launcher button */ 
 .raia-chat-button { 
   display: none !important; 
 } 
+
 ```
 
 ```
@@ -207,7 +207,125 @@ _**Hide the default button and open the chat from your own UI element:**_
     }); 
   }); 
 </script> 
+
 ```
+
+#### 4.2 Advanced: Overriding base styles (BEM classes)
+
+The Raia chatbot widget injects its base styles into the host page at runtime (via an inline `<style>` tag). When embedding on an external site, you can override these base styles by adding your own CSS rules that target the widget’s public class names.
+
+**How overrides work**
+
+* The widget’s base CSS is injected at runtime.
+* Your site CSS can override it using:
+  * More specific selectors, or
+  * `!important` (use sparingly)
+
+**Public CSS classes (BEM)**
+
+The widget uses the `raia-chat-widget__*` namespace for elements.
+
+**Block**
+
+* `.raia-chat-widget`
+
+**Elements**
+
+* `.raia-chat-widget__container` — floating chat container (contains the `<iframe>`)
+* `.raia-chat-widget__launcher` — fixed-position launcher container
+* `.raia-chat-widget__button` — clickable launcher button
+* `.raia-chat-widget__button-image` — `<img>` inside the button (avatar mode)
+* `.raia-chat-widget__button-text` — `<p>` inside the button (text-only mode)
+* `.raia-chat-widget__tooltip` — tooltip shown for icon+text mode
+* `.raia-chat-widget__suggestions` — suggestions popup container
+* `.raia-chat-widget__suggestion` — a single suggestion button
+
+**Modifiers / state**
+
+* `.raia-chat-widget__container--open` — applied when chat is open
+* `.raia-chat-widget__tooltip--visible` — applied when tooltip is visible
+* `.raia-chat-widget__suggestions--visible` — applied when suggestions popup is visible
+* `.raia-chat-widget__launcher--icon-and-text` — applied when tooltip is shown (icon+text mode)
+
+**View mode and size (public)**
+
+These classes can be used for conditional overrides:
+
+* `.raia-chat-mode-popup` / `.raia-chat-mode-sidebar`
+* `.raia-chat-size-small` / `.raia-chat-size-medium` / `.raia-chat-size-big` / `.raia-chat-size-full_height`
+
+
+
+**Recommended override pattern**
+
+Create a small CSS file in your host site and load it after any CSS reset and your base theme. If you want to avoid affecting other widgets or pages, scope your overrides to a page wrapper (example: `body.customer-portal`).
+
+```
+/* 1) Scope overrides (recommended) */
+body.customer-portal .raia-chat-widget__launcher {
+  right: 24px;
+  bottom: 24px;
+}
+
+/* 2) Customize container (chat window) */
+body.customer-portal .raia-chat-widget__container {
+  width: 420px;
+  border-radius: 18px;
+}
+
+/* 3) Example: different width for sidebar mode */
+body.customer-portal .raia-chat-widget__container.raia-chat-mode-sidebar {
+  width: 520px;
+}
+
+/* 4) Customize launcher button */
+body.customer-portal .raia-chat-widget__button {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* 5) Tooltip styling */
+body.customer-portal .raia-chat-widget__tooltip {
+  font-family: inherit;
+  border-radius: 10px;
+}
+
+/* 6) Suggestions */
+body.customer-portal .raia-chat-widget__suggestions {
+  gap: 10px;
+}
+body.customer-portal .raia-chat-widget__suggestion {
+  border-radius: 10px;
+}
+
+```
+
+**When to use `!important`**
+
+Prefer selector specificity first. If you must force an override (e.g., your CSS loads before the widget script and you cannot change order), use `!important` on a small number of properties.
+
+**Safe properties to override**
+
+Safe:
+
+* Layout/position: `right`, `bottom`, `width`, `height`, `max-height`
+* Visual: `border-radius`, `box-shadow`, `background`, `font-family`, `font-size`
+
+Be careful with:
+
+* `pointer-events` and `visibility` (used for open/close behavior)
+* `transform` and `opacity` (used for animations/transitions)
+
+**Troubleshooting**
+
+If your styles don’t apply:
+
+* Confirm your selector matches the element class
+* Increase specificity (add a page scope / parent selector)
+* As a last resort, use `!important`
+
+If the widget becomes unclickable:
+
+* Check you didn’t override `pointer-events` on launcher/button elements
 
 ## Iframe SDK
 
