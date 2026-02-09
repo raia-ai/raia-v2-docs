@@ -10,7 +10,7 @@ Installation & Usage Guide
 
 This guide explains how to install and run the Raia Reasoning Agent VS Code extension using the hardcoded configuration version.
 
-{% file src="../.gitbook/assets/raia-vscode-extension.zip" %}
+{% file src="../.gitbook/assets/raia-vscode-extension 2.zip" %}
 
 
 
