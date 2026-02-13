@@ -7,6 +7,42 @@ description: >-
 
 # Release Notes - raia
 
+**February 11, 2026**\
+**New Features**
+
+* **Unsubscribe option in agent emails**\
+  Public users can now easily unsubscribe from agent emails using standard unsubscribe links
+* **Chat auto-assigned to user activating Human in the Loop**\
+  Chats are now automatically assigned to the user who takes over via the Human in the Loop feature, streamlining ownership and follow-up.
+* **New MCP Server Skill for Agents**\
+  Agents can now be accessed via an MCP server endpoint. This skill generates a unique URL and token, enabling external systems to connect and communicate with agents securely.
+
+**Improvements**
+
+* **Updated Live Chat action buttons to support a predefined system-wide visual style.**\
+  A new visual style property is now available in button settings, allowing teams to skip custom design configuration and apply the default system style automatically. Updated Live Chat action buttons to support a predefined system-wide visual style.
+* **2FA/MFA login method in system logs**\
+  System logs now include details on which 2FA or MFA method was used during user login. This provides admins with better visibility into authentication activity for security reviews.
+* **Download chat history from Live Chat**\
+  Users can now download a full copy of their Live Chat session as a plain text file, including timestamps and sender roles. This feature is available from the chat menu and helps with reference, reporting, or record-keeping.
+* **Agent Contact Info Modal in Copilot**\
+  Users can now see and access available contact methods (Email, SMS, Voice) for the active agent directly in Copilot. When these skills are enabled, a new menu option displays the contact information, allowing users to quickly reach out without using the chat.
+* **Email validation status added to user records**\
+  Email addresses are now verified through Zerobounce, and the resulting status (e.g. valid/invalid) is saved to the user record. This helps ensure cleaner data and improves deliverability across messaging workflows.
+* **Improved hover behavior for Live Chat options**\
+  Updated the hover state for pre-defined response options in the Live Chat popup to ensure clearer visual feedback when navigating with a cursor.
+* **Deprecation of GPT-4o**\
+  The gpt-4o model has been removed from the platform and is no longer available for selection.
+
+**Fixes**
+
+* **Dropdown issues in mobile Copilot**\
+  Fixed problems with dropdown menus in the mobile version of Copilot. Dropdowns now appear in the correct position and do not overlap when multiple are open.
+* **Custom scored conversations now correctly appear in the system** \
+  Conversations that included custom scoring were previously missing from the Launchpad conversation table. The issue has been fixed, and all relevant conversations now appear as expected when filtering by agent or score.
+
+***
+
 **February 4, 2026**\
 **New Features**
 
