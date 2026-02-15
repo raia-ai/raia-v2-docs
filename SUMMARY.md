@@ -94,6 +94,7 @@
 
 * [MCP with VS Code](integrations/mcp-with-vs-code.md)
 * [MCP with Windsurf](integrations/mcp-with-windsurf.md)
+* [MCP with ChatGPT](integrations/mcp-with-chatgpt.md)
 * [Workflow Integration](integrations/workflow-integration/README.md)
   * [API Documentation](integrations/workflow-integration/api-documentation.md)
   * [n8n Node](integrations/workflow-integration/n8n-node.md)
@@ -116,7 +117,6 @@
   * [Zendesk Integration — Practical Implementation Guide](integrations/zendesk-integration-practical-implementation-guide.md)
 * [Agent-to-Agent Setup](integrations/agent-to-agent-setup.md)
 * [OpenAI Integration](integrations/openai-integration.md)
-* [VS Code + Agent](integrations/vs-code-+-agent.md)
 * [Microsoft Teams Integration](integrations/microsoft-teams-integration.md)
 
 ## Launch Plan
