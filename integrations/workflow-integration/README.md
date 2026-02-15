@@ -1,4 +1,4 @@
-# Integration
+# Workflow Integration
 
 ## 🔗 Integration Options with raia : Extending AI Agents into Your Workflows
 
@@ -8,18 +8,24 @@ While raia AI Agents work out of the box across omni-channel communication platf
 
 That’s where RAIA’s flexible **integration options** come into play.
 
+<figure><img src="../../.gitbook/assets/agent_workflow_diagram.png" alt=""><figcaption></figcaption></figure>
+
+
+
 ***
 
 ### 🧠 Why Integrate Your AI Agent?
 
 Even though raia Agents are ready to chat from the moment they’re launched, integration unlocks powerful new capabilities:
 
-* Use the agent as a **step in your automation flow** (e.g., in Zapier or n8n)
+* Use the agent as a **step in your automation flow** (e.g., in n8n, make, etc)
 * Let your CRM or helpdesk system **trigger an AI response**
 * Push lead data, tickets, or summaries to a **3rd-party system**
 * Allow your agent to **query your database** or **run internal logic**
 
 Whether you're aiming for seamless customer journeys or smart internal operations, **integration makes your AI Agent more connected, useful, and valuable.**
+
+<figure><img src="../../.gitbook/assets/zendesk_workflow_diagram.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
