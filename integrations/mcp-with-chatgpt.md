@@ -221,10 +221,3 @@ By connecting your raia AI Agent via MCP in ChatGPT, you enable:
 
 This allows raia agents to operate seamlessly within ChatGPT’s conversational interface while maintaining control through MCP.
 
-***
-
-If you'd like, I can also provide:
-
-* A shorter version for customer-facing documentation
-* A more technical version for developers
-* A version formatted for Notion or Confluence
