@@ -92,6 +92,7 @@
 
 ## Integrations
 
+* [MCP with VS Code](integrations/mcp-with-vs-code.md)
 * [MCP with Windsurf](integrations/mcp-with-windsurf.md)
 * [Workflow Integration](integrations/workflow-integration/README.md)
   * [API Documentation](integrations/workflow-integration/api-documentation.md)
