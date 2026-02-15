@@ -1,10 +1,8 @@
 # Agent Skills
 
-## Skills gives Agents Agency
+#### Skills gives Agents Agency
 
 <figure><img src="../../.gitbook/assets/agent_skills_diagram.png" alt=""><figcaption></figcaption></figure>
-
-##
 
 #### Able to add Skills by clicking on the plus
 
