@@ -92,6 +92,7 @@
 
 ## Integrations
 
+* [MCP with Windsurf](integrations/mcp-with-windsurf.md)
 * [Workflow Integration](integrations/workflow-integration/README.md)
   * [API Documentation](integrations/workflow-integration/api-documentation.md)
   * [n8n Node](integrations/workflow-integration/n8n-node.md)
