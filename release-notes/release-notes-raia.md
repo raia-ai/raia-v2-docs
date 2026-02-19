@@ -7,6 +7,50 @@ description: >-
 
 # Release Notes - raia
 
+**February 17, 2026**\
+**New Features**
+
+*   **Organization-Level MFA Enforcement**&#x20;
+
+    Admins can now enforce multi-factor authentication (MFA) at the organization level using an authenticator app. When enabled, users without MFA configured are automatically redirected to complete setup before accessing other parts of the system. SMS-based MFA is not allowed when this setting is active, strengthening overall account security.
+*   **Notification Preferences (Toggle On/Off)**
+
+    Users can now control in-app notification behavior. A new “Notification Preferences” section within User Profile Settings allows toggling visual notifications and notification sounds on or off. Preferences are saved per user and persist across sessions.
+* **Reference Links in AI Annotations**\
+  AI-generated responses can now include clickable links to referenced training documents directly within annotations. This allows users to access source documents used in the response without leaving the conversation context, improving transparency and usability.
+*   **Structured System Actions in Live Chat and Copilot**\
+    Introduced a structured framework for displaying system actions inside Live Chat and Copilot conversations. Key system events are now shown as informational system messages within the conversation feed and recorded in the Copilot activity log for transparency and traceability.
+
+    The structure defines how system and muted actions are presented and ensures consistent formatting across channels. It is designed to be scalable, allowing additional action types to be added and supported in the future.
+
+**Improvements**
+
+* **Auto-Archive Notification Option Removed**\
+  The “Notify on Auto-Archive” option has been removed from the Notification Skill. This simplifies the configuration and prevents unnecessary email alerts when conversations are automatically archived.
+* **Legacy Email Notifications Fully Removed from Notifications Skill (Auto-Archive trigger)**\
+  Legacy email notifications related to conversation events have been fully removed from the backend. Previously, although these notifications were removed from the UI, they could still remain active if configured earlier.
+* **Account Deletion Email Notifications**\
+  Added automated email notifications throughout the account deletion process. Users now receive confirmation when a deletion request is submitted, a reminder one day before deletion, a final confirmation once the account is permanently deleted, and a notification if the deletion request is canceled. This improves transparency and ensures users are fully informed at every stage of the deletion lifecycle.
+*   **Expanded Live Chat Font Customization Options**
+
+    Live Chat design settings have been enhanced to allow adjusting the font styling of the buttons' text and link titles. This update provides greater flexibility in branding and visual consistency across the chat interface.
+
+    Admins can now customize these elements directly within Live Chat design settings to better align with their organization’s style guidelines.
+* **Download All Training Documents as ZIP (Owner/Admin)**\
+  Owners and Admins can now download all training documents from the Training → Documents tab as a single ZIP archive. This simplifies backup and bulk export of training materials at the organization level.
+*   **Preserve Original File Names When Downloading Training Documents as ZIP**\
+    Training documents downloaded as a ZIP file will now retain their original file names instead of being renamed with UUID-based identifiers.
+
+    This improvement makes downloaded archives easier to understand and manage, ensuring files remain recognizable and aligned with their original uploaded names.
+* **Error Page Redesign**\
+  The system error page has been redesigned to reduce visual intensity and make the messaging more user-friendly. The updated design uses softer language, improved typography, and a calmer visual style while still clearly communicating that an issue has occurred.
+* **Extended Shared Memory Retention to 1 Year**\
+  Shared memory retention in the Memory Skill has been extended from 90 days to up to 1 year. This provides greater flexibility for long-term context preservation while maintaining controlled retention limits.
+* **Webhook Payload Includes Assignment & Human Agent Info**\
+  Webhook data now includes information about which admin responded in Human-in-the-Loop mode and who the conversation is assigned to, allowing external systems to stay aligned with Copilot activity.
+
+***
+
 **February 11, 2026**\
 **New Features**
 
