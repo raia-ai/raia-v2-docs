@@ -90,6 +90,7 @@
   * [Uploading a Contact List](applications/mission-control/uploading-a-client-list.md)
   * [Launching a Mission](applications/mission-control/launching-a-mission.md)
   * [Building Targeted Lists with the Apollo.io Integration](applications/control/building-targeted-lists-with-the-apollo.io-integration.md)
+  * [Lead Enhancement & Email Verification](applications/control/lead-enhancement-and-email-verification.md)
 
 ## Integrations
 
