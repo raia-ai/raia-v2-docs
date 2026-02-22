@@ -1,4 +1,4 @@
-# Email Analytics (Reports)
+# Email Analytics
 
 **Email Analytics** provides an account-wide view of email performance across all campaigns. It helps you understand deliverability, engagement, and patterns like the best time/day to send, audience device/email client breakdowns, geographic distribution, and bounce-rate anomalies.
 
