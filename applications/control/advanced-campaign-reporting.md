@@ -1,12 +1,12 @@
-# Advanced Campaign Report
+# Advanced Campaign Reporting
 
-The Campaign Report gives you a performance overview of a mission’s email campaign—delivery, opens, clicks, bounces, and engagement breakdowns so you can quickly understand what happened and what to improve next.
+The **Campaign Report** gives you a performance overview of a mission’s email campaign—delivery, opens, clicks, bounces, and engagement breakdowns—so you can quickly understand what happened and what to improve next.
 
 ### How to open the Campaign Report
 
-1. Go to Missions
+1. Go to **Missions**
 2. Click a mission **name** to open it
-3. In the top-right corner, click **Campaign Report**
+3. In the top-right corner, click **Campaign report**
 
 This opens a dashboard-style report with summary metrics, insights, charts, and breakdown tables.
 
@@ -16,7 +16,19 @@ This opens a dashboard-style report with summary metrics, insights, charts, and 
 
 These cards give a quick snapshot of campaign performance:
 
-<table data-header-hidden><thead><tr><th width="211.48046875">Metric</th><th>Description</th></tr></thead><tbody><tr><td>Delivered</td><td>The total number of emails that were successfully delivered to the recipients’ inboxes. Often also shows unique recipients (how many distinct people received the email).</td></tr><tr><td>Total Opens</td><td>The total number of times your emails were opened by recipients. This includes multiple opens by the same recipient.</td></tr><tr><td>Unique Opens</td><td>The number of unique recipients who opened your email at least once.</td></tr><tr><td>Open Rate</td><td>The percentage of unique opens relative to the number of delivered emails. Typically calculated as: Unique Opens ÷ Delivered × 100</td></tr><tr><td>Clicks</td><td>The total number of clicks on the links within your emails. Often includes unique clickers (distinct recipients who clicked at least once).</td></tr><tr><td>Bounces / Failures</td><td>The number of emails that could not be delivered to the recipients’ inboxes (hard/soft bounces depending on the provider).</td></tr><tr><td>Countries Reached</td><td>The number of different countries where your emails were opened (based on available tracking/location data).</td></tr><tr><td>Recipient Domains</td><td>The number of unique email domains to which the emails were sent (e.g., gmail.com, company.com).</td></tr><tr><td>Bot Opens</td><td>The percentage of opens that are suspected to be from bots. Useful to avoid overestimating real human engagement.</td></tr></tbody></table>
+| Metric                 | Description                                                                                                                                                                 |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Delivered**          | The total number of emails that were successfully delivered to the recipients’ inboxes. Often also shows _unique recipients_ (how many distinct people received the email). |
+| **Total Opens**        | The total number of times your emails were opened by recipients. This includes multiple opens by the same recipient.                                                        |
+| **Unique Opens**       | The number of unique recipients who opened your email at least once.                                                                                                        |
+| **Open Rate**          | The percentage of unique opens relative to the number of delivered emails. Typically calculated as: `Unique Opens ÷ Delivered × 100`                                        |
+| **Clicks**             | The total number of clicks on the links within your emails. Often includes _unique clickers_ (distinct recipients who clicked at least once).                               |
+| **Bounces / Failures** | The number of emails that could not be delivered to the recipients’ inboxes (hard/soft bounces depending on the provider).                                                  |
+| **Countries Reached**  | The number of different countries where your emails were opened (based on available tracking/location data).                                                                |
+| **Recipient Domains**  | The number of unique email domains to which the emails were sent (e.g., `gmail.com`, `company.com`).                                                                        |
+| **Bot Opens**          | The percentage of opens that are suspected to be from bots. Useful to avoid overestimating real human engagement.                                                           |
+
+> Tip: Always read **Delivered** and **Bounces/Failures** together first. If delivery is low, opens/clicks won’t be meaningful.
 
 #### 2) Key Insights (summary box)
 
@@ -44,7 +56,7 @@ This helps you spot:
 
 #### 4) Top Recipient Domains (table)
 
-A breakdown of results by email domain (e.g., gmail.com, company.com), typically including:
+A breakdown of results by email domain (e.g., `gmail.com`, `company.com`), typically including:
 
 * **Delivered**
 * **Opened**
@@ -57,7 +69,9 @@ This is useful for diagnosing deliverability or engagement patterns by domain:
 
 #### 5) Most Common Email Subjects (table)
 
-Shows which subject lines appeared most in the campaign and how frequently they were used.Common uses:
+Shows which subject lines appeared most in the campaign and how frequently they were used.
+
+Common uses:
 
 * Validate which subject lines were used the most (especially if A/B testing or personalization is involved)
 * Identify whether certain subject styles correlate with better opens/clicks (compare with engagement metrics)
@@ -101,7 +115,9 @@ Possible causes:
 
 * Image blocking or privacy features in the recipient’s email client
 * Open tracking disabled or blocked by security tools
-* The email was read in a way that didn’t trigger the tracking pixelIn these cases, **Clicks** can be a more reliable engagement signal than opens.
+* The email was read in a way that didn’t trigger the tracking pixel
+
+In these cases, **Clicks** can be a more reliable engagement signal than opens.
 
 #### High clicks but low opens
 
@@ -114,18 +130,11 @@ Check **Bot Opens** and overall behavior across domains for hints.
 
 ### FAQ
 
-1. **Do "Total Opens" and "Unique Opens" mean the same thing?**
+**Do "Total Opens" and "Unique Opens" mean the same thing?**\
+No. **Total Opens** counts every open event (including multiple opens by the same recipient). **Unique Opens** counts how many distinct recipients opened at least once.
 
-No. Total Opens counts every open event (including multiple opens by the same recipient). Unique Opens counts how many distinct recipients opened at least once.
+**What's the difference between "Clicks" and "Unique Clickers"?**\
+**Clicks** counts every click event (including multiple clicks by the same recipient). **Unique Clickers** counts how many distinct recipients clicked at least once.
 
-
-
-2. **What's the difference between "Clicks" and "Unique Clickers"?**
-
-Clicks counts every click event (including multiple clicks by the same recipient). Unique Clickers counts how many distinct recipients clicked at least once.
-
-
-
-3. **Why does domain/country data sometimes look incomplete?**
-
+**Why does domain/country data sometimes look incomplete?**\
 Domain and country reporting depends on the tracking data available from the recipient's email client and network. Privacy features, VPNs, and security tools can block or mask this data, so it may not always be captured.
