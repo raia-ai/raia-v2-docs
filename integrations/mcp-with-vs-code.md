@@ -124,13 +124,15 @@ Replace or update the configuration so it looks like this:
       "headers": {
         "Authorization": "YOUR_API_KEY_OF_AGENT_FROM_RAIA_MCP_SKILL"
       }
-    }
-  },
- "inputs": [
-    "Use the RAIA MCP for questions related to legacy code",
-    "Call raia-mcp when user asks about XXXXX product"
-  ]
+    	},
+		"NAME OF AGENT": {
+			"url": "https://api.raia2.com/mcp",
+			"type": "http"
+		}
+	},
+	"inputs": []
 }
+
 ```
 
 #### 🔑 Important
