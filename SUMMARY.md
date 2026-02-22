@@ -92,6 +92,7 @@
   * [Building Targeted Lists with the Apollo.io Integration](applications/control/building-targeted-lists-with-the-apollo.io-integration.md)
   * [Lead Enhancement & Email Verification](applications/control/lead-enhancement-and-email-verification.md)
   * [Mastering Contact Management in RAIA Control](applications/control/mastering-contact-management-in-raia-control.md)
+  * [Email Analytics (Reports)](applications/control/email-analytics-reports.md)
   * [Advanced Campaign Reporting](applications/control/advanced-campaign-reporting.md)
 
 ## Integrations
