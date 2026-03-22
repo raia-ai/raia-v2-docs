@@ -1,15 +1,10 @@
----
-description: >-
-  raia's Live Chat SDK lets you customize the chat experience. You can pass user
-  info and context, send messages programmatically, and fully control the chat
-  interface.
----
-
 # Live Chat SDK
 
 This article covers the two primary integration methods: the **Embed JS SDK** and the **Iframe SDK.**&#x20;
 
+Check out this simple HTML Example of the SDK in action:&#x20;
 
+[https://storage.googleapis.com/raiahosted/raia\_test\_sdk.html](https://storage.googleapis.com/raiahosted/raia_test_sdk.html)
 
 ## Key Capabilities
 
@@ -139,7 +134,7 @@ whenRaiaChatReady((raiaChat) => {
 
 **Available commands:**
 
-<table><thead><tr><th>Command</th><th>Description</th><th width="232">Payload (example)</th></tr></thead><tbody><tr><td><code>INIT</code></td><td>Initializes the chat session (API key only if required in your environment).</td><td><p><code>{ apiKey?:</code> </p><p><code>"YOUR_API_KEY" }</code></p></td></tr><tr><td><code>OPEN_CHAT</code></td><td>Opens the chat window.</td><td><code>{ page?: 'home'| 'chat' }</code></td></tr><tr><td><code>CLOSE_CHAT</code></td><td>Closes the chat window.</td><td>-</td></tr><tr><td><code>SEND_MESSAGE</code></td><td>Sends a message as the user.</td><td><code>{ message: string }</code></td></tr><tr><td><code>SET_USER</code></td><td>Sets the user’s information.</td><td><code>{ user: { fkId?, fkUserId?, firstName?, lastName?, email?, phoneNumber?, customData? } }</code></td></tr><tr><td><code>CLEAR_USER</code></td><td>Clears the user's information.</td><td>-</td></tr><tr><td><code>SET_CONTEXT</code></td><td>Sets context used for the next interaction/message.</td><td><code>{ context: string }</code></td></tr><tr><td><code>CLEAR_CONTEXT</code></td><td>Clears message-level context.</td><td>-</td></tr><tr><td><code>SET_CONVERSATION_CONTEXT</code></td><td>Sets context for the entire conversation.</td><td><code>{ context: string }</code></td></tr><tr><td><code>SET_WELCOME_MESSAGE</code></td><td>Overrides the default welcome message.</td><td><code>{ message: string }</code></td></tr><tr><td><code>ENABLE_CURRENT_PAGE_TEXT</code></td><td>Allows the AI to use the current page text as context.</td><td>-</td></tr><tr><td><code>DISABLE_CURRENT_PAGE_TEXT</code></td><td>Prevents the AI from using the current page text as context.</td><td>-</td></tr><tr><td><code>RELOAD</code></td><td>Reloads the chat application.</td><td>-</td></tr><tr><td><code>REFETCH_CONFIG</code></td><td>Forces the chat to pull the latest configuration from the server.</td><td>-</td></tr><tr><td><code>DELETE_CHAT</code></td><td>Wipes the current conversation.</td><td>-</td></tr></tbody></table>
+<table><thead><tr><th>Command</th><th>Description</th><th width="232">Payload (example)</th></tr></thead><tbody><tr><td><code>INIT</code></td><td>Initializes the chat session (API key only if required in your environment).</td><td><p><code>{ apiKey?:</code> </p><p><code>"YOUR_API_KEY" }</code></p></td></tr><tr><td><code>OPEN_CHAT</code></td><td>Opens the chat window.</td><td><code>{ page?: 'home'| 'chat' }</code></td></tr><tr><td><code>CLOSE_CHAT</code></td><td>Closes the chat window.</td><td>-</td></tr><tr><td><code>SEND_MESSAGE</code></td><td>Sends a message as the user.</td><td><code>{ message: string }</code></td></tr><tr><td><code>SET_USER</code></td><td>Sets the user’s information.</td><td><code>{ user: { fkId?, fkUserId?, firstName?, lastName?, email?, phoneNumber?, customData? } }</code></td></tr><tr><td><code>CLEAR_USER</code></td><td>Clears the user's information.</td><td>-</td></tr><tr><td><code>SET_CONTEXT</code></td><td>Sets context used for the next interaction/message.</td><td><code>{ context: string }</code></td></tr><tr><td><code>CLEAR_CONTEXT</code></td><td>Clears message-level context.</td><td>-</td></tr><tr><td><code>SET_CONVERSATION_CONTEXT</code></td><td>Sets context for the entire conversation.</td><td><code>{ context: string }</code></td></tr><tr><td><code>SET_WELCOME_MESSAGE</code></td><td>Overrides the default welcome message.</td><td><code>{ message: string }</code></td></tr><tr><td><code>ENABLE_CURRENT_PAGE_TEXT</code></td><td>Allows the AI to use the current page text as context.</td><td>-</td></tr><tr><td><code>DISABLE_CURRENT_PAGE_TEXT</code></td><td>Prevents the AI from using the current page text as context.</td><td>-</td></tr><tr><td><code>RELOAD</code></td><td>Reloads the chat application.</td><td>-</td></tr><tr><td><code>REFETCH_CONFIG</code></td><td>Forces the chat to pull the latest configuration from the server.</td><td>-</td></tr><tr><td><code>DELETE_CHAT</code></td><td>Wipes the current conversation.</td><td>-</td></tr><tr><td><code>RESET_USER</code></td><td>Resets the current user identity and clears user-linked session state so the next interaction behaves like a fresh/anonymous user.</td><td>-</td></tr></tbody></table>
 
 ### 4. Customizing the Chat Widget Appearance (CSS)
 

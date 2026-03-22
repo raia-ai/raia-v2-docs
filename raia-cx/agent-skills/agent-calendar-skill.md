@@ -1,6 +1,6 @@
 # Agent Calendar Skill
 
-<figure><img src="../../.gitbook/assets/image (200).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (273).png" alt=""><figcaption></figcaption></figure>
 
 The **Calendar** skill integrates with [Cal.com](https://cal.com) to help AI agents manage appointments and scheduling tasks.
 
@@ -16,7 +16,7 @@ With this skill, an agent can:
 * **Update** scheduled events
 * **Delete** events when necessary
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 ### Authentication
 

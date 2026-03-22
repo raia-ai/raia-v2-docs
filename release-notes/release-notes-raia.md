@@ -7,6 +7,194 @@ description: >-
 
 # Release Notes - raia
 
+**March 10, 2026**\
+**Improvement**
+
+*   **TOTP MFA Enforcement**
+
+    Fixed an issue where users could bypass enforced TOTP multi-factor authentication by switching back to SMS-based 2FA. Organization-level MFA policies are now consistently enforced.
+*   **Enhanced API Key Management for External APIs**
+
+    Refactored API key management to support multiple keys at both the organization and API skill levels. Added expiration options (TTL or fixed date), key status handling (Active, Expired, Revoked), and improved overall security. Existing keys remain fully supported to ensure backward compatibility.
+*   **Training Documents Access Restriction**
+
+    Introduced a new security setting allowing restriction of training document downloads to the agent owner only. This enhances control over sensitive data stored in the Vector Store.
+
+***
+
+**March 10, 2026**\
+**New Features**
+
+* **GPT-5.4 Model Integration**\
+  The GPT-5.4 model has been integrated into the platform. Analytical capabilities have been expanded, allowing the model to be selected and utilized within AI agents for complex reasoning and improved response accuracy.
+* **Manual Vector Store ID Configuration**\
+  The ability to edit the Vector Store ID for individual agents has been implemented. This feature allows multiple agents to be pointed to the same knowledge base, enabling shared data access while streamlining the management of vector storage across different agent configurations.
+
+**Improvement**
+
+* **Expanded File Format Support** \
+  Support for the most commonly used file formats, including PDF, DOCX, XLSX, and CSV, has been implemented across Copilot, Live Chat, and Email Skill. A new conversion pipeline has been introduced to process these documents into AI-friendly formats before they are stored in the Vector Store.
+* **Archived Conversations Visibility and Notifications Cleanup**\
+  A "Show Archived" filter has been added to the Copilot conversation list, allowing archived sessions to be viewed alongside active ones.&#x20;
+* **Expanded System Event Messages in Conversation UI**\
+  Support for muted system messages has been extended within conversation transcripts for both Live Chat and Copilot. By incorporating a broader range of system events into the interface, the tracking of user actions and the restoration of activity logs have been made more transparent and efficient for administrative monitoring.
+* **Optimize UI of Live Chat Settings Panel**\
+  The Live Chat settings interface has been redesigned to improve navigation and clarity. Existing configurations have been reorganized into clearly defined tabs and application-specific sections, complemented by the introduction of accordion UI components to manage high-density settings and reduce visual clutter
+
+**Fix**&#x20;
+
+* **Security Vulnerability Mitigation for Image Uploads** \
+  A critical Cross-Site Scripting (XSS) vulnerability related to SVG file uploads for Agent logos has been resolved. Sanitization and validation measures have been implemented to prevent the execution of malicious scripts within the platform.
+
+***
+
+**March 4, 2026**\
+**New Features**
+
+* **Added Auto-Assignment Configuration for Escalation Skill**\
+  Escalation Skill now supports configuring a default assignee for each escalation type. When an escalation is triggered, the conversation can automatically be assigned to the specified admin instead of remaining unassigned.
+
+**Improvements**
+
+* **Added Option to Disable Live Chat Access**\
+  A new configuration option allows Live Chat access to be disabled while keeping the agent available through Copilot.\
+  This helps prevent direct access via the Live Chat link when agents are intended to be used only within Copilot, improving access control and reducing potential security risks.
+*   **Added Control for File Links in Copilot Annotations**
+
+    A new Copilot setting allows administrators to enable or disable file links (hyperlinks) in document annotations.
+
+    This provides greater control over document access, helping organizations prevent users from downloading or accessing underlying training files when annotations are displayed.
+*   **Improved Refresh Token Handling**
+
+    Refresh token logic has been reviewed and updated to ensure more reliable session renewal and authentication stability.
+
+    This improvement helps prevent unexpected authentication interruptions and ensures tokens are refreshed correctly during active user sessions.
+*   **Standardized Email Templates for Consistent Branding**
+
+    Introduced a unified structure and styling standard for all system-generated email templates to ensure a consistent user experience and alignment with organization branding.
+
+    This update standardizes elements such as headers, footers, greetings, layout spacing, and the use of organization logos or names. It also ensures that email templates properly reflect organization branding settings where applicable.
+
+**Fixes**
+
+*   **Fixed Validation Logic for Optional Fields in Live Chat Pre-Chat Form**\
+    Corrected validation behavior in the Live Chat pre-chat form where fields configured as Not Required still prevented users from starting a chat if left empty.
+
+    The Start Chat button is now enabled as long as all required fields are completed, ensuring the form behavior correctly matches the admin configuration for optional fields.
+*   **Fixed Inconsistent Authors in Copilot Activity Log**
+
+    Resolved an issue where activity entries in the Copilot Activity Log could display inconsistent or incorrect authors for certain actions.
+
+    The log now consistently records and displays the correct author for each activity, improving traceability and audit accuracy.
+*   **Fixed Security Vulnerability in Signup Flow**\
+    Addressed a security vulnerability in the signup process related to email hyperlink injection, which could potentially lead to unauthorized account access.
+
+    Input validation and sanitization mechanisms have been strengthened to prevent malicious link execution and protect user accounts from potential takeover attempts.
+
+***
+
+**February 27, 2026**\
+**Improvements**
+
+*   **Separated MCP Skill Description into Server and Tool Levels**
+
+    The single description field in MCP skills has been split into two distinct fields: serverDescription and toolDescription.
+
+    This change improves clarity and structure by separating the overall server description from individual tool descriptions, enabling more accurate tool selection and better context handling by the AI.
+*   **Added Live Chat Launcher Preview to Settings Panel**
+
+    A real-time preview of the Live Chat Launcher has been added to the settings panel. Users can now instantly see how changes to the launcher’s icon, text, colors, and visibility settings affect its appearance — without needing to embed the widget externally.
+*   **Simplified Color Settings – Removed Separate HEX Inputs**
+
+    Standalone HEX input fields have been removed from color settings to simplify the interface and reduce visual clutter.
+
+    Color selection is now fully handled within the enhanced color picker component, which supports direct HEX and RGB value input. This provides the same flexibility while offering a cleaner and more streamlined configuration experience.
+*   **Updated Live Chat End Flow and Webhook Trigger Logic**
+
+    Improved the Live Chat ending flow to better handle feedback submission and webhook timing.
+
+    When a user ends a chat and submits a rating or feedback, the webhook is now triggered immediately. If the chat is ended without submitting feedback, the webhook will be automatically sent after a 10-minute delay.
+*   **Added Protection Against Clickjacking Attacks**
+
+    Implemented protection against clickjacking by preventing the application from being embedded in unauthorized iframes.
+
+    This update enhances login and session security, reducing the risk of credential theft and unauthorized account access through malicious framing attempts.
+*   **Adjusted Default Organization Logic for Trial Users**
+
+    Updated the default organization behavior for users whose personal organization is on trial but who are also members of a non-trial organization.
+
+    Users will now default to the non-trial organization when accessing the platform, ensuring correct login context and preventing issues with features that rely on the default organization setting.
+*   **Added “Once per Session” Option for In-Chat Buttons**
+
+    Introduced a new “Once per Session” appearance condition for in-chat buttons in Live Chat and Copilot.
+
+    When enabled, the button appears only once per user session, hides immediately after being clicked, and does not reappear during the same session — even after re-renders or re-triggers.
+
+    This behavior is managed in session memory and applies to all in-chat button types, ensuring more controlled and predictable user interactions.
+*   **Escalation Button Now Hidden After Escalation is Triggered**
+
+    Updated the in-chat escalation button behavior in both Live Chat and Copilot.
+
+    Once a conversation enters the escalated state, the escalation button is automatically hidden to prevent duplicate or redundant escalation actions. If the conversation is later de-escalated, the button becomes visible again.
+*   **Enabled Reordering of Custom Fields in Live Chat Form**\
+    Admins can now manually reorder custom fields in the Live Chat form within the admin interface.
+
+    The updated order is reflected in the end-user chat form and remains persistent, even when other field properties are edited.
+*   **Display Last Editor (Name/Email) in Instructions Version Dropdown and Logs**
+
+    We have enhanced visibility into agent configuration changes by displaying the name or email of the last editor directly in the Instructions Version dropdown.
+
+    Users can now easily see who made the most recent changes to each version without needing to check debug logs.
+*   **Show Archived Conversations in Copilot Threads**
+
+    Users can access past archived chats directly within the interface, improving transparency and making it easier to review previous interactions when needed.
+
+    This option is available in the Copilot settings, allowing to control whether archived conversations are displayed.
+*   **Display Archived Conversations in Copilot Right-Side Drawer**
+
+    When the “View Archived Conversations” option is enabled in Copilot Settings, archived conversations are now also visible in the right-side drawer under “Past Conversations.”
+
+    Previously, archived chats were only accessible from the main Conversations section.
+*   **Prompt API – Custom Input Fields Added for Usage Tracking**
+
+    Support for custom input fields has been added to the Prompt API to enable more detailed usage tracking.
+
+    A TokenTrackingID can now be passed within API requests. This value is stored in logs and can be used to segment and monitor token usage across different users or use cases.
+*   **Conditional Display of “Test Agent” Link in Launch Pad**
+
+    The “Test Agent” link in the Launch tab is now displayed only when the agent is set to public.
+
+    If the agent is configured as private, the link is hidden and not available in the Launch Pad.
+
+    This update ensures that test access is aligned with the agent’s visibility settings.
+*   **API Update – Support Ordering Conversations by Updated Date**
+
+    The /external/conversations endpoint has been updated to support ordering conversations by updatedAt.
+
+    Previously, only createdAt was supported as an orderBy parameter, which limited the ability to group conversations by most recent activity.
+
+    With this update, conversations can now be ordered by their last update timestamp, enabling more accurate sorting and improved alignment with UI requirements.
+*   **Copilot – Auto Archive Conversations**
+
+    Support for automatic conversation archiving has been added to Copilot.
+
+    Conversations can now be automatically moved to an archived state based on the configured behavior, reducing manual management and keeping active conversation lists clean.
+*   **Organization-Level Setting to Enforce Authenticator App MFA**
+
+    An organization-level setting has been introduced to enforce multi-factor authentication (MFA) via an authenticator app.
+
+    When enabled, users who have not configured MFA are automatically redirected to complete setup before accessing other parts of the system. Access remains restricted until the setup process is successfully completed.
+
+    SMS-based MFA is not permitted when this setting is enforced, ensuring authentication is completed specifically through an authenticator application.
+
+**Fixes**
+
+*   **Resolved User Identity Leakage in Live Chat**&#x20;
+
+    Fixed an issue where the Live Chat retained a previous user’s identity in the browser after logout. When a new user logged in on the same browser profile, the widget could continue the previous session. The CLEAR\_USER command now properly resets the stored visitor identity, ensuring each user starts a clean and independent conversation session.
+
+***
+
 **February 17, 2026**\
 **New Features**
 

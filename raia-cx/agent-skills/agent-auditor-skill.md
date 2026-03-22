@@ -1,6 +1,6 @@
 # Agent Auditor Skill
 
-<figure><img src="../../.gitbook/assets/image (198).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (271).png" alt=""><figcaption></figcaption></figure>
 
 The **Auditor Skill** enables administrators to audit AI conversations for **security, privacy, and compliance** purposes. It automatically scans messages for:
 

@@ -16,7 +16,7 @@ Navigate to:
 
 > **LaunchPad → Manage → Conversation States**
 
-<figure><img src="../../.gitbook/assets/image (204).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (277).png" alt=""><figcaption></figcaption></figure>
 
 From the sidebar:
 
@@ -33,7 +33,7 @@ This page allows you to:
 ✅ Edit or remove outdated statuses\
 ✅ Create new workflow states for Copilot
 
-<figure><img src="../../.gitbook/assets/image (205).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (278).png" alt=""><figcaption></figcaption></figure>
 
 > These colored labels are exactly what will display inside conversations in Copilot.
 
@@ -47,7 +47,7 @@ Click:
 
 You will be taken to the state creation form:
 
-<figure><img src="../../.gitbook/assets/image (208).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (281).png" alt=""><figcaption></figcaption></figure>
 
 Here you can configure:
 
@@ -67,7 +67,7 @@ Example inputs:
 
 Click **Create Conversation State** to finalize.
 
-<figure><img src="../../.gitbook/assets/image (209).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (282).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
