@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # raiaCX for Support
 
 ### Why #1: Preserve and Share Expertise Across Your Organization

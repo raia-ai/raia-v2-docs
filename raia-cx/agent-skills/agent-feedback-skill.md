@@ -1,6 +1,6 @@
 # Agent Feedback Skill
 
-<figure><img src="../../.gitbook/assets/image (276).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (203).png" alt=""><figcaption></figcaption></figure>
 
 ## Feedback Skill
 
@@ -35,7 +35,7 @@ Inside the **Feedbacks** tab, administrators can:
 
 Each feedback entry is automatically compiled into a structured **JSON document** suitable for AI training and analytics.
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 ### Configuration
 
@@ -47,4 +47,4 @@ The **Feedback Skill Config** panel allows fine-tuning of how feedback is collec
 | **Generation Mode**      | Auto · Manual                                         | **Auto** generates the feedback document automatically on schedule. **Manual** allows admins to trigger generation on demand. |
 | **Auto Upload Document** | On / Off                                              | When enabled, the generated feedback document is uploaded to the AI immediately after generation for training.                |
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>

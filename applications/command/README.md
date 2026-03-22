@@ -1,5 +1,6 @@
 ---
 description: Formerly known as Launch Pad
+hidden: true
 ---
 
 # Command
