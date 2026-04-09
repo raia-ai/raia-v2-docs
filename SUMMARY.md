@@ -17,7 +17,7 @@
 
 ## raia CX
 
-* [Setting up New Account](raia-cx/setting-up-new-account.md)
+* [Setting up New Account](raia-cx/setting-up-account.md)
 * [Sign up via Invite](raia-cx/sign-up-via-invite.md)
 * [Building an AI Agent](raia-cx/building-an-ai-agent.md)
 * [Searching Agents](raia-cx/searching-agents.md)
