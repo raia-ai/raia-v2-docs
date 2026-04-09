@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # MCP with ChatGPT
 
 ## How to Access a raia AI Agent via MCP in ChatGPT
