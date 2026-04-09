@@ -1,6 +1,6 @@
-# Setting up Account
+# Setting up New Account
 
-{% hint style="info" %}
+{% hint style="warning" %}
 In order to setup an Account on raia you will require a License Key or you will need to be invited to an Organization that has a license key. \
 \
 To obtain a license key please email sales@raiaai.com.\
