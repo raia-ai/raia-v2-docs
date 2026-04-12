@@ -107,6 +107,7 @@
 
 ## Integrations
 
+* [AI DLC with raia Agents](integrations/ai-dlc-with-raia-agents.md)
 * [MCP with VS Code](integrations/mcp-with-vs-code.md)
 * [MCP with Windsurf](integrations/mcp-with-windsurf.md)
 * [MCP with ChatGPT](integrations/mcp-with-chatgpt.md)
