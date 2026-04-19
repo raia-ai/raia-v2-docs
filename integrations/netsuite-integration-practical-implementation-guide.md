@@ -1,3 +1,10 @@
+---
+metaLinks:
+  alternates:
+    - >-
+      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/integrations/training-integrations/netsuite-integration-practical-implementation-guide
+---
+
 # Netsuite Integration — Practical Implementation Guide
 
 ### Introduction

@@ -1,4 +1,11 @@
-# Live chat in Zendesk
+---
+metaLinks:
+  alternates:
+    - >-
+      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/applications/chat/live-chat-in-zendesk
+---
+
+# Live Chat in Zendesk
 
 ## Raia × Zendesk Help Center Integration Guide
 

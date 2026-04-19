@@ -1,12 +1,11 @@
-# Setting up New Account
+---
+metaLinks:
+  alternates:
+    - >-
+      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/raia-cx/setting-up-new-account
+---
 
-{% hint style="warning" %}
-In order to setup an Account on raia you will require a License Key or you will need to be invited to an Organization that has a license key. \
-\
-To obtain a license key please email sales@raiaai.com.\
-\
-To request an invite from your organization please contact the Admin of your raia account and request an invite.
-{% endhint %}
+# Setting up Account
 
 Here’s a clear, **step-by-step guide to setting up a new account on raia and building your first AI agent**, tailored for a business user or team member. I'll mix in both the **big-picture overview** and the **practical clicks and steps** you’ll take in the platform.
 
@@ -19,7 +18,6 @@ Here’s a clear, **step-by-step guide to setting up a new account on raia and b
 * **Go to the raia website:** [https://www.raiaai.com](https://www.raiaai.com/) or go direct to the app [https://raia2.com](https://raia2.com/)
 * **Click “Get Started”** or **“Sign Up”** – You’ll usually see a prominent button to start the registration process.
 * **Provide your information:** You’ll be asked for your name, phone, email, and to set a password. Some plans may prompt for a company name.
-* You will be required to enter a License Key. If you do not have one contact sales@raiaai.com.
 * Our platform requires 2FA via Phone - so make sure you put a mobile phone.
 * **Verify your email:** Check your inbox for a verification link and click it to activate your account.
 * **Log in** with your new credentials.
@@ -71,7 +69,7 @@ raia uses a **step-by-step wizard**. Here’s how the process typically flows:
 
 ***
 
-#### **Step 4:** [**Select Skills**](../launch-plan/ai-agent-skills/)
+#### **Step 4:** [**Select Skills**](../ai-agent-skills/)
 
 * raia agents come with built-in skills: **Live Chat, SMS, Email, Voice, APIs, Calendar, Campaigns, Webhooks**, etc.
 * Choose the communication channels and integrations your agent needs.
@@ -79,7 +77,7 @@ raia uses a **step-by-step wizard**. Here’s how the process typically flows:
 
 ***
 
-#### **Step 5:** [**Connect Integrations**](../integrations/workflow-integration/)
+#### **Step 5:** [**Connect Integrations**](../integration/)
 
 * Link to your CRM, calendar, or other apps via API keys or OAuth.
 * Configure permissions (least privilege is best).

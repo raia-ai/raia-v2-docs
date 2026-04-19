@@ -2,6 +2,9 @@
 description: >-
   Internal User Experience for training, testing and collaborating with your AI
   Agents.
+metaLinks:
+  alternates:
+    - https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/applications/copilot
 ---
 
 # Copilot
@@ -30,5 +33,4 @@ raia’s Co-Pilot platform makes accessing AI agents a breeze. With a straightfo
 
 Whether you are providing access to the foundation model of OpenAI or building custom AI Agents trained on your processes and data - you can deliver intelligence-on-demand to your team. raia makes it simple to connect AI with your existing tools. Integrate apps into ChatGPT and let raia’s Agent Autopilot feature handle recurring tasks and reminders automatically. Whether it’s integrating with CRMs, managing internal databases, or creating new workflows, raia’s flexible design lets your team stay organized and efficient.
 
-[\
-](https://open.gitbook.com/~site/site_0CrXx/~/revisions/gvzouR4VisGpVxoCkiXr/copilot-vs-chatgpt)
+[<br>](https://open.gitbook.com/~site/site_0CrXx/~/revisions/gvzouR4VisGpVxoCkiXr/copilot-vs-chatgpt)

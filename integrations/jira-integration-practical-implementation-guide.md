@@ -1,3 +1,10 @@
+---
+metaLinks:
+  alternates:
+    - >-
+      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/integrations/training-integrations/jira-integration-practical-implementation-guide
+---
+
 # Jira Integration — Practical Implementation Guide
 
 ### Introduction

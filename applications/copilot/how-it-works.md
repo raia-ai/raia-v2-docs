@@ -1,3 +1,10 @@
+---
+metaLinks:
+  alternates:
+    - >-
+      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/applications/copilot/how-it-works
+---
+
 # How it works
 
 ## How it Works

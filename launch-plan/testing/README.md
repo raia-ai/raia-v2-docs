@@ -1,3 +1,9 @@
+---
+metaLinks:
+  alternates:
+    - https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/launch-plan/testing
+---
+
 # Testing
 
 ## 🧪 Phase 4: RAIA TESTING — Real-World QA + Feedback Loop

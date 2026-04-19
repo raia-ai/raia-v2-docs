@@ -1,3 +1,10 @@
+---
+metaLinks:
+  alternates:
+    - >-
+      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/launch-plan/ai-agent-roles/ai-project-manager
+---
+
 # AI Project Manager
 
 ## 📋 How to Build a Project Manager AI Agent in raia v2

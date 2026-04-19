@@ -1,3 +1,10 @@
+---
+metaLinks:
+  alternates:
+    - >-
+      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/launch-plan/ai-agent-roles/ai-support-agent
+---
+
 # AI Support Agent
 
 ## 🛟 How to Build a Support AI Agent in raia v2

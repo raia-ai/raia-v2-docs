@@ -1,3 +1,10 @@
+---
+metaLinks:
+  alternates:
+    - >-
+      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/applications/copilot/human-in-the-loop
+---
+
 # Human in the Loop
 
 ## 👤 Using Human-in-the-Loop Mode in Copilot

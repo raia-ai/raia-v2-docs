@@ -1,3 +1,10 @@
+---
+metaLinks:
+  alternates:
+    - >-
+      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/integrations/training-integrations/wistia-integration-practical-implementation-guide
+---
+
 # Wistia Integration — Practical Implementation Guide
 
 ### Introduction

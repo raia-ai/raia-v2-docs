@@ -1,14 +1,21 @@
+---
+metaLinks:
+  alternates:
+    - >-
+      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/raia-cx/launch-pad/launchpad-conversations-tab
+---
+
 # Launchpad Conversations Tab
 
 ## Conversation Tab
 
 The Conversation Tab keeps track of the Quality Score, Agent Name, User, Source, Total Message and a Summary.
 
-<figure><img src="../../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (186).png" alt=""><figcaption></figcaption></figure>
 
 Whilst allowing you to download the full logs of the conversation or delete them.
 
-<figure><img src="../../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (187).png" alt=""><figcaption></figcaption></figure>
 
 ## Agent Name, User & Messages
 
@@ -22,4 +29,4 @@ Clicking on Messages it will send you directly to the CoPilot logs.
 
 You're able to search and sort easier by changing the Source or Status to what you are specifically looking for.
 
-<figure><img src="../../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (188).png" alt=""><figcaption></figcaption></figure>

@@ -1,3 +1,10 @@
+---
+metaLinks:
+  alternates:
+    - >-
+      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/integrations/training-integrations/vimeo-integration-practical-implementation-guide
+---
+
 # Vimeo Integration — Practical Implementation Guide
 
 ### Introduction

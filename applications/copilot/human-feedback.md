@@ -1,3 +1,10 @@
+---
+metaLinks:
+  alternates:
+    - >-
+      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/applications/copilot/human-feedback
+---
+
 # Human Feedback
 
 ## 🧠 How to Provide Human Feedback in Copilot to Train Your AI Agent

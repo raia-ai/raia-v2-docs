@@ -1,10 +1,18 @@
+---
+description: >-
+  raia's Live Chat SDK lets you customize the chat experience. You can pass user
+  info and context, send messages programmatically, and fully control the chat
+  interface.
+metaLinks:
+  alternates:
+    - /broken/spaces/EwGkQrKpAAj0jhmC3fkJ/pages/WWFiftnB9zLD22bBEEgm
+---
+
 # Live Chat SDK
 
 This article covers the two primary integration methods: the **Embed JS SDK** and the **Iframe SDK.**&#x20;
 
-Check out this simple HTML Example of the SDK in action:&#x20;
 
-[https://storage.googleapis.com/raiahosted/raia\_test\_sdk.html](https://storage.googleapis.com/raiahosted/raia_test_sdk.html)
 
 ## Key Capabilities
 
@@ -114,7 +122,7 @@ The following example demonstrates how to use the Embed JS SDK to interact with 
 
 ### 3. SDK Command Reference
 
-Once the widget script is loaded, you can control it using `raiaChat.sendCommand()` Because the script loads asynchronously, wait until the SDK is ready before calling commands.
+Once the widget script is loaded, you can control it using `window.raiaChat.sendCommand()` Because the script loads asynchronously, wait until the SDK is ready before calling commands.
 
 ```
 function whenRaiaChatReady(callback) { 
@@ -130,30 +138,24 @@ whenRaiaChatReady((raiaChat) => {
 }); 
 ```
 
-
-
 **Available commands:**
 
-<table><thead><tr><th>Command</th><th>Description</th><th width="232">Payload (example)</th></tr></thead><tbody><tr><td><code>INIT</code></td><td>Initializes the chat session (API key only if required in your environment).</td><td><p><code>{ apiKey?:</code> </p><p><code>"YOUR_API_KEY" }</code></p></td></tr><tr><td><code>OPEN_CHAT</code></td><td>Opens the chat window.</td><td><code>{ page?: 'home'| 'chat' }</code></td></tr><tr><td><code>CLOSE_CHAT</code></td><td>Closes the chat window.</td><td>-</td></tr><tr><td><code>SEND_MESSAGE</code></td><td>Sends a message as the user.</td><td><code>{ message: string }</code></td></tr><tr><td><code>SET_USER</code></td><td>Sets the user’s information.</td><td><code>{ user: { fkId?, fkUserId?, firstName?, lastName?, email?, phoneNumber?, customData? } }</code></td></tr><tr><td><code>CLEAR_USER</code></td><td>Clears the user's information.</td><td>-</td></tr><tr><td><code>SET_CONTEXT</code></td><td>Sets context used for the next interaction/message.</td><td><code>{ context: string }</code></td></tr><tr><td><code>CLEAR_CONTEXT</code></td><td>Clears message-level context.</td><td>-</td></tr><tr><td><code>SET_CONVERSATION_CONTEXT</code></td><td>Sets context for the entire conversation.</td><td><code>{ context: string }</code></td></tr><tr><td><code>SET_WELCOME_MESSAGE</code></td><td>Overrides the default welcome message.</td><td><code>{ message: string }</code></td></tr><tr><td><code>ENABLE_CURRENT_PAGE_TEXT</code></td><td>Allows the AI to use the current page text as context.</td><td>-</td></tr><tr><td><code>DISABLE_CURRENT_PAGE_TEXT</code></td><td>Prevents the AI from using the current page text as context.</td><td>-</td></tr><tr><td><code>RELOAD</code></td><td>Reloads the chat application.</td><td>-</td></tr><tr><td><code>REFETCH_CONFIG</code></td><td>Forces the chat to pull the latest configuration from the server.</td><td>-</td></tr><tr><td><code>DELETE_CHAT</code></td><td>Wipes the current conversation.</td><td>-</td></tr><tr><td><code>RESET_USER</code></td><td>Resets the current user identity and clears user-linked session state so the next interaction behaves like a fresh/anonymous user.</td><td>-</td></tr></tbody></table>
+<table><thead><tr><th>Command</th><th>Description</th><th width="232">Payload (example)</th></tr></thead><tbody><tr><td><code>INIT</code></td><td>Initializes the chat session (API key only if required in your environment).</td><td><p><code>{ apiKey?:</code> </p><p><code>"YOUR_API_KEY" }</code></p></td></tr><tr><td><code>OPEN_CHAT</code></td><td>Opens the chat window.</td><td><code>{ page?: 'home'| 'chat' }</code></td></tr><tr><td><code>CLOSE_CHAT</code></td><td>Closes the chat window.</td><td>-</td></tr><tr><td><code>SEND_MESSAGE</code></td><td>Sends a message as the user.</td><td><code>{ message: string }</code></td></tr><tr><td><code>SET_USER</code></td><td>Sets the user’s information.</td><td><code>{ user: { fkId?, fkUserId?, firstName?, lastName?, email?, phoneNumber?, customData? } }</code></td></tr><tr><td><code>CLEAR_USER</code></td><td>Clears the user's information.</td><td>-</td></tr><tr><td><code>SET_CONTEXT</code></td><td>Sets context used for the next interaction/message.</td><td><code>{ context: string }</code></td></tr><tr><td><code>CLEAR_CONTEXT</code></td><td>Clears message-level context.</td><td>-</td></tr><tr><td><code>SET_CONVERSATION_CONTEXT</code></td><td>Sets context for the entire conversation.</td><td><code>{ context: string }</code></td></tr><tr><td><code>SET_WELCOME_MESSAGE</code></td><td>Overrides the default welcome message.</td><td><code>{ message: string }</code></td></tr><tr><td><code>ENABLE_CURRENT_PAGE_TEXT</code></td><td>Allows the AI to use the current page text as context.</td><td>-</td></tr><tr><td><code>DISABLE_CURRENT_PAGE_TEXT</code></td><td>Prevents the AI from using the current page text as context.</td><td>-</td></tr><tr><td><code>RELOAD</code></td><td>Reloads the chat application.</td><td>-</td></tr><tr><td><code>REFETCH_CONFIG</code></td><td>Forces the chat to pull the latest configuration from the server.</td><td>-</td></tr><tr><td><code>DELETE_CHAT</code></td><td>Wipes the current conversation.</td><td>-</td></tr></tbody></table>
 
-### 4. Customizing the Chat Widget Appearance (CSS)
+### 4. CSS Customization (Embed JS)&#x20;
 
-You can override the default widget styles with your own CSS. The widget injects its base styles into the host page at runtime (via an inline `<style>` tag). Make sure your custom stylesheet is loaded **after** the widget script or use `!important` to ensure your styles are applied (sparingly).
+You can override the default widget styles with your own CSS. Make sure your custom stylesheet is loaded after the widget script or use `!important` to ensure your styles are applied.&#x20;
 
-#### 4.1 Quick customization (common classes)
+#### Targetable CSS Classes:&#x20;
 
-**Targetable CSS Classes:**
+* `.raia-chat-container`  — The main chat window container.&#x20;
+* `.raia-chat-container-open` — Added when the chat window is open.&#x20;
+* `.raia-chat-button` — The floating launcher button.&#x20;
+* `.raia-chat-button-icon` — The `<img>` element inside the launcher button.&#x20;
 
-* **`.raia-chat-container`** – The main chat widget container that holds the iframe with the chat UI. This is the element that’s fixed in the bottom-right corner and controls size, position, border-radius, box-shadow, etc.
-* **`.raia-chat-container-open`** – Applied to the same container when the chat is opened. Controls visibility, opacity, pointer-events, and the open/closed transition. Toggling this class is what shows/hides the widget.
-* **`.raia-chat-button`** – The floating launcher button container (the round button you click to open the chat). Controls fixed positioning, cursor, border-radius, margins, and the hover transform.
-* **`.raia-chat-button-icon`** – The `<img>` inside the launcher button (the avatar/icon). Controls its size and circular shape.
+**Example: reposition and restyle the widget:**
 
-These class names are defined as constants in `src/chatbotWidget/constants.ts` and then used both for DOM creation and for the default injected styles, so overriding them in your own stylesheet (loaded after the widget script) is the supported way to customize positioning and appearance from the host page.
-
-**Example: reposition and restyle the widget**
-
-```css
+```
 /* Reposition the chat window to the bottom-left */ 
 .raia-chat-container { 
   right: auto !important; 
@@ -170,18 +172,17 @@ These class names are defined as constants in `src/chatbotWidget/constants.ts` a
 } 
 ```
 
-**Example: use a custom launcher button**
+**Example: use a custom launcher button:**
 
 A common use case is to hide the default button and open the chat from another element, like a button in your navigation bar.
 
-Hide the default button and open the chat from your own UI element:
+_**Hide the default button and open the chat from your own UI element:**_
 
 ```
 /* Hide the default floating launcher button */ 
 .raia-chat-button { 
   display: none !important; 
 } 
-
 ```
 
 ```
@@ -202,125 +203,7 @@ Hide the default button and open the chat from your own UI element:
     }); 
   }); 
 </script> 
-
 ```
-
-#### 4.2 Advanced: Overriding base styles (BEM classes)
-
-The Raia chatbot widget injects its base styles into the host page at runtime (via an inline `<style>` tag). When embedding on an external site, you can override these base styles by adding your own CSS rules that target the widget’s public class names.
-
-**How overrides work**
-
-* The widget’s base CSS is injected at runtime.
-* Your site CSS can override it using:
-  * More specific selectors, or
-  * `!important` (use sparingly)
-
-**Public CSS classes (BEM)**
-
-The widget uses the `raia-chat-widget__*` namespace for elements.
-
-**Block**
-
-* `.raia-chat-widget`
-
-**Elements**
-
-* `.raia-chat-widget__container` — floating chat container (contains the `<iframe>`)
-* `.raia-chat-widget__launcher` — fixed-position launcher container
-* `.raia-chat-widget__button` — clickable launcher button
-* `.raia-chat-widget__button-image` — `<img>` inside the button (avatar mode)
-* `.raia-chat-widget__button-text` — `<p>` inside the button (text-only mode)
-* `.raia-chat-widget__tooltip` — tooltip shown for icon+text mode
-* `.raia-chat-widget__suggestions` — suggestions popup container
-* `.raia-chat-widget__suggestion` — a single suggestion button
-
-**Modifiers / state**
-
-* `.raia-chat-widget__container--open` — applied when chat is open
-* `.raia-chat-widget__tooltip--visible` — applied when tooltip is visible
-* `.raia-chat-widget__suggestions--visible` — applied when suggestions popup is visible
-* `.raia-chat-widget__launcher--icon-and-text` — applied when tooltip is shown (icon+text mode)
-
-**View mode and size (public)**
-
-These classes can be used for conditional overrides:
-
-* `.raia-chat-mode-popup` / `.raia-chat-mode-sidebar`
-* `.raia-chat-size-small` / `.raia-chat-size-medium` / `.raia-chat-size-big` / `.raia-chat-size-full_height`
-
-
-
-**Recommended override pattern**
-
-Create a small CSS file in your host site and load it after any CSS reset and your base theme. If you want to avoid affecting other widgets or pages, scope your overrides to a page wrapper (example: `body.customer-portal`).
-
-```
-/* 1) Scope overrides (recommended) */
-body.customer-portal .raia-chat-widget__launcher {
-  right: 24px;
-  bottom: 24px;
-}
-
-/* 2) Customize container (chat window) */
-body.customer-portal .raia-chat-widget__container {
-  width: 420px;
-  border-radius: 18px;
-}
-
-/* 3) Example: different width for sidebar mode */
-body.customer-portal .raia-chat-widget__container.raia-chat-mode-sidebar {
-  width: 520px;
-}
-
-/* 4) Customize launcher button */
-body.customer-portal .raia-chat-widget__button {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
-}
-
-/* 5) Tooltip styling */
-body.customer-portal .raia-chat-widget__tooltip {
-  font-family: inherit;
-  border-radius: 10px;
-}
-
-/* 6) Suggestions */
-body.customer-portal .raia-chat-widget__suggestions {
-  gap: 10px;
-}
-body.customer-portal .raia-chat-widget__suggestion {
-  border-radius: 10px;
-}
-
-```
-
-**When to use `!important`**
-
-Prefer selector specificity first. If you must force an override (e.g., your CSS loads before the widget script and you cannot change order), use `!important` on a small number of properties.
-
-**Safe properties to override**
-
-Safe:
-
-* Layout/position: `right`, `bottom`, `width`, `height`, `max-height`
-* Visual: `border-radius`, `box-shadow`, `background`, `font-family`, `font-size`
-
-Be careful with:
-
-* `pointer-events` and `visibility` (used for open/close behavior)
-* `transform` and `opacity` (used for animations/transitions)
-
-**Troubleshooting**
-
-If your styles don’t apply:
-
-* Confirm your selector matches the element class
-* Increase specificity (add a page scope / parent selector)
-* As a last resort, use `!important`
-
-If the widget becomes unclickable:
-
-* Check you didn’t override `pointer-events` on launcher/button elements
 
 ## Iframe SDK
 

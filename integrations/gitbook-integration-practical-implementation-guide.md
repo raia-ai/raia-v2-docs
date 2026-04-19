@@ -1,3 +1,10 @@
+---
+metaLinks:
+  alternates:
+    - >-
+      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/integrations/training-integrations/gitbook-integration-practical-implementation-guide
+---
+
 # Gitbook Integration — Practical Implementation Guide
 
 ### Introduction

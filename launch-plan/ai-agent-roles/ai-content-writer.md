@@ -1,3 +1,10 @@
+---
+metaLinks:
+  alternates:
+    - >-
+      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/launch-plan/ai-agent-roles/ai-content-writer
+---
+
 # AI Content Writer
 
 ## ✍️ How to Build an AI Content Writer in raia v2

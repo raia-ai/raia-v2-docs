@@ -1,3 +1,10 @@
+---
+metaLinks:
+  alternates:
+    - >-
+      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/launch-plan/ai-agent-roles/ai-sales-agent
+---
+
 # AI Sales Agent
 
 ## 🤖 How to Build a Sales AI Agent in raia v2
