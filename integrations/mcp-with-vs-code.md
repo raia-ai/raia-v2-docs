@@ -47,7 +47,7 @@ Click **Install**.
 
 > Note: If prompted about Restricted Mode, click **Trust** to enable full functionality.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-02-15 at 7.11.17 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-15 at 7.11.17 AM.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -73,7 +73,7 @@ Ctrl + Shift + P
 MCP: Add Server
 ```
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-02-15 at 7.11.46 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-15 at 7.11.46 AM.png" alt=""><figcaption></figcaption></figure>
 
 #### 3. Choose Server Type
 
@@ -213,7 +213,7 @@ This prevents having to manually restart the MCP server.
 
 ## &#x20;Example of it working:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-02-15 at 8.05.58 AM (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-15 at 8.05.58 AM (1).png" alt=""><figcaption></figcaption></figure>
 
 \
 Common Error:&#x20;

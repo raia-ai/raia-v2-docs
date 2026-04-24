@@ -42,9 +42,9 @@ When enabled:
 
 
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-02-15 at 8.59.01 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-15 at 8.59.01 AM.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-02-15 at 8.59.24 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-15 at 8.59.24 AM.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -72,9 +72,9 @@ Example MCP URL format:
 https://api.raia2.com/mcp/{agent-uuid}
 ```
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-02-15 at 8.59.30 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-15 at 8.59.30 AM.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-02-15 at 9.02.20 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-15 at 9.02.20 AM.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -133,9 +133,9 @@ Click **Publish** to make it available to workspace members.
 
 After publishing, it will appear in the **Apps Directory** for your workspace.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-02-15 at 9.03.08 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-15 at 9.03.08 AM.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-02-15 at 9.03.15 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-15 at 9.03.15 AM.png" alt=""><figcaption></figcaption></figure>
 
 ***
 

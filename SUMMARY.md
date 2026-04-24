@@ -110,10 +110,11 @@
 * [Application Integrations](integrations/application-integrations/README.md)
   * [Microsoft Dynamics 365 Setup](integrations/application-integrations/microsoft-dynamics-365-setup.md)
 * [Tools Integration](integrations/tools-integration/README.md)
-  * [AI DLC with raia Agents](integrations/tools-integration/ai-dlc-with-raia-agents.md)
-  * [MCP with ChatGPT](integrations/tools-integration/mcp-with-chatgpt.md)
-  * [MCP with Windsurf](integrations/tools-integration/mcp-with-windsurf.md)
-  * [MCP with VS Code](integrations/tools-integration/mcp-with-vs-code.md)
+  * [AI DLC with raia Agents](integrations/ai-dlc-with-raia-agents.md)
+  * [MCP with ChatGPT](integrations/mcp-with-chatgpt.md)
+  * [MCP with Windsurf](integrations/mcp-with-windsurf.md)
+  * [MCP with VS Code](integrations/mcp-with-vs-code.md)
+  * [Microsoft Teams Integration](integrations/tools-integration/microsoft-teams-integration.md)
 * [Workflow Integration](integrations/workflow-integration/README.md)
   * [API Documentation](integrations/workflow-integration/api-documentation.md)
   * [n8n Node](integrations/workflow-integration/n8n-node.md)
@@ -136,7 +137,6 @@
   * [Zendesk Integration — Practical Implementation Guide](integrations/zendesk-integration-practical-implementation-guide.md)
 * [Agent-to-Agent Setup](integrations/agent-to-agent-setup.md)
 * [OpenAI Integration](integrations/openai-integration.md)
-* [Microsoft Teams Integration](integrations/microsoft-teams-integration.md)
 
 ## Launch Plan
 

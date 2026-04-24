@@ -4,7 +4,7 @@
 
 Got it — here’s the cleaned-up, well-structured **Markdown version** of the document you uploaded. I’ve preserved the technical details, clarified headings, and formatted code blocks properly for easy reuse in docs, README files, or internal guides.
 
-{% file src="../.gitbook/assets/app-package.zip" %}
+{% file src="../../.gitbook/assets/app-package.zip" %}
 
 ***
 
