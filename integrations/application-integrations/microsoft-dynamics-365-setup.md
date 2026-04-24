@@ -2,59 +2,60 @@
 
 ### Raia Platform Integration Guide: Microsoft Dynamics 365 CRM
 
-This playbook provides step-by-step instructions for integrating the Raia platform with Microsoft Dynamics 365 CRM. The integration utilizes the Microsoft Entra ID (formerly Azure Active Directory) OAuth 2.0 client credentials flow, which is the recommended approach for server-to-server (S2S) communication. This method allows the Raia platform to authenticate securely as an application and interact with the Dynamics 365 Web API to manage records such as contacts, leads, and opportunities.
+This playbook provides step-by-step instructions for integrating the Raia platform with Microsoft Dynamics 365 CRM. The integration utilizes the Microsoft Entra ID (formerly Azure Active Directory) OAuth 2.0 client credentials flow. This is the recommended approach for server-to-server (S2S) communication, allowing the Raia platform to authenticate securely as a confidential client application and interact with the Dynamics 365 Web API without requiring interactive user login.
 
 ### 1. Register the Application in Microsoft Entra ID
 
-The first step in the integration process is to register the Raia platform as an application within the client's Microsoft Entra ID tenant. This registration establishes the identity of the application and allows it to request access tokens.
+The first step is to register the Raia platform as an application within the client's Microsoft Entra ID tenant. This establishes the identity of the application.
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) or the Azure portal using an account with administrator permissions in the same tenant as the Dynamics 365 environment \[1].
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) using an account with administrator permissions in the same tenant as the Dynamics 365 environment \[1].
 2. Navigate to **Identity** > **Applications** > **App registrations**.
 3. Select **+ New registration**.
 4. Provide a meaningful name for the application, such as "Raia Platform Integration".
-5. Under **Supported account types**, select **Accounts in this organizational directory only (Single tenant)**, as the integration is typically specific to the client's organization \[1].
+5. Under **Supported account types**, select **Accounts in this organizational directory only (Single tenant)** \[1].
 6. Leave the **Redirect URI** blank, as it is not required for the client credentials flow.
 7. Click **Register** to create the application.
 
-Once the application is registered, navigate to the **Overview** page of the newly created app and record the **Application (client) ID** and the **Directory (tenant) ID**. These values are essential for configuring the authentication flow in the Raia platform \[1].
+Once registered, navigate to the **Overview** page of the newly created app and record the **Application (client) ID** and the **Directory (tenant) ID**. These values are essential for configuring the authentication flow \[1].
 
-### 2. Configure API Permissions
+**Important Note on API Permissions:** For true Server-to-Server (S2S) authentication using the client credentials flow, **you do not need to configure delegated API permissions** (such as `user_impersonation`) \[1] \[2]. The application will authenticate as itself, and its authorization will be governed entirely by the Application User and Security Roles configured inside Dynamics 365 (see Step 3).
 
-After registering the application, you must grant it permission to access the Dynamics 365 API.
+### 2. Configure Application Credentials (Certificates Preferred)
 
-1. In the left navigation pane of the app registration, select **API permissions**.
-2. Click **+ Add a permission**.
-3. Select the **APIs my organization uses** tab and search for "Dataverse" or "Dynamics CRM" \[1].
-4. Select the appropriate API from the search results.
-5. Choose **Delegated permissions** and check the box for **user\_impersonation** \[1].
-6. Click **Add permissions**.
-7. Crucially, you must grant admin consent for these permissions. Click the **Grant admin consent for \[Organization Name]** button and confirm the action \[1]. This step ensures that the application can access the API without requiring individual user consent, which is necessary for background services.
+To prove its identity when requesting an access token, the application requires credentials. Microsoft strongly recommends using certificate credentials or managed identities over password credentials (client secrets) for confidential client applications \[3].
 
-### 3. Generate a Client Secret
-
-The application requires a client secret to prove its identity when requesting an access token.
+#### Option A: Upload a Certificate (Recommended)
 
 1. In the left navigation pane of the app registration, select **Certificates & secrets**.
-2. Under the **Client secrets** tab, click **+ New client secret** \[2].
-3. Provide a description for the secret (e.g., "Raia Integration Secret") and select an appropriate expiration period (e.g., 12 or 24 months).
-4. Click **Add**.
-5. **Important:** Immediately copy the **Value** of the newly created client secret and store it securely. This value will not be displayed again once you navigate away from the page \[2].
+2. Under the **Certificates** tab, click **Upload certificate** \[2].
+3. Select your public key certificate file (`.cer`, `.pem`, or `.crt`).
+4. Provide a description and click **Add**.
+5. The Raia platform will use the corresponding private key to sign the token requests.
 
-### 4. Create an Application User in Dynamics 365
+#### Option B: Generate a Client Secret (Alternative)
 
-To allow the registered application to interact with Dynamics 365 data, you must create an application user within the Dynamics 365 environment and assign it the necessary security roles.
+If certificates or managed identities cannot be used, you can generate a client secret.
+
+1. Under the **Client secrets** tab, click **+ New client secret** \[1].
+2. Provide a description and select an appropriate expiration period.
+3. Click **Add**.
+4. **Critical:** Immediately copy the **Value** of the newly created client secret and store it securely in a key vault. This value will not be displayed again once you navigate away from the page \[2].
+
+### 3. Create an Application User in Dynamics 365
+
+To allow the registered application to interact with Dynamics 365 data, you must create an "Application User" within the Dynamics 365 environment and assign it the necessary security roles. This binds the Entra ID app registration to a specific identity inside Dataverse \[1] \[2].
 
 1. Log in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-2. Select **Environments** in the left navigation pane and choose the target Dynamics 365 environment \[3].
-3. Navigate to **Settings** > **Users + permissions** > **Application users** \[3].
+2. Select **Environments** in the left navigation pane and choose the target Dynamics 365 environment.
+3. Navigate to **Settings** > **Users + permissions** > **Application users**.
 4. Click **+ New app user**.
-5. Click **+ Add an app** and search for the application you registered in Microsoft Entra ID. Select it and click **Add** \[3].
+5. Click **+ Add an app** and search for the application you registered in Microsoft Entra ID. Select it and click **Add**.
 6. Select the appropriate **Business unit** for the application user.
 7. Click the pencil icon next to **Security roles** to assign permissions.
-8. Select a custom security role that provides the minimum required permissions for the Raia platform to function. Avoid assigning the System Administrator role unless absolutely necessary. A typical integration role should include Read and Write access to core entities such as Accounts, Contacts, Leads, and Opportunities \[4].
-9. Click **Save** and then **Create** to finalize the application user \[3].
+8. **Least Privilege Principle:** Select a custom security role that provides the minimum required permissions for the Raia platform to function (e.g., Read/Write access only to Contacts, Leads, and Opportunities). Do not assign the System Administrator role.
+9. Click **Save** and then **Create** to finalize the application user.
 
-### 5. Authenticate and Connect
+### 4. Authenticate and Connect
 
 With the application registered and the user created, the Raia platform can now authenticate and make requests to the Dynamics 365 Web API.
 
@@ -66,24 +67,22 @@ Make a `POST` request to the following URL: `https://login.microsoftonline.com/{
 
 Include the following parameters in the request body (application/x-www-form-urlencoded):
 
-| Parameter       | Value                                                                                                           |
-| --------------- | --------------------------------------------------------------------------------------------------------------- |
-| `client_id`     | The Application (client) ID obtained in Step 1.                                                                 |
-| `client_secret` | The client secret value obtained in Step 3.                                                                     |
-| `scope`         | The Dynamics 365 environment URL appended with `/.default` (e.g., `https://orgname.crm.dynamics.com/.default`). |
-| `grant_type`    | `client_credentials`                                                                                            |
+| Parameter       | Value                                                                                                                                                                            |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `client_id`     | The Application (client) ID obtained in Step 1.                                                                                                                                  |
+| `client_secret` | The client secret value obtained in Step 2 (if using secrets). If using certificates, use `client_assertion_type` and `client_assertion` instead.                                |
+| `scope`         | The Dynamics 365 environment URL appended with `/.default` (e.g., `https://orgname.crm.dynamics.com/.default`). This is the required scope format for confidential clients \[2]. |
+| `grant_type`    | `client_credentials`                                                                                                                                                             |
 
-The response will contain an `access_token`, which is typically valid for 60 minutes \[5].
+The response will contain an `access_token`, which is typically valid for 60 minutes.
 
 #### Making API Requests
 
 Use the obtained access token to authenticate requests to the Dynamics 365 Web API. Include the token in the `Authorization` header of your HTTP requests as a Bearer token.
 
-The base URL for the Web API follows this format: `https://{organization_name}.api.crm.dynamics.com/api/data/v9.2/`
+The base URL for the Web API typically follows this format: `https://{organization_name}.api.crm.dynamics.com/api/data/v9.2/`
 
 **Example: Retrieving Contacts**
-
-To retrieve a list of contacts, make a `GET` request to the `contacts` endpoint:
 
 ```http
 GET https://{organization_name}.api.crm.dynamics.com/api/data/v9.2/contacts
@@ -93,12 +92,22 @@ OData-Version: 4.0
 Accept: application/json
 ```
 
-The Raia platform can utilize standard RESTful operations (GET, POST, PATCH, DELETE) to interact with various entities within Dynamics 365, enabling seamless data synchronization and agent-driven actions.
+### 5. Validation and Operational Security
+
+Before deploying the integration to production, perform the following validation and operational security steps:
+
+#### Validation Steps
+
+1. **Test Token Acquisition:** Ensure the Raia platform can successfully acquire an access token using the configured credentials.
+2. **Call the WhoAmI Endpoint:** Make a `GET` request to `https://{organization_name}.api.crm.dynamics.com/api/data/v9.2/WhoAmI` to verify the token is accepted and correctly identifies the Application User.
+3. **Test Least Privilege:** Attempt to perform CRUD operations on tables the Raia platform _should_ have access to, and verify that operations on unauthorized tables are correctly rejected (returning a 403 Forbidden).
+
+#### Operational Security Best Practices
+
+* **Credential Rotation:** Establish a schedule to rotate certificates or client secrets before they expire to prevent integration downtime.
+* **Secure Storage:** Never hardcode credentials. Store certificates or client secrets in a secure vault (e.g., Azure Key Vault, AWS Key Management Service).
+* **Environment Isolation:** Create separate Entra ID app registrations and Dynamics 365 Application Users for Development, Testing, and Production environments.
 
 ### References
 
-\[1] Microsoft Learn. "Tutorial: Register an app with Microsoft Entra ID (Microsoft Dataverse)". https://learn.microsoft.com/en-us/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory \
-\[2] ZappySys Blog. "How to register App for Dynamics CRM 365 / CDS / Dataverse API (Azure AD / OAuth)". https://zappysys.com/blog/register-app-dynamics-crm-365-cds-dataverse-api-azure-ad-oauth/ \
-\[3] Microsoft Learn. "Create a Dataverse application user (preview)". https://learn.microsoft.com/en-us/power-platform/admin/create-dataverseapplicationuser \
-\[4] Demandbase Help Center. "Step 2 (OAuth): Create Microsoft Dynamics Integration User". https://support.demandbase.com/hc/en-us/articles/10420777675675-Step-2-OAuth-Create-Microsoft-Dynamics-Integration-User \
-\[5] Microsoft Learn. "OAuth 2.0 client credentials flow on the Microsoft identity platform". https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-client-creds-grant-flow
+\[1] Microsoft Learn. "Use single-tenant server-to-server authentication". https://learn.microsoft.com/en-us/power-apps/developer/data-platform/use-single-tenant-server-server-authentication \[2] Microsoft Learn. "Use OAuth authentication with Microsoft Dataverse". https://learn.microsoft.com/en-us/power-apps/developer/data-platform/authenticate-oauth \[3] Microsoft Learn. "Best practices for the Microsoft identity platform". https://learn.microsoft.com/en-us/entra/identity-platform/identity-platform-integration-checklist
