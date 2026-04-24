@@ -1,9 +1,3 @@
----
-metaLinks:
-  alternates:
-    - https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/launch-plan/raia-setup
----
-
 # raia Setup
 
 ## ✅ Phase 1: RAIA SETUP — Simple Implementation Guide

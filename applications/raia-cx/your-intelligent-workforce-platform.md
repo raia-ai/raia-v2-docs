@@ -1,10 +1,3 @@
----
-metaLinks:
-  alternates:
-    - >-
-      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/applications/raia-cx/your-intelligent-workforce-platform
----
-
 # Your Intelligent Workforce Platform
 
 ## Your Intelligent Workforce Platform

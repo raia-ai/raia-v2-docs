@@ -1,9 +1,5 @@
 ---
 description: Using Simulation in raia Connect to Test AI Agents
-metaLinks:
-  alternates:
-    - >-
-      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/applications/connect/simulation
 ---
 
 # Simulation

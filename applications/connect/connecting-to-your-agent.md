@@ -1,10 +1,3 @@
----
-metaLinks:
-  alternates:
-    - >-
-      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/applications/connect/connecting-to-your-agent
----
-
 # Connecting to your Agent
 
 raia Connect connects with your Agents you build in raia Launch Pad.&#x20;

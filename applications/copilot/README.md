@@ -2,9 +2,6 @@
 description: >-
   Internal User Experience for training, testing and collaborating with your AI
   Agents.
-metaLinks:
-  alternates:
-    - https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/applications/copilot
 ---
 
 # Copilot

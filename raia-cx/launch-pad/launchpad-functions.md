@@ -1,37 +1,30 @@
----
-metaLinks:
-  alternates:
-    - >-
-      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/raia-cx/launch-pad/launchpad-functions
----
-
 # Launchpad Functions
 
 ## Function Tab
 
-<figure><img src="../../.gitbook/assets/image (170).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
 
 ## Function Creation
 
-<figure><img src="../../.gitbook/assets/image (171).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure>
 
 ## Function Name & Internal Name
 
 The Function Name provides a clear, user-friendly label for what the AI function does, while the Internal Function Name ensures it’s uniquely identifiable and properly referenced within the system.
 
-<figure><img src="../../.gitbook/assets/image (172).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
 
 ## Function Status
 
 Function Status is important because it controls access, allowing you to keep a function private for personal use or share it with your organization for broader collaboration and consistency.
 
-<figure><img src="../../.gitbook/assets/image (173).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure>
 
 ## Function Instructions
 
 Function instructions are essential because they clearly define what the AI should do, ensuring the function is executed accurately and aligned with its intended purpose.
 
-<figure><img src="../../.gitbook/assets/image (174).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
 
 ## Webhook to Call
 
@@ -49,4 +42,4 @@ Function parameters define the specific inputs an AI function needs to execute p
 
 Header name and value are essential in function creation for securely passing authentication credentials or custom metadata required by the external API being called.
 
-<figure><img src="../../.gitbook/assets/image (175).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>

@@ -1,8 +1,5 @@
 ---
 description: raia Launch Pad – Core Functionality Overview
-metaLinks:
-  alternates:
-    - https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/raia-cx/launch-pad
 ---
 
 # Launch Pad

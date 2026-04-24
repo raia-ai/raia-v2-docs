@@ -1,9 +1,5 @@
 ---
 description: AI-First (raiaCX) vs. Human-First with Embedded AI (Traditional Platforms)
-metaLinks:
-  alternates:
-    - >-
-      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/applications/raia-cx/ai-first-vs.-human-first
 ---
 
 # AI-First vs. Human-First

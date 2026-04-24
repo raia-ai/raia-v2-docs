@@ -1,9 +1,5 @@
 ---
 description: raia Connect – Feedback Tool
-metaLinks:
-  alternates:
-    - >-
-      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/applications/connect/human-feedback
 ---
 
 # Human Feedback

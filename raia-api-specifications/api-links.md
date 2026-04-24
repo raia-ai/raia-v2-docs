@@ -1,10 +1,3 @@
----
-metaLinks:
-  alternates:
-    - >-
-      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/raia-api-specifications/api-links
----
-
 # API Links
 
 US Region: [https://api.raia2.com/api/external/docs/](https://api.raia2.com/api/external/docs/)

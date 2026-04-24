@@ -1,10 +1,3 @@
----
-metaLinks:
-  alternates:
-    - >-
-      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/applications/connect/raia-connect-user-guide
----
-
 # raia Connect User Guide
 
 ## Turn Your Company Knowledge Base into Living Intelligence

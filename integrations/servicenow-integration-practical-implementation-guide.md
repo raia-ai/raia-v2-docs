@@ -1,10 +1,3 @@
----
-metaLinks:
-  alternates:
-    - >-
-      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/integrations/training-integrations/servicenow-integration-practical-implementation-guide
----
-
 # ServiceNow Integration — Practical Implementation Guide
 
 ### Introduction

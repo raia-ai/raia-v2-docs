@@ -1,39 +1,32 @@
----
-metaLinks:
-  alternates:
-    - >-
-      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/raia-cx/launch-pad/launchpad-settings
----
-
 # Launchpad Settings
 
 ## Setting Personal Profile
 
 Going to the Setting on LaunchPad you'll have the option to fully edit and change your personal account information on raia.
 
-<figure><img src="../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 ## Admins Tab
 
 The Admins Tab is where you'll be able to manage the Users within your organization
 
-<figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 #### Invite User
 
 You have to ability to invite a user into your organization and set their role within it.
 
-<figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 #### Edit User
 
 You have the ability to fully Edit a organization Users Role and Status.
 
-<figure><img src="../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 As well as having to ability to the delete whichever user if necessary.
 
-<figure><img src="../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 ## Subscription
 
@@ -65,10 +58,10 @@ This section displays the active subscription plan and usage limits across multi
   The end date for the current plan.\
   **Importance**: Alerts the organization to renewal timelines to avoid service interruption.
 
-<figure><img src="../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 #### Payments
 
 You'll be able to also find the Payment section, which keeps track and allows you to manage your Payments.
 
-<figure><img src="../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>

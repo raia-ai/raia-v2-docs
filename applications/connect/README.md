@@ -1,9 +1,3 @@
----
-metaLinks:
-  alternates:
-    - https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/applications/connect
----
-
 # Connect
 
 **raia** Connect is a specialized application designed to streamline and accelerate the training of AI Agents by transforming traditional business content into AI-ready formats. It empowers teams to turn everyday knowledge—whether in PDFs, Word docs, slide decks, or web pages—into structured training data that can be instantly pushed into any AI Agent within the raia platform.

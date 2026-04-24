@@ -1,10 +1,3 @@
----
-metaLinks:
-  alternates:
-    - >-
-      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/introduction/welcome-to-raia/core-capabilities-of-raia
----
-
 # Core Capabilities of raia
 
 #### **No-Code AI Agent Creation (raia Command)**

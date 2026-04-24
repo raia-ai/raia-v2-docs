@@ -1,10 +1,3 @@
----
-metaLinks:
-  alternates:
-    - >-
-      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/applications/connect/guide-to-training-and-testing
----
-
 # Guide to Training and Testing
 
 {% embed url="https://youtu.be/Tk0XtPrr6pg" %}

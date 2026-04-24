@@ -1,9 +1,5 @@
 ---
 description: Transforming any unstructured or structured file type to be "AI Ready"
-metaLinks:
-  alternates:
-    - >-
-      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/applications/connect/file-transformation
 ---
 
 # File Transformation

@@ -1,8 +1,5 @@
 ---
 description: Externally facing Live Chat Experience for embedding on websites.
-metaLinks:
-  alternates:
-    - https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/applications/chat
 ---
 
 # Chat

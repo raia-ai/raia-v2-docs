@@ -1,10 +1,3 @@
----
-metaLinks:
-  alternates:
-    - >-
-      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/launch-plan/testing/reasons-for-bad-responses
----
-
 # Reasons for Bad Responses
 
 When testing AI Agents they can provide bad, incomplete or vague answers to questions during testing. The following outlines the various reasons the AI Agent may not be answering correctly (or meet your requirements/expectations).&#x20;

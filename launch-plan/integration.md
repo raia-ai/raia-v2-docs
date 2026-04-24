@@ -1,9 +1,3 @@
----
-metaLinks:
-  alternates:
-    - https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/launch-plan/integration
----
-
 # Integration
 
 ## 🔗 Phase 3: RAIA INTEGRATION — Practical Implementation Guide

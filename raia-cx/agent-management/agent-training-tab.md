@@ -1,33 +1,26 @@
----
-metaLinks:
-  alternates:
-    - >-
-      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/raia-cx/agent-management/agent-training-tab
----
-
 # Agent Training Tab
 
 ## Agent Instructions Tab
 
 The Agent Instructions Tab is where you'll be able to edit the prompting and the AI Agents Information
 
-<figure><img src="../../.gitbook/assets/image (122).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
 
 ## Ability to go to previous Agent version.
 
 Whenever you save your prompting a version is uploaded and saved as a backup to return to.
 
-<figure><img src="../../.gitbook/assets/image (123).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
 
 ## Custom Agent Prompting & Optimization
 
 You are able to create your own Agent prompting and customize it as you wish.
 
-<figure><img src="../../.gitbook/assets/image (126).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;If you are less experienced and feel unsure raia AI can optimize it for you. By simply clicking on the Optimize with AI button.
 
-<div align="center"><figure><img src="../../.gitbook/assets/image (125).png" alt="" width="104"><figcaption></figcaption></figure></div>
+<div align="center"><figure><img src="../../.gitbook/assets/image (52).png" alt="" width="104"><figcaption></figcaption></figure></div>
 
 Doing so will optimize your prompting to what is the standard for AI Prompting, even after doing so you are free to edit it as you need.
 
@@ -35,35 +28,35 @@ Doing so will optimize your prompting to what is the standard for AI Prompting, 
 
 With raia even after the creation of the agent, you are still able to add Information Packs.
 
-<figure><img src="../../.gitbook/assets/image (127).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
 
 ## Ability to add documents & disable them as needed.
 
 With raia you have the ability to uploads documents as you please, ranging from Json, Pdfs, etc.
 
-<figure><img src="../../.gitbook/assets/image (128).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
 
 As well as you have the ability to disable and enable as you please after importing them and if needed deleting them.
 
-<figure><img src="../../.gitbook/assets/image (130).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
 
 ## Advanced Settings
 
 This tab allows you to fine-tune your AI agent’s behavior by adjusting model settings like creativity (Temperature), response diversity (Top\_P), and enabling features like file search, JSON output, or code interpretation. It also links the agent to a specific Assistant ID and Vector Store for personalized memory and file-driven responses.
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## GPT Model
 
 The GPT model you choose determines the intelligence, speed, cost, and capabilities of your AI agent, directly affecting how well it understands and responds to users. Selecting the right model—whether lightweight for efficiency or advanced for complex reasoning—ensures the agent aligns with your specific goals and performance needs.
 
-<figure><img src="../../.gitbook/assets/image (132).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
 
 ## AI Agent Creativity
 
 The Creativity (Temperature) setting controls how random or creative the AI’s responses are—lower values (0.2–0.5) produce more focused, predictable answers, while higher values (0.7–1.0) generate more diverse and imaginative output. Adjusting this lets you tailor the AI's tone and response style to match your use case, from technical accuracy to conversational flair.
 
-<figure><img src="../../.gitbook/assets/image (133).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
 
 ## AI Agent Randomness
 
@@ -87,9 +80,9 @@ The **Assistant ID** uniquely identifies a specific AI agent configuration, link
 
 The **Update Vector Store** option allows users to delete and recreate an existing vector store in one step. This is especially useful when major changes have been made to the source data, ensuring the store reflects the most current and accurate information. When this option is triggered, the system removes the old vector embeddings and regenerates them from the updated data set. This process helps maintain optimal search accuracy, content relevance, and system performance without requiring manual deletion followed by a separate recreation step.
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## [Agents Tab Full Showcase](https://www.youtube.com/watch?v=FE4Stzy5fTk)
 

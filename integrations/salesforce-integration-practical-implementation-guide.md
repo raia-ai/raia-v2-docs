@@ -1,10 +1,3 @@
----
-metaLinks:
-  alternates:
-    - >-
-      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/integrations/training-integrations/salesforce-integration-practical-implementation-guide
----
-
 # Salesforce Integration — Practical Implementation Guide
 
 ### Introduction

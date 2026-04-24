@@ -1,10 +1,3 @@
----
-metaLinks:
-  alternates:
-    - >-
-      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/integrations/training-integrations/zendesk-integration-practical-implementation-guide
----
-
 # Zendesk Integration — Practical Implementation Guide
 
 ### Introduction

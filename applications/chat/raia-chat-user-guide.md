@@ -1,10 +1,3 @@
----
-metaLinks:
-  alternates:
-    - >-
-      https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/applications/chat/raia-chat-user-guide
----
-
 # raia Chat User Guide
 
 ## Deliver Seamless 24/7 Customer Engagement Across All Channels

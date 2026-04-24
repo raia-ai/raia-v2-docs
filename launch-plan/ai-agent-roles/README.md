@@ -1,9 +1,3 @@
----
-metaLinks:
-  alternates:
-    - https://app.gitbook.com/s/EwGkQrKpAAj0jhmC3fkJ/launch-plan/ai-agent-roles
----
-
 # AI Agent Roles
 
 In raia, roles serve as the cornerstone for orchestrating a vast “agentic workforce,” where each AI Agent is assigned a specialized function (e.g., Sales, Support, Creative) and trained with custom data reflecting the organization’s requirements. Through a robust permissions system, teams gain precise control over who can access, edit, or deactivate each agent. By leveraging role-specific Packs, administrators can tailor agents’ knowledge to different tasks, ensuring that every department, from HR to Analytics, benefits from AI that’s both accurate and compliant. This centralized approach to agent management and training empowers organizations to scale up confidently, supporting hundreds or even thousands of agents in a single, streamlined platform.
