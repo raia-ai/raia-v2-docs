@@ -44,7 +44,7 @@ If you sign up using a phone number that is not a valid mobile phone, you will n
 
 raia uses a **step-by-step wizard**. Here’s how the process typically flows:
 
-#### **Step 1:** [**Define the Agent’s Role**](../launch-plan/ai-agent-roles/)
+#### **Step 1:** [**Define the Agent’s Role**](/broken/pages/CspgHYyQcqq9FJeV5VDt)
 
 * Choose what your AI agent will do: Sales, Support, Operations, Internal HR, etc.
 * Pick a role template or start from scratch.
@@ -71,7 +71,7 @@ raia uses a **step-by-step wizard**. Here’s how the process typically flows:
 
 ***
 
-#### **Step 4:** [**Select Skills**](../launch-plan/ai-agent-skills/)
+#### **Step 4:** [**Select Skills**](/broken/pages/eGgO5vaNuKaWKD8RqaJn)
 
 * raia agents come with built-in skills: **Live Chat, SMS, Email, Voice, APIs, Calendar, Campaigns, Webhooks**, etc.
 * Choose the communication channels and integrations your agent needs.
