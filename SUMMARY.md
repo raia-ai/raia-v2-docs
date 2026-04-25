@@ -102,6 +102,7 @@
 
 ***
 
+* [PDF Tools](pdf-tools.md)
 * [Convert to Markdown](convert-to-markdown.md)
 
 ## Integrations
