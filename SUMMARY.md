@@ -78,13 +78,6 @@
   * [Live Chat Security Key](applications/chat/live-chat-security-key.md)
   * [Live Chat in Zendesk](applications/chat/live-chat-in-zendesk.md)
 * [Command](applications/command.md)
-* [Connect](applications/connect/README.md)
-  * [raia Connect User Guide](applications/connect/raia-connect-user-guide.md)
-  * [Connecting to your Agent](applications/connect/connecting-to-your-agent.md)
-  * [File Transformation](applications/connect/file-transformation.md)
-  * [Simulation](applications/connect/simulation.md)
-  * [Human Feedback](applications/connect/human-feedback.md)
-  * [Guide to Training and Testing](applications/connect/guide-to-training-and-testing.md)
 * [Control](applications/mission-control/README.md)
   * [raia Control User Guide](applications/control/raia-control-user-guide.md)
   * [Connecting your Agent](applications/mission-control/connecting-your-agent.md)
@@ -104,6 +97,12 @@
   * [Segments](applications/contract/segments.md)
   * [Versions](applications/contract/versions.md)
   * [Tags](applications/contract/tags.md)
+
+## TOOLS
+
+***
+
+* [Convert to Markdown](convert-to-markdown.md)
 
 ## Integrations
 
