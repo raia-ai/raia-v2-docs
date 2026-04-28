@@ -20,7 +20,7 @@ Download our Mobile App at [Google Play](https://play.google.com/store/apps/deta
 
 ### Are you a Developer?
 
-If you are a developer looking to build AI Agentic Solutions, learn how raia can simplify your life and accelerate your ability to deploy enterprise grade agents ffasteraster.
+If you are a developer looking to build AI Agentic Solutions, learn how raia can simplify your life and accelerate your ability to deploy enterprise grade agents faster.
 
 <a href="https://app.gitbook.com/o/6fIasulwAMiCXfnCAZn0/s/mUCQZRcY4U9lLNybdRmB/" class="button primary" data-icon="rocket-launch">Developer Program</a> <a href="https://app.gitbook.com/o/6fIasulwAMiCXfnCAZn0/s/YnCphJOJo77GlU5wRPYS/" class="button secondary" data-icon="terminal">API reference</a>
 
