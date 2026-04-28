@@ -12,7 +12,7 @@ The Leading Platform for building, training, testing and managing AI Agents
 * AI Training - [https://docs.raiaai.com/ai-training](https://docs.raiaai.com/ai-training)
 * Developer Program - [https://docs.raiaai.com/dev-program](https://docs.raiaai.com/dev-program)
 * AI Research - [https://docs.raiaai.com/ai-research](https://docs.raiaai.com/ai-research)
-* Security & Compiamce - [https://docs.raiaai.com/security](https://docs.raiaai.com/security)
+* Security & Compliance - [https://docs.raiaai.com/security](https://docs.raiaai.com/security)
 
 
 
