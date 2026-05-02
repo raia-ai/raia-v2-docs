@@ -109,6 +109,7 @@
 
 * [Application Integrations](integrations/application-integrations/README.md)
   * [Microsoft Dynamics 365 Setup](integrations/application-integrations/microsoft-dynamics-365-setup.md)
+  * [Microsoft Sharepoint](integrations/application-integrations/microsoft-sharepoint.md)
 * [Tools Integration](integrations/tools-integration/README.md)
   * [AI DLC with raia Agents](integrations/ai-dlc-with-raia-agents.md)
   * [MCP with ChatGPT](integrations/mcp-with-chatgpt.md)
