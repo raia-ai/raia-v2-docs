@@ -135,32 +135,3 @@ Sites.ReadWrite.All
 Those are easier to configure but much riskier because they can allow broad tenant-wide SharePoint/OneDrive access.
 
 ***
-
-## Environment variables to store
-
-```bash
-M365_TENANT_ID="..."
-M365_CLIENT_ID="..."
-M365_CLIENT_SECRET="..."
-SHAREPOINT_HOSTNAME="contoso.sharepoint.com"
-SHAREPOINT_SITE_PATH="/sites/Operations"
-SHAREPOINT_SITE_ID="..."
-SHAREPOINT_DRIVE_ID="..."
-```
-
-***
-
-## Quick validation sequence
-
-Run these in order:
-
-```http
-POST /{tenant}/oauth2/v2.0/token
-GET  /sites/{hostname}:/sites/{siteName}
-GET  /sites/{siteId}/drives
-GET  /drives/{driveId}/root/children
-POST /drives/{driveId}/root/children
-PUT  /drives/{driveId}/root:/Test Folder/test.txt:/content
-```
-
-If all pass, the app is correctly set up to add/edit SharePoint files and folders.
