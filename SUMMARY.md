@@ -120,6 +120,8 @@
   * [API Documentation](integrations/workflow-integration/api-documentation.md)
   * [n8n Node](integrations/workflow-integration/n8n-node.md)
   * [Zapier](integrations/workflow-integration/zapier.md)
+* [Communication Integration](integrations/communication-integration/README.md)
+  * [Mailgun](integrations/communication-integration/mailgun.md)
 * [Training Integrations](integrations/training-integrations/README.md)
   * [Vimeo Integration — Practical Implementation Guide](integrations/vimeo-integration-practical-implementation-guide.md)
   * [TeamSupport Integration — Practical Implementation Guide](integrations/teamsupport-integration-practical-implementation-guide.md)
