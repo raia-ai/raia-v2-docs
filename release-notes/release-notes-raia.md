@@ -7,6 +7,400 @@ description: >-
 
 # Release Notes - raia
 
+**May 16, 2026**
+
+### Live Chat / Web Chat
+
+1. **New Live Chat version / migration**
+   * A larger Live Chat redesign/migration was discussed as close to release / production deployment.
+2. **Live Chat background image customization**
+   * Upload/delete background images for the chat widget.
+   * Configure background image and background color by light/dark theme.
+   * Background image covers/scales within the widget.
+   * Color mask/fade uses the configured background color.
+3. **Live Chat templates / standard template setting**
+   * New template configuration was shown in Live Chat settings.
+4. **Live Chat after-hours / unavailable message webhook**
+   * Instead of storing deferred messages locally and sending later, after-hours messages are sent to a webhook.
+   * Supports sending multiple after-hours messages.
+5. **Live Chat limited-date availability**
+   * Live Chat availability can now be configured by specific dates, not just times.
+6. **Live Chat webhook payload now includes embedded page URL and user IP**
+   * Conversation metadata captures where the chat is embedded and the user IP.
+7. **Live Chat buttons: improved regex appearance logic**
+   * Button visibility conditions can parse assistant responses and manual assistant messages, not just user input.
+8. **Escalation / button behavior improvements**
+   * Discussion around using escalation logic to trigger buttons.
+   * Discussion around regex checking both user message and AI response.
+   * Proposed improvement: escalation auto-mode should also parse AI answer, not only user question.
+9. **Inline / mid-conversation forms**
+   * A form could appear inside a conversation based on similar appearance conditions as buttons.
+   * Use case: user says they want to register, and a form appears for event registration.
+10. **Conversation forms / user information forms**
+
+* Forms in Live Chat for collecting user or conversation info.
+* Added validation for maximum string length.
+
+11. **500-character validation on custom form fields**
+
+* Frontend and backend validation added to prevent very long input strings in user/conversation forms.
+
+12. **Live Chat CSV/table export**
+
+* Tables can be copied or downloaded as CSV in Live Chat.
+
+13. **Widget fixes**
+
+* Sasha mentioned fixing issues found in widgets.
+
+14. **Chat SDK async command support**
+
+* SDK commands such as opening/closing chat, setting users/context, and sending messages can now be awaited using native JavaScript promises.
+
+### Copilot
+
+15. **Prompting / enhanced prompting skill**
+
+* New “Prompting” skill.
+* Clients can activate the skill and override default prompts at the agent level.
+* User message is transformed/enhanced before being sent.
+
+16. **Prompting toggle in Copilot**
+
+* Copilot input includes a toggle/control for enhanced prompting.
+
+17. **Force prompting setting**
+
+* Admins can force prompting to always be used.
+
+18. **Hide prompting toggle setting**
+
+* Admins can hide the prompting control from users while still using prompting behind the scenes.
+
+19. **View enhanced/transformed prompt**
+
+* Users/admins can inspect the transformed prompt that was actually sent.
+* Discussed UI options: icon, modal, status pill, dropdown, or subtle “prompt enhanced” indicator.
+
+20. **Prompting state persistence via OpenAI background processing**
+
+* Prompt API improved to use OpenAI background processing and response IDs, storing state in Redis so Kubernetes pod restarts do not lose long-running prompt state.
+
+21. **GPT-5.5 model added**
+
+* Latest GPT-5.5 model was added to the application.
+
+22. **GPT-5.4 Nano for Optimize with AI**
+
+* Optimize with AI / completion API updated to GPT-5.4 Nano.
+
+23. **Formatted Copilot message downloads**
+
+* Downloaded Copilot messages can render Markdown as formatted documents rather than raw Markdown.
+
+24. **Word/PDF/other document export improvements**
+
+* Markdown now exports into cleaner Word/PDF-style documents.
+
+25. **Copy/download tables as CSV**
+
+* Tables in Copilot can be copied and downloaded as CSV.
+
+26. **Increase Copilot attachment limit**
+
+* Copilot file attachments increased from 4 files to 20 files.
+
+27. **Sticky save button for dirty forms**
+
+* UI improvement so save button remains visible when a form has unsaved changes.
+
+28. **Copilot reskin / Launchpad core product reskin**
+
+* Rich mentioned ongoing work to reskin Copilot and Launchpad.
+
+### Agent / Skills
+
+29. **New skill type: Prompting**
+
+* Prompting appears as a skill in the skill list.
+
+30. **Frontend handling for new skill mappings**
+
+* Fix for cached frontend versions failing to render newly added backend skills.
+
+31. **Regex generation / Optimize with AI for regex fields**
+
+* Proposed ability to type a natural-language description and have AI generate the regex for button appearance conditions.
+
+32. **Computer skill**
+
+* Sasha was working on a new “computer skill.”
+* Configuration was mostly built; Manus API integration into message processing was still needed.
+
+33. **MCP skill OAuth**
+
+* Pablo created a pull request for MCP skill OAuth; it was under review.
+
+34. **Custom Twilio API key logic**
+
+* Pablo implemented custom Twilio API key logic; it was still in review in the first transcript.
+
+35. **Function skill now receives conversation ID**
+
+* Conversation ID added into function skill metadata/payload.
+
+36. **Function/API file attachment support discussion**
+
+* Proposed support for passing file IDs / multiple files into prompts through external API, especially for code interpreter-style workflows.
+
+37. **Agent-to-agent communication**
+
+* Agents can delegate questions to other agents, likely implemented as function-call-style orchestration.
+* Streaming/proxying events between agents was called out as the hard part.
+
+38. **Task agent / deep-research style workflow**
+
+* Prototype direction: prompt expansion, query multiple raia agents, query MCPs, optionally send to Manus/computer/code interpreter, then deliver output through Slack/email.
+
+39. **Scheduled task-style Copilot workflow**
+
+* Concept where a user can schedule or run a background task through Copilot-like UI.
+
+### Usage, Limits, Billing / Quotas
+
+40. **Agent-level usage tab**
+
+* Owners/admins can see a Usage tab on an agent.
+
+41. **Agent-level usage limits**
+
+* Admins can set limits for tokens, SMS, emails, and WhatsApp/WAPI minutes at the agent level.
+
+42. **Usage enforcement in Copilot and Live Chat**
+
+* If an agent hits its configured limit, Copilot and Live Chat block further sends for that agent while other agents still work.
+
+43. **Delete/reset agent limits**
+
+* Admins can remove the configured agent-level limits.
+
+44. **Future org/user-level limits**
+
+* Next step discussed: organization-level and user-level token limits, especially for Copilot.
+
+45. **Updated quota/resource management**
+
+* Database and quota recalculation improvements were discussed, including daily cron behavior and reduced resource issues.
+
+46. **License key registration fix**
+
+* Users can register via license key again after a Supabase/wrong-ID issue was fixed.
+
+### APIs / Analytics / Metadata
+
+47. **Assigned user contact info in Escalation and Conversation APIs**
+
+* API responses include assigned user information such as ID/name/avatar and later contact details.
+
+48. **Conversation assignee metadata**
+
+* Conversation metadata includes assigned user information.
+
+49. **Agent statistics API filters**
+
+* Agent statistics endpoints can fetch/filter by user ID, foreign key ID, conversation user ID, etc.
+
+50. **External API batch/vector-store improvements discussed**
+
+* Proposed API to upload a group of file IDs to an agent/vector store instead of one-by-one processing.
+
+51. **Batch file/vector-store handling for OpenAI rate limits**
+
+* OpenAI 429s were observed during bulk file uploads; timeouts/batch processing were discussed.
+
+52. **Vector store upload status tracking**
+
+* File upload status stored in the database to prevent duplicate vector-store uploads.
+
+53. **Support for OpenAI file IDs vs vector-store files**
+
+* Discussion around uploading files first, then using file IDs for vector stores or attaching files directly to prompts/code interpreter.
+
+### Admin / Super Admin / Permissions
+
+54. **Document security permission update**
+
+* Organization owners can manage document security settings, not just agent owners.
+
+55. **Super Admin users table improvements**
+
+* Delete users or change roles directly from Super Admin user table without impersonating.
+
+56. **System prompt library in Super Admin**
+
+* Prompts for things like agent descriptions/disclaimers/optimization are managed in the Super Admin prompt library.
+
+57. **Custom prompt for background-image generation**
+
+* Discussion/ticket around having a Super Admin-configured prompt used when generating background images.
+
+58. **Private agent permission update**
+
+* Copilot users can be invited into private agents.
+
+59. **Impersonation used for org owner/admin security management**
+
+* Related to managing document security settings as an org owner.
+
+### Authentication / Regions / Enterprise
+
+60. **Region selector on login/sign-up**
+
+* Login/sign-up screen has a region dropdown for US Central, US West, EU, etc.
+
+61. **EU OpenAI project / regional OpenAI routing**
+
+* Plan to route EU server/projects to EU OpenAI project.
+* Legacy customers may stay on existing project until vector stores are recreated/moved.
+
+62. **Organization-level API key approach for OpenAI region migration**
+
+* Current API key can be saved as org-level key for existing orgs; new orgs use EU project key.
+
+63. **Microsoft Entra / Active Directory login**
+
+* Client-specific Microsoft Entra / AD login discussed.
+* Open question: separate login page, slug-based routing, or separate frontend deployment.
+
+64. **Apple / Google / Microsoft login already supported**
+
+* Mentioned as existing common login providers while discussing Entra.
+
+### Storage / Infrastructure / Self-hosting
+
+65. **Cloud storage abstraction**
+
+* Common storage interface with different implementations because Google Cloud/Azure do not fully support all S3 methods.
+
+66. **Support for Google Cloud Storage, S3, and MinIO**
+
+* Cloud storage migration supports Google Cloud, S3, and MinIO, including Azure/self-hosted style deployments.
+
+67. **Queue/message broker abstraction**
+
+* Planned common queue interface/connectors for different message brokers/systems.
+
+68. **RabbitMQ to replace/reduce Google Pub/Sub dependency**
+
+* Discussed as part of making the platform distributable as Docker images without cloud-provider dependency.
+
+69. **Docker/self-hosted distribution foundation**
+
+* Storage and queue abstraction work supports deployability outside Google Cloud.
+
+70. **Supabase/Lovable portability discussion**
+
+* Discussed how to move Lovable/Supabase apps into a more internal/self-hosted stack.
+
+### Reliability / Observability / Performance
+
+71. **Sentry profiling / request tracing**
+
+* Added/improved Sentry profiling to collect request statistics and performance traces.
+
+72. **Sentry noise reduction**
+
+* Scanner/scraper 404s filtered out to reduce Sentry usage/limit impact.
+
+73. **Grafana health-check log cleanup**
+
+* Kubernetes health-check logs removed from Grafana noise.
+
+74. **Database query/index improvements**
+
+* SQL queries and indexes updated to reduce CPU/memory pressure.
+
+75. **Quota recalculation performance improvements**
+
+* Quota/resource management improved; daily midnight recalculation spike discussed.
+
+76. **Scoring batch-processing fix**
+
+* Incorrect promise-based batching fixed with `map_limit`, intended to reduce Kubernetes SIGTERM/memory/connection problems.
+
+77. **Database replication/copy process concerns**
+
+* Large copy commands were causing memory/database load; batching/read-replica usage discussed.
+
+78. **Increase database connections**
+
+* Discussed as possible mitigation for database spikes.
+
+79. **SMS emoji / empty OpenAI response handling**
+
+* Fix for cases where OpenAI returns empty response, especially SMS messages containing emoji.
+
+80. **Backend/frontend dependency upgrades**
+
+* Libraries/packages updated across backend.
+* Security-related package updates completed.
+
+81. **Node.js LTS migration**
+
+* Frontend and backend migrated to latest LTS Node.js version.
+
+82. **Sentry frontend/backend configuration improvements**
+
+* Better handling of frontend/backend Sentry logs.
+
+### Product / Workflow Ideas Discussed
+
+83. **Button can load a form**
+
+* Suggested as a preferred approach for showing forms from conversation interactions.
+
+84. **Prompt-based button appearance condition**
+
+* Discussed but not clearly approved; concern was cost/overhead and over-triggering.
+
+85. **Function action to trigger button appearance**
+
+* Discussed as an alternative to regex/prompt-based appearance logic.
+
+86. **Escalation without changing conversation state**
+
+* Discussed because escalation-like logic may be used to show options/buttons without truly escalating.
+
+87. **Support-options buttons in Live Chat**
+
+* Example: user asks “what are my support options” and multiple buttons appear.
+
+88. **Image crop modal for Live Chat backgrounds**
+
+* Suggested as a nice future improvement so users can crop background images.
+
+89. **Batch upload UX for folders**
+
+* Suggested UI where users drop a folder and get prompted to automatically upload documents to vector store.
+
+90. **OpenAI file-batch API usage**
+
+* Discussed using OpenAI file batches to improve handling of hundreds of files.
+
+91. **Code interpreter file passthrough**
+
+* Support for attaching one or multiple files to a prompt without vector-storing them.
+
+92. **MCP/connectors in Copilot tasks**
+
+* Future Copilot workflows may connect to Slack, Gmail, and other MCP servers for actions and data retrieval.
+
+93. **Post output to Slack / email output**
+
+* Prototype included generating a document/PDF and posting to Slack or emailing it.
+
+
+
 **March 10, 2026**\
 **Improvement**
 
