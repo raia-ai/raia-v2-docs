@@ -2,25 +2,13 @@
 description: The Leading Platform for building, training, testing and managing AI Agents
 ---
 
-# What is raia?
-
-{% embed url="https://youtu.be/aWdovmC6jpw" %}
-
-
-
-### **Where raia lives in the Agentic Stack**
-
-
-
-<figure><img src="../../.gitbook/assets/raia_ecosystem_diagram_v3.png" alt=""><figcaption></figcaption></figure>
-
-
+# About raia
 
 **Welcome to raia**—the platform that helps you build your AI-powered workforce, all in one place. With raia, you can create and manage AI agents that are trained on your data, follow your processes, and support your team—without needing any technical skills. Everything happens on a single, secure, and scalable platform, so you can grow your agentic workforce with confidence, one use case at a time.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-10-04 at 9.41.24 AM.png" alt=""><figcaption></figcaption></figure>
+{% embed url="https://docs.google.com/presentation/d/1V6Q6Hosg8PtnAk1nmq3-TQTsitCk0rkGT6E0PLWzpcQ/edit?usp=sharing" %}
 
-## What is raia?&#x20;
+### What is raia?&#x20;
 
 **raia**  is an advanced multi-agent platform that allows organizations to create and manage specialized AI Agents, each with distinct roles, skills, and knowledge packs. Roles define tasks, while skills handle communication channels, such as SMS, email, or live chat. Packs supply training data and instructions to accelerate agent creation.&#x20;
 
