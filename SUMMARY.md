@@ -102,6 +102,7 @@
 
 ***
 
+* [Live Chat SDK Editor](live-chat-sdk-editor.md)
 * [PDF Tools](pdf-tools.md)
 * [Convert to Markdown](convert-to-markdown.md)
 
