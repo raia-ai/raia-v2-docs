@@ -1,10 +1,8 @@
 # Live Chat SDK
 
-This article covers the two primary integration methods: the **Embed JS SDK** and the **Iframe SDK.**&#x20;
+Go to [https://sdk.raia.run/](https://sdk.raia.run/) to build on our SDK
 
-Check out this simple HTML Example of the SDK in action:&#x20;
-
-[https://storage.googleapis.com/raiahosted/raia\_test\_sdk.html](https://storage.googleapis.com/raiahosted/raia_test_sdk.html)
+<figure><img src="../../.gitbook/assets/Screenshot 2026-05-21 at 10.27.28 AM (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Key Capabilities
 
