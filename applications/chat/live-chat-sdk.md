@@ -2,7 +2,7 @@
 
 Go to [https://sdk.raia.run/](https://sdk.raia.run/) to build on our SDK
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-05-21 at 10.27.28 AM (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/https___files.gitbook.com_v0_b_gitbook-x-prod.appspot.com_o_spaces%2FEwGkQrKpAAj0jhmC3fkJ%2Fuploads%2F2j2mogirj8RluJ9PD2Xh%2FScreenshot%202026-05-21%20at%2010.27.28%E2%80%AFAM.png" alt=""><figcaption></figcaption></figure>
 
 ## Key Capabilities
 
