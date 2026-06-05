@@ -368,8 +368,7 @@ _Which files you can upload, which are blocked, and the size limits that apply._
 
 The platform supports a wide range of common document, image, and data formats.
 
-* Documents: PDF, Word (DOC/DOCX), Excel (XLS/XLSX), PowerPoint (PPT/PPTX), and more.
-* Images: PNG, JPG, GIF, WEBP, SVG, BMP, TIFF.
+* Documents: PDF, Word (DOC/DOCX), Excel (XLSX), PowerPoint (PPTX), and more.
 * Data files: JSON, XML, YAML, CSV, TSV, HTML, Markdown.
 * Archives: ZIP files — these are automatically extracted when uploaded.
 
